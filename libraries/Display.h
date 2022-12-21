@@ -8,6 +8,8 @@ using namespace std;
 class Display{
 private:
     int prefix_length; // backspace could potentially delete the prefix, so each time we display_new_command() we also change thi
+    vector<string>prefix;
+    vector<int>colors;
 public:
     void clear_screen(); // clear_tool the entire screen
     void backspace(); // remove the last n chars from the screen
@@ -19,7 +21,23 @@ public:
     void display_message(string message) { printw("%s", message.c_str());};
     const int get_prefix_length() {return prefix_length;};
     void display_shell_runned_command(string);
+    void display_prefix(vector<string>, vector<int>);
 }display;
+
+void Display::display_prefix(vector<string> prefix, vector<int> colors)
+{
+    this->prefix = prefix;
+    this->colors = colors;
+
+    prefix_length = 0;
+    for(int i=0; i<prefix.size(); i++)
+    {
+        prefix_length += prefix[i].length();
+        attron(COLOR_PAIR( colors[i] ));
+        printw("%s", prefix[i].c_str());
+        attroff(COLOR_PAIR( colors[i] ));
+    }
+}
 
 //used to show the user, that the code waits for a command
 void Display::display_new_command(int (*Output_Stream) (const char *, ...), string message)
@@ -30,7 +48,7 @@ void Display::display_new_command(int (*Output_Stream) (const char *, ...), stri
 
 void Display::display_after_key_press(string result)
 {
-    display.display_new_command(&printw, PREFIX);
+    display.display_prefix(this->prefix, this->colors);
     printw("%s", result.c_str());
 }
 

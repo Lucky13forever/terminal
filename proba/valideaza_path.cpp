@@ -14,7 +14,7 @@ bool is_this_a_valid_path(string path){
 
 int main() {
 
-    cout << is_this_a_valid_path("/home/area51/faculta1");
+    cout << is_this_a_valid_path("/home/area51/faculta/OS/terminal/one");
 
     return 0;
 }

@@ -22,6 +22,7 @@ public:
     const int get_prefix_length() {return prefix_length;};
     void display_shell_runned_command(string);
     void display_prefix(vector<string>, vector<int>);
+    void display_debug(string);
 }display;
 
 void Display::display_prefix(vector<string> prefix, vector<int> colors)
@@ -87,4 +88,13 @@ void Display::display_new_command(string command) {
 void Display::display_char(char c) {
     printw("%c", c);
 }
+
+void Display::display_debug(string debug) {
+    if (DEBUG){
+        printw("\n------------------------------\n\n");
+        printw("%s", debug.c_str());
+        printw("\n\n------------------------------\n");
+    }
+}
+
 #endif //PROJECT_DISPLAY_H

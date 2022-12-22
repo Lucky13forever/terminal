@@ -7,6 +7,7 @@
 #include <bits/stdc++.h>
 #include <ncurses.h>
 #include <sys/wait.h>
+#include <sys/stat.h>
 #include "Scanner.h"
 #include "Constants.h"
 #include "Status.h"

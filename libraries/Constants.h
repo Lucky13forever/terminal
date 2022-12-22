@@ -12,6 +12,7 @@ const char * CD = "cd";
 const char * LS = "ls";
 const int RUNNING = 0;
 const int TERMINATED = 1;
+const int DEBUG = 0;
 const char * CLEAR = "clear";
 const int BUFFER = 1024;
 

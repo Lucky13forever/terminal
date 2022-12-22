@@ -77,7 +77,12 @@ void User_Input::check_if_command_is_internal(string command)
         return;
     }
 
-//    if not internal, we shall use the system command
-    system(command.append(" >> temp.txt").c_str());
+    if ( command.rfind(string(PWD).append(" "), 0) == 0 or strcmp(command.c_str(), PWD) == 0 )
+    {
+        pwd_command.run(command);
+        return;
+    }
+
+    terminal.execute_external_command(command);
 }
 #endif //TERMINAL_USERINPUT_H

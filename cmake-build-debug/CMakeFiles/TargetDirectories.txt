@@ -1,0 +1,3 @@
+/home/area51/faculta/OS/terminal/cmake-build-debug/CMakeFiles/Terminal.dir
+/home/area51/faculta/OS/terminal/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/area51/faculta/OS/terminal/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -7,6 +7,7 @@ const int BACKSPACE = 263;
 const char * PREFIX = "area51:~$ ";
 const char * EXIT = "exit";
 const char * HISTORY = "history";
+const char * PWD = "pwd";
 const int RUNNING = 0;
 const int TERMINATED = 1;
 const char * CLEAR = "clear";

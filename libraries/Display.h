@@ -18,7 +18,7 @@ public:
     void display_new_command(string);
     void display_char(char);
     void display_after_key_press(string);
-    void display_message(string message) { printw("%s", message.c_str());};
+    void display_message(string message) { printw("%s\n", message.c_str());};
     const int get_prefix_length() {return prefix_length;};
     void display_shell_runned_command(string);
     void display_prefix(vector<string>, vector<int>);

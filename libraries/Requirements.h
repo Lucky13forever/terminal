@@ -1,8 +1,12 @@
 // used to include all the libraries
 
 
+#ifndef TERMINAL_REQUIREMENTS_H
+#define TERMINAL_REQUIREMENTS_H
+
 #include <bits/stdc++.h>
 #include <ncurses.h>
+#include <sys/wait.h>
 #include "Constants.h"
 #include "Status.h"
 #include "Display.h"
@@ -14,14 +18,12 @@
 #include "../commands/Terminal.h"
 #include "../commands/History.h"
 #include "../commands/Exit.h"
+#include "../commands/Pwd.h"
 #include "../commands/Clear.h"
 
 //user input might use terminal stuff and commands aswell
 #include "UserInput.h"
 //Application will have access to everything, this is for control, the new main
 #include "Application.h"
-
-#ifndef TERMINAL_REQUIREMENTS_H
-#define TERMINAL_REQUIREMENTS_H
 
 #endif //TERMINAL_REQUIREMENTS_H

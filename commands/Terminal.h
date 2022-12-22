@@ -34,8 +34,6 @@ public:
     void execute_external_command(string);
     bool this_command_exists(string);
     string extract_name_of_command(string);
-    string is_this_a_valid_path(string);
-    string remove_last_slash(string word);
 }terminal;
 
 Terminal::Terminal()
@@ -153,80 +151,14 @@ const string &Terminal::getPath() const {
     return path;
 }
 
-string Terminal::is_this_a_valid_path(string path){
-
-
-    struct stat sb;
-    // if the user also provided a / at the end, it can be removed
-    if (path[ path.size() - 1 ] == '/')
-    {
-        path.pop_back();
-    }
-
-    //if path doesnt start with / -> the user intention is to continue from current path
-
-    string true_path = path;
-    string mt;
-
-
-    if (path == ".")
-    {
-        //do nothing
-        return mt;
-    }
-    if (path == "..")
-    {
-        true_path = remove_last_slash(this->path);
-        display.display_debug("Removing the last slash new path will be -> " + true_path);
-        return true_path;
-    }
-    if (path[0] != '/')
-    {
-        true_path = this->path;
-        true_path.append("/");
-        true_path.append(path);
-    }
-
-    if (stat(true_path.c_str(), &sb) == 0)
-    {
-        display.display_debug(true_path + " is valid -> changing");
-        return true_path;
-    }
-    display.display_debug(true_path + " is invalid, ignoring");
-    return mt;
-}
-
 void Terminal::update_path(string path) {
-    //is the path valid?
-    string rez = is_this_a_valid_path(path);
-    if (!rez.empty())
-    {
-        display.display_debug("Variable this->path chaging to " + rez);
-        this->path = rez;
-        prefix[2] = "~";
-        prefix[2].append(rez);
-        display.display_debug("Prefix[2] is now " + prefix[2]);
-        return;
-    }
-    //if im here the path was invalid
-    errors.invalid_path_provided();
+    display.display_debug("Variable this->path chaging to " + path);
+    this->path = path;
+    prefix[2] = "~";
+    prefix[2].append(path);
+    display.display_debug("Prefix[2] is now " + prefix[2]);
+    return;
 }
 
-string Terminal::remove_last_slash(string word) {
-//    first let's find if there is a slash
-    int pos_of_last_slash = word.find_last_of("/");
-
-    string mt;
-
-    string debug_message = "Position of last slash is";
-    debug_message.append(to_string(pos_of_last_slash) );
-    display.display_debug(debug_message);
-    if (pos_of_last_slash != -1)
-    {
-        //if i have one -> then i can remove this from the path
-        return word.substr(0, pos_of_last_slash);
-    }
-    return mt;
-}
 
 #endif //TERMINAL_TERMINAL_H

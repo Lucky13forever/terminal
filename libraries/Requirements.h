@@ -7,6 +7,7 @@
 #include <bits/stdc++.h>
 #include <ncurses.h>
 #include <sys/wait.h>
+#include "Scanner.h"
 #include "Constants.h"
 #include "Status.h"
 #include "Display.h"
@@ -20,6 +21,7 @@
 #include "../commands/Exit.h"
 #include "../commands/Pwd.h"
 #include "../commands/Clear.h"
+#include "../commands/Cd.h"
 
 //user input might use terminal stuff and commands aswell
 #include "UserInput.h"

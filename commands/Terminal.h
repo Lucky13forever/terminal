@@ -31,7 +31,8 @@ public:
     void display_shell_runned_command(string);
     Terminal();
     void configure();
-    void execute_external_command(string);
+    void check_if_external_command_exists(string command);
+    string execute_external_command(string command);
     bool this_command_exists(string);
     string extract_name_of_command(string);
 }terminal;
@@ -102,7 +103,7 @@ string Terminal::extract_name_of_command(string command){
 }
 
 
-void Terminal::execute_external_command(string command) {
+void Terminal::check_if_external_command_exists(string command) {
 
     //extract the name of the command
     string name = extract_name_of_command(command);
@@ -110,10 +111,25 @@ void Terminal::execute_external_command(string command) {
     if (this_command_exists(name) == 1)
     {
         //run exec on it
+        execute_external_command(command);
+
     }
     else{
         errors.internal_command_not_found();
     }
+}
+
+string Terminal::execute_external_command(string command) {
+    FILE * file = popen(command.c_str(), "r");
+
+    char * buffer = new char[1024];
+    string result;
+    while (std::fgets(buffer, 1024, file) != NULL)
+    {
+        result += buffer;
+        display.display_message(buffer);
+    }
+    return result;
 }
 
 bool Terminal::this_command_exists(string name)

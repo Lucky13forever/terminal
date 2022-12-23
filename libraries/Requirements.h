@@ -8,6 +8,8 @@
 #include <ncurses.h>
 #include <sys/wait.h>
 #include <sys/stat.h>
+#include <dirent.h>
+#include <algorithm>
 #include "Scanner.h"
 #include "Constants.h"
 #include "Status.h"
@@ -23,6 +25,7 @@
 #include "../commands/Pwd.h"
 #include "../commands/Clear.h"
 #include "../commands/Cd.h"
+#include "../commands/Ls.h"
 
 //user input might use terminal stuff and commands aswell
 #include "UserInput.h"

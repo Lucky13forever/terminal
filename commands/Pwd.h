@@ -11,6 +11,6 @@ public:
 
 void Pwd::run(string command)
 {
-    display.display_message(terminal.getPath());
+    display.display_message_with_endl(terminal.getPath());
 }
 #endif //TERMINAL_PWD_H

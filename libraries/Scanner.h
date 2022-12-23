@@ -33,6 +33,11 @@ public:
     void show_short_flags();
     void show_long_flags();
     void show_all();
+    bool found_long_flag(string flag);
+    static bool is_string_starting_with_dot(string word) {return word[0] == '.';};
+    static string remove_starting_dots_from_string(string word);
+
+    bool found_short_flag(string flag);
 }scanner;
 
 bool Scanner::has_key(map<string, vector<string>> map, const string& key){
@@ -167,6 +172,43 @@ void Scanner::show_all() {
     scanner.show_arguments();
     scanner.show_short_flags();
     scanner.show_long_flags();
+}
+
+bool Scanner::found_long_flag(string flag) {
+    for (string long_flag : this->get_long_flags())
+    {
+        if (long_flag == flag)
+            return true;
+    }
+    return false;
+}
+
+bool Scanner::found_short_flag(string flag){
+    for (string short_flag : this->get_short_flags())
+    {
+        if (short_flag == flag)
+            return true;
+    }
+    return false;
+}
+
+string Scanner::remove_starting_dots_from_string(string word) {
+    int i;
+    for (i=0; i<word.size(); i++)
+    {
+        if (word[i] != '.')
+        {
+            break;
+        }
+    }
+    if (i == word.size())
+    {
+        //no letter in this word
+        //return original
+        return word;
+    }
+    //if i'm here, remove the first dots
+    return word.substr(i, word.size() - 1);
 }
 
 #endif //TERMINAL_SCANNER_H

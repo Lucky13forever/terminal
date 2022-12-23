@@ -18,11 +18,14 @@ public:
     void display_new_command(string);
     void display_char(char);
     void display_after_key_press(string);
-    void display_message(string message) { printw("%s\n", message.c_str());};
+    void display_message_with_endl(string message) { printw("%s\n", message.c_str());};
     const int get_prefix_length() {return prefix_length;};
     void display_shell_runned_command(string);
     void display_prefix(vector<string>, vector<int>);
     void display_debug(string);
+    void display_message(string);
+
+    void scroll_screen(int i);
 }display;
 
 void Display::display_prefix(vector<string> prefix, vector<int> colors)
@@ -95,6 +98,15 @@ void Display::display_debug(string debug) {
         printw("%s", debug.c_str());
         printw("\n\n------------------------------\n");
     }
+}
+
+void Display::display_message(string command) {
+    printw("%s", command.c_str());
+}
+
+void Display::scroll_screen(int direction) {
+    wscrl(stdscr, direction);
+    wrefresh(stdscr);
 }
 
 #endif //PROJECT_DISPLAY_H

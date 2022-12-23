@@ -46,7 +46,6 @@ string User_Input::user_types_command() {
                 if (result.empty() == 0)
                     result.pop_back();
                 break;
-
             default:
                 printw("%c", key);
                 result += key;
@@ -91,10 +90,10 @@ void User_Input::check_if_command_is_internal(string command)
 
     if ( command.rfind(string(LS).append(" "), 0) == 0 or strcmp(command.c_str(), LS) == 0 )
     {
-        cd_command.run(command);
+        ls_command.run(command);
         return;
     }
 
-    terminal.execute_external_command(command);
+    terminal.check_if_external_command_exists(command);
 }
 #endif //TERMINAL_USERINPUT_H

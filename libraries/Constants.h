@@ -16,5 +16,10 @@ const int DEBUG = 0;
 const char * CLEAR = "clear";
 const int BUFFER = 1024;
 const int CHARS_ON_SINGLE_LINE = 160;
+const int COLOR_WHITE_CODE = 1;
+const int COLOR_GREEN_CODE = 2;
+const int COLOR_CYAN_CODE = 3;
+const int COLOR_BLUE_CODE = 4;
+const int COLOR_RED_CODE = 5;
 
 #endif //PROJECT_CONSTANTS_H

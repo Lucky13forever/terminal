@@ -18,6 +18,16 @@ class Ls{
         const char * s = "s";
     }accepted_flags;
 
+    class Classifier{
+    public:
+        const char * DIRECTORY = "/";
+        const char * EXECUTABLE = "*";
+        const char * SYMBOLIC = "@";
+        const char * FIFO = "|";
+        const char * SOCKER = "=";
+        const char * REGULAR = "";
+    }classifier;
+
 
     int chars_on_single_line = CHARS_ON_SINGLE_LINE;
     string help = "Usage: ls [PATH]... [FLAGS]...\n"
@@ -43,22 +53,34 @@ class Ls{
 
 //the structure we will keep inside a vector, meaning a row and this will contain everything so to make ls -l easier
 
-    class Row_info{
-        string name; //the file name
-    public:
-        explicit Row_info(const string &name) : name(name) {};
-        Row_info();
+    class File{
+        string name;
+        int theoretical_length{}; //this is the length that this file will consume on screen consider the extra spaces the size and the type
+        int size_in_blocks{};
+        int color{};
+        int type{}; //that thing at the end /*@=
+        int sufix_extra_space_for_simple_view = 1; //this is the minim
+        int prefix_extra_space_for_size_in_simple_view = 1; // minimal;
 
+    public:
         const string &getName() const {
             return name;
         }
 
-        static bool compareByName(const Row_info &left, const Row_info &right);
+        int getSizeInBlocks() const {
+            return size_in_blocks;
+        }
+
+        int getColor() const {
+            return color;
+        }
+        File(string, struct stat);
     };
 
     class Col_info{
-        vector<string> file_names;
+        vector<File> file_names;
         int longest_length = 0;
+        int longest_size = 0;
     public:
 
         void insert_file(string file);
@@ -66,7 +88,7 @@ class Ls{
         int get_file_number() {return file_names.size();};
         string get_file(int index);
     };
-    vector< Row_info > rows;
+    vector< File > rows;
     vector< Col_info > columns;
     set<int> file_name_lengths;
 
@@ -100,10 +122,28 @@ public:
     void display_file_distribution();
 }ls_command;
 
+Ls::File::File(string file_name, struct stat st) {
+    this->name = file_name;
+    this->size_in_blocks = st.st_blocks / 2;
+
+    this->type
+}
+
+
 void Ls::Col_info::insert_file(string file) {
-    file_names.push_back(file);
+
+    struct stat st;
+    //file exists no need to check
+    stat(file.c_str(), &st);
+
+    File * new_file = new File(file, st);
+
+    file_names.push_back(*new_file);
+
     if (file.length() > longest_length)
         longest_length = file.length();
+    if (new_file->getSizeInBlocks() > longest_size)
+        longest_size = new_file->getSizeInBlocks();
 }
 
 void Ls::Col_info::add_spaces() {
@@ -345,6 +385,16 @@ void Ls::display_file_distribution() {
         display.display_message_with_endl("");
     }
 
+}
+
+int get_file_size_in_blocks(string filename)
+{
+    struct stat st;
+    //the file will exist no need to check
+
+    stat(filename.c_str(), &st);
+    return st.st_blocks / 2;
+    //over 2 cause st.st_blocks measured in 512, where linux terminal uses 1024
 }
 
 #endif //TERMINAL_LS_H

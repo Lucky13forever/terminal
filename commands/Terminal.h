@@ -13,7 +13,7 @@ private:
     string path;
 
     vector<string>prefix = {"area51", ":", "~", "$ "};
-    vector<int>color_pairs = {2, 1, 3, 1};
+    vector<int>color_pairs = {COLOR_GREEN_CODE, COLOR_WHITE_CODE, COLOR_CYAN_CODE, COLOR_WHITE_CODE};
 public:
     const vector<string> &getPrefix() const;
 

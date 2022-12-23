@@ -18,9 +18,11 @@ void Application::start_terminal()
     noecho();
     start_color();
 
-    init_pair(1, COLOR_WHITE, 0);
-    init_pair(2, COLOR_GREEN, 0);
-    init_pair(3, COLOR_CYAN, 0);
+    init_pair(COLOR_WHITE_CODE, COLOR_WHITE, 0);
+    init_pair(COLOR_GREEN_CODE, COLOR_GREEN, 0);
+    init_pair(COLOR_CYAN_CODE, COLOR_CYAN, 0);
+    init_pair(COLOR_BLUE_CODE, COLOR_BLUE, 0);
+    init_pair(COLOR_RED_CODE, COLOR_RED, 0);
     bkgdset(A_NORMAL);
 
 

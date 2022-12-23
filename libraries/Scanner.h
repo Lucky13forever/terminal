@@ -36,6 +36,7 @@ public:
     bool found_long_flag(string flag);
     static bool is_string_starting_with_dot(string word) {return word[0] == '.';};
     static string remove_starting_dots_from_string(string word);
+    static string transform_to_lower_case(string word);
 
     bool found_short_flag(string flag);
 }scanner;
@@ -209,6 +210,15 @@ string Scanner::remove_starting_dots_from_string(string word) {
     }
     //if i'm here, remove the first dots
     return word.substr(i, word.size() - 1);
+}
+
+string Scanner::transform_to_lower_case(string word) {
+    for (char & c : word)
+    {
+        c = std::tolower(c);
+    }
+    return word;
+
 }
 
 #endif //TERMINAL_SCANNER_H

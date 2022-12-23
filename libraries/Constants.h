@@ -15,5 +15,6 @@ const int TERMINATED = 1;
 const int DEBUG = 0;
 const char * CLEAR = "clear";
 const int BUFFER = 1024;
+const int CHARS_ON_SINGLE_LINE = 160;
 
 #endif //PROJECT_CONSTANTS_H

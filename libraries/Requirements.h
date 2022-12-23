@@ -10,6 +10,7 @@
 #include <sys/stat.h>
 #include <dirent.h>
 #include <algorithm>
+#include <cctype>
 #include "Scanner.h"
 #include "Constants.h"
 #include "Status.h"

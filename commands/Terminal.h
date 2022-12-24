@@ -35,11 +35,33 @@ public:
     string execute_external_command(string command);
     bool this_command_exists(string);
     string extract_name_of_command(string);
+    static bool check_file_type(string, string);
+
 }terminal;
 
 Terminal::Terminal()
 {
     initialize_path();
+}
+
+bool check_file_type(string file, string type)
+{
+    string command = "file ";
+    command += file + " | grep " + "'" + type + "'";
+
+    FILE * f = popen(command.c_str(), "r");
+
+    string result;
+    char * buffer = new char[1024];
+    while(std::fgets(buffer, 1024, f) != NULL)
+    {
+        result += buffer;
+    }
+    if (!result.empty())
+    {
+        return 1;
+    }
+    return 0;
 }
 
 void Terminal::configure()

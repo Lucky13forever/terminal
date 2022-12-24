@@ -37,6 +37,7 @@ public:
     static bool is_string_starting_with_dot(string word) {return word[0] == '.';};
     static string remove_starting_dots_from_string(string word);
     static string transform_to_lower_case(string word);
+    static bool compare_strings(const string &, const string &);
 
     bool found_short_flag(string flag);
 }scanner;
@@ -219,6 +220,18 @@ string Scanner::transform_to_lower_case(string word) {
     }
     return word;
 
+}
+
+bool Scanner::compare_strings(const string & left, const string & right) {
+    //if left is starting with ., i try to extract only the letters if it even has them
+    //like for .git i will change it to git
+    string reconstruct_left = Scanner::remove_starting_dots_from_string(left);
+    string reconstruct_right = Scanner::remove_starting_dots_from_string(right);
+
+    //lower the case
+    reconstruct_left = Scanner::transform_to_lower_case(reconstruct_left);
+    reconstruct_right = Scanner::transform_to_lower_case(reconstruct_right);
+    return reconstruct_left < reconstruct_right;
 }
 
 #endif //TERMINAL_SCANNER_H

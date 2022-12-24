@@ -36,7 +36,7 @@ int main() {
     int terminal_width = cols_str ? atoi(cols_str) : 250;
     int num_columns = (terminal_width + 1) / (width + 1);
 
-    // Calculate the number of rows needed
+    // Calculate the number of files_in_lexicographic_order needed
     int num_rows = (names.size() + num_columns - 1) / num_columns;
 
     // Print the names in a columnar format

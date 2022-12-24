@@ -4,7 +4,6 @@
 
 const int ENTER = 10;
 const int BACKSPACE = 263;
-const char * PREFIX = "area51:~$ ";
 const char * EXIT = "exit";
 const char * HISTORY = "history";
 const char * PWD = "pwd";
@@ -14,8 +13,6 @@ const int RUNNING = 0;
 const int TERMINATED = 1;
 const int DEBUG = 0;
 const char * CLEAR = "clear";
-const int BUFFER = 1024;
-const int CHARS_ON_SINGLE_LINE = 160;
 const int COLOR_WHITE_CODE = 1;
 const int COLOR_GREEN_CODE = 2;
 const int COLOR_CYAN_CODE = 3;

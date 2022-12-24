@@ -15,7 +15,15 @@ namespace accepted_flags{
     const char * l = "l";
     const char * s = "s";
 }
-
+vector<const char *>accepted_flags_list = {
+        accepted_flags::a,
+        accepted_flags::all,
+        accepted_flags::F,
+        accepted_flags::classify,
+        accepted_flags::help,
+        accepted_flags::l,
+        accepted_flags::s
+};
 
 namespace classifier{
     const char * DIRECTORY = "/";
@@ -24,6 +32,7 @@ namespace classifier{
     const char * FIFO = "|";
     const char * SOCKET = "=";
     const char * REGULAR = " "; //empty
+    const char * NOT_FOUND = "!"; //missing file or directory
 }
 
 namespace keywords{
@@ -33,6 +42,7 @@ namespace keywords{
 
 class Ls{
 
+    bool default_path = true;
     string help = "Usage: ls [PATH]... [FLAGS]...\n"
                   "Lists all the files inside the directory which path is what you provided\n"
                   "You can provide more paths, and it will display the result for each one, if it's a valid one\n"
@@ -58,8 +68,10 @@ class Ls{
 
     class File{
         string name;
+        string real_path;
         int theoretical_length; //this is the length that this file will consume on screen consider the extra spaces the size and the type
         int size_in_blocks;
+        int exists;
         int color;
         const char * type; //that thing at the end /*@=
         int sufix_extra_space_for_simple_view = 1; //this is the minim
@@ -87,6 +99,8 @@ class Ls{
             return std::to_string(size_in_blocks).length();
         }
 
+        const string &getRealPath() const;
+
         void determine_type();
 
         const char *getType() const;
@@ -94,6 +108,8 @@ class Ls{
         File(string);
         File(void *) {is_this_null=true;};
         int get_theoretical_length() const;
+        bool is_directory();
+        bool is_symbolic_link();
 
     };
 
@@ -123,6 +139,7 @@ class Ls{
     };
     vector< string > files_in_lexicographic_order; //this will keep the files in order, but will be light weight, will only keep the name of the files in an ascending order
     vector< Col_info > columns; //this will be used for displaying
+    vector< string > directories_provided;
     set<int> file_name_lengths;
     int file_number = 0;
 
@@ -137,7 +154,7 @@ public:
 
     void simple_view();
 
-    void initialize_rows(const string&);
+    void initialize_rows_when_the_path_is_a_directory(string path);
 
     void sort_rows_after_file_name();
 
@@ -152,12 +169,37 @@ public:
     void create_file_distribution(int final_num_of_files_per_column);
 
     void display_file_distribution();
+
+    void validate_path(string basicString);
+
+    void initialize_rows_when_the_path_is_a_file(const string &path);
+
+    void initialize_rows_when_the_path_is_a_file(string file_path);
+
+    void validate_flags();
+
+    bool is_unknown_flag(string flag);
+
+    void initialize_rows_when_the_path_is_a_file();
 }ls_command;
 
-Ls::File::File(string file_name) {
-    this->name = file_name;
+Ls::File::File(string file_path) {
+    this->real_path = file_path;
+    this->name = Scanner::extract_file_name_from_path(this->real_path);
     struct stat st;
-    stat(file_name.c_str(), &st);
+    //gotta test the relative path of the file
+    this->exists = stat(file_path.c_str(), &st) == 0;
+
+
+    //must stop the code if it doesnt exist;
+    if (!this->exists)
+    {
+        display.display_debug_file("This is the first path " + real_path);
+        return;
+        this->type = classifier::NOT_FOUND;
+        throw NoSuchFileOrDirectory(this->real_path);
+    }
+
     this->size_in_blocks = st.st_blocks / 2;
 
     this->type = classifier::REGULAR;
@@ -236,9 +278,7 @@ void Ls::Col_info::show_file_type(File file)
 
 void Ls::Col_info::show_file_name(File file)
 {
-    //display_the_name_of_the_file
-    //TODO color the output
-    display.display_message(file.getName());
+    display.display_message_with_color(file.getName(), file.getColor());
 }
 
 void Ls::Col_info::show_suffix_spaces(File file)
@@ -277,19 +317,40 @@ void Ls::Col_info::show_file_info_on_screen(int index) {
 void Ls::run(const string& command)
 {
 
+    //clear the memory
+    default_path = true;
+    files_in_lexicographic_order.clear();
+    file_name_lengths.clear();
+    directories_provided.clear();
+
     display.display_debug("Running ls command");
     //here there is no problem with more arguments
     //but if i receive more paths i should display them all
 
     scanner.scan_command(command);
 
-    //ignore if the flag a doesnt exist
-    consider_starting_with_dot = scanner.found_short_flag(accepted_flags::a);
+    try{
+        validate_flags();
 
-//    here we will identify what we need, we can get any amount of arguments all will be considered as paths
-//    any amount of duplicate flags will be reduced to one appeareance
-//    if the help command appears anywhere, the command will not execute, instead we will have the help window open
-    identify_next_step();
+        //i could have more potential commands
+        //let's check
+        //if i have more then one argument -> i will get a list of all the right commands from the scanner TODO
+
+        for(string path : scanner.get_arguments())
+        {
+            validate_path(path);
+        }
+
+        consider_starting_with_dot = scanner.found_short_flag(accepted_flags::a);
+
+    //    here we will identify what we need, we can get any amount of arguments all will be considered as paths
+    //    any amount of duplicate flags will be reduced to one appeareance
+    //    if the help command appears anywhere, the command will not execute, instead we will have the help window open
+        identify_next_step();
+    } catch (const InvalidFlag & ex){
+        errors.invalid_flag_provided(ex.getFlag());
+        errors.use_help_flag_on_command(LS);
+    }
 
 }
 
@@ -297,6 +358,7 @@ void Ls::run(const string& command)
 // scope: identify what should ls print to the screen
 void Ls::identify_next_step() {
     display.display_debug("Identifying next step!");
+
     //if help is provided -> only the help message will appear
     // --help is only a long flag
     if (scanner.found_long_flag(accepted_flags::help))
@@ -305,8 +367,34 @@ void Ls::identify_next_step() {
         return;
     }
 
-    //reaching the bootom means no path, no flag -> simple view
-    simple_view();
+    //firstly we will consider the file paths provided
+    if (files_in_lexicographic_order.size())
+    {
+        //
+        initialize_rows_when_the_path_is_a_file();
+        create_file_distribution();
+        display_file_distribution();
+        display.display_message_with_endl("");
+    }
+
+    //now for each of the directories
+    for (int i=0; i<directories_provided.size(); i++)
+    {
+        display.display_message_with_endl(directories_provided[i] + ":");
+        initialize_rows_when_the_path_is_a_directory(directories_provided[i]);
+        create_file_distribution();
+        display_file_distribution();
+        display.display_message_with_endl("");
+    }
+
+    if (default_path)
+    {
+        //no arguments -> default path;
+        //reaching the bootom means no path, no flag -> simple view
+        display.display_debug("We reached sample view ");
+        simple_view();
+    }
+
 }
 
 int Ls::get_number_of_files_per_line(){
@@ -372,7 +460,8 @@ int Ls::get_final_num_of_files_per_column()
 
 //this means ls with maybe flags, but no arguments
 void Ls::simple_view() {
-    initialize_rows(terminal.getPath());
+    display.display_debug("Terminal path to be opened is " + terminal.getPath());
+    initialize_rows_when_the_path_is_a_directory(terminal.getPath());
 
 
     //now time to create
@@ -393,9 +482,7 @@ int Ls::File::get_theoretical_length() const
     {
         //if the scanner has the 's' flag -> add an extra space to the front, the size in blocks, and another space
         length += 1; //the first space
-        File * new_file = new File(word);
-
-        string file_size = std::to_string(new_file->getSizeInBlocks());
+        string file_size = std::to_string(this->getSizeInBlocks());
         length += int ( file_size.length() ); //counting the size
 
         length += 1; //again an extra space;
@@ -430,32 +517,64 @@ void Ls::File::determine_type() {
     if (S_ISLNK(fstat.st_mode))
     {
         type = classifier::SYMBOLIC;
+        color = COLOR_CYAN_CODE;
     }
     else if (S_ISDIR(st.st_mode))
     {
         type = classifier::DIRECTORY;
+        color = COLOR_BLUE_CODE;
     }
     else if (S_ISFIFO(st.st_mode))
     {
         type = classifier::FIFO;
+        color = COLOR_YELLOW_CODE;
     }
     else if (S_ISSOCK(st.st_mode))
     {
         type = classifier::SOCKET;
+        color = COLOR_MAGENTA_CODE;
     }
     else if (st.st_mode & S_IXUSR)
     {
         type = classifier::EXECUTABLE;
+        color = COLOR_GREEN_CODE;
     }
     else if (S_ISREG(st.st_mode))
     {
         type = classifier::REGULAR;
+        color = COLOR_WHITE_CODE;
     }
+}
+
+bool Ls::File::is_directory() {
+    string file = this->getName();
+    struct stat st;
+    stat(file.c_str(), &st);
+    if (S_ISDIR(st.st_mode))
+    {
+        return true;
+    }
+    return false;
+}
+
+bool Ls::File::is_symbolic_link() {
+    string file = this->getName();
+    struct stat fstat;
+    lstat(file.c_str(), &fstat);
+    if (S_ISLNK(fstat.st_mode))
+    {
+        return true;
+    }
+    return false;
+}
+
+const string &Ls::File::getRealPath() const {
+    return real_path;
 }
 
 
 //keep how many files are there, and the set in desc order of length
-void Ls::initialize_rows(const string& path) {
+void Ls::initialize_rows_when_the_path_is_a_directory(string path) {
 //    first clear the memory
     files_in_lexicographic_order.clear();
     file_name_lengths.clear();
@@ -463,6 +582,7 @@ void Ls::initialize_rows(const string& path) {
     //first let's get each of the names
     DIR * dir;
     struct dirent * entry;
+    display.display_debug("I want to open " + path);
     dir = opendir(path.c_str());
     if (dir == nullptr)
     {
@@ -471,6 +591,7 @@ void Ls::initialize_rows(const string& path) {
         return;
     }
     string file_name;
+    display.display_debug("Opening the directory");
     while ((entry = readdir(dir)) != nullptr)
     {
         file_name = entry->d_name;
@@ -481,12 +602,27 @@ void Ls::initialize_rows(const string& path) {
         files_in_lexicographic_order.push_back(file_name);
         //add the length to the set
         //place with - cause i want desc order
-        File * new_file = new File(file_name);
+        //TODO get relative path of the file
+        string real_path = Scanner::concatenate_current_path_with_another_path(path, file_name);
+        display.display_debug_file("This is the second real path " + real_path);
+        File * new_file = new File(real_path);
         file_name_lengths.insert( - new_file->get_theoretical_length() );
 
     }
 
     closedir(dir);
+    sort_rows_after_file_name();
+}
+
+void Ls::initialize_rows_when_the_path_is_a_file(){
+
+    for(string file_ : files_in_lexicographic_order)
+    {
+        display.display_debug_file("This is the third real path " + file_);
+        File * new_file = new File(file_);
+        file_name_lengths.insert( - new_file->get_theoretical_length() );
+    }
+
     sort_rows_after_file_name();
 }
 
@@ -509,6 +645,7 @@ void Ls::create_file_distribution() {
         aux = new Col_info();
         for (int j=i; j < i + final_num_of_files_per_column and j < total_num_of_files; j++)
         {
+            display.display_debug_file("This is the fourth path " + files_in_lexicographic_order[j]);
             File new_file = *new File(files_in_lexicographic_order[j]);
             aux->insert_file(new_file );
         }
@@ -518,7 +655,6 @@ void Ls::create_file_distribution() {
 }
 
 void Ls::display_file_distribution() {
-
     display.display_debug("Yep trying to show you the files");
 
     for (int i = 0; i<columns[0].get_file_number(); i++)
@@ -530,6 +666,66 @@ void Ls::display_file_distribution() {
         display.display_message_with_endl("");
     }
 
+}
+
+void Ls::validate_path(string path) {
+    //if i got any path
+    default_path = false;
+    try{
+        display.display_debug("This is the path received : " + path);
+
+
+        //get the real_path
+        string real_path = Scanner::concatenate_current_path_with_another_path(terminal.getPath(), path);
+        display.display_debug_file("This is the fifth path " + real_path);
+        File path_provided = new File(real_path);
+
+        //if it is a directory continue with the normal design
+        //be carefull that a symbolic link could be a directory
+        if (path_provided.is_directory()){
+
+            display.display_debug("It seems to be a directory");
+            directories_provided.push_back(real_path);
+        }
+        //if it is a file. think of it like a new directory that only has that file, we will only modify the files_in_lexicographic_order
+        else{
+            display.display_debug("It seems to be just a file");
+            display.display_debug_file("This is the sixth path " + path_provided.getRealPath());
+            files_in_lexicographic_order.push_back(path_provided.getRealPath());
+        }
+
+    } catch (const NoSuchFileOrDirectory & ex) {
+        errors.no_such_file_or_directory(path);
+    }
+
+}
+
+bool Ls::is_unknown_flag(string flag)
+{
+    for (const char * accepted : accepted_flags_list)
+    {
+        if (strcmp(accepted, flag.c_str()) == 0)
+            return false;
+    }
+    return true;
+}
+
+void Ls::validate_flags() {
+    for (string long_flag : scanner.get_long_flags())
+    {
+        if (is_unknown_flag(long_flag))
+        {
+            throw InvalidFlag(long_flag);
+        }
+    }
+
+    for (string short_flag : scanner.get_short_flags())
+    {
+        if (is_unknown_flag(short_flag))
+        {
+            throw InvalidFlag(short_flag);
+        }
+    }
 }
 
 #endif //TERMINAL_LS_H

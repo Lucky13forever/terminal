@@ -23,6 +23,8 @@ void Application::start_terminal()
     init_pair(COLOR_CYAN_CODE, COLOR_CYAN, 0);
     init_pair(COLOR_BLUE_CODE, COLOR_BLUE, 0);
     init_pair(COLOR_RED_CODE, COLOR_RED, 0);
+    init_pair(COLOR_YELLOW_CODE, COLOR_YELLOW, 0);
+    init_pair(COLOR_MAGENTA_CODE, COLOR_MAGENTA, 0);
     bkgdset(A_NORMAL);
 
 

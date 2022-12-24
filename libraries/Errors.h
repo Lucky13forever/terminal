@@ -11,6 +11,9 @@ public:
     void too_many_arguments();
     void invalid_path_provided();
     void cannot_open_dir();
+    void no_such_file_or_directory(string);
+    void invalid_flag_provided(string);
+    void use_help_flag_on_command(string);
 }errors;
 
 //    internal meaning, implemented by this program
@@ -32,6 +35,18 @@ void Errors::invalid_path_provided() {
 
 void Errors::cannot_open_dir() {
     display.display_message_with_endl("\nCannot open the current directory, you are probably missing permisions to do so!\n");
+}
+
+void Errors::no_such_file_or_directory(string file_name) {
+    display.display_message_with_endl("\nCannot access '" + file_name + "'" + " -> No such file or directory!\n");
+}
+
+void Errors::invalid_flag_provided(string flag) {
+    display.display_message_with_endl("\nUnknown flag, '" + flag + "'" + " -> Invalid flag provided!\n");
+}
+
+void Errors::use_help_flag_on_command(string command) {
+    display.display_message_with_endl("\nTry running the '" + command + " --help command for more details!\n");
 }
 
 #endif //TERMINAL_ERRORS_H

@@ -38,8 +38,12 @@ public:
     static string remove_starting_dots_from_string(string word);
     static string transform_to_lower_case(string word);
     static bool compare_strings(const string &, const string &);
+    static string concatenate_path_with_file_name(string, string);
+    static string extract_file_name_from_path(string);
 
     bool found_short_flag(string flag);
+
+    static string concatenate_current_path_with_another_path(string current_path, string path);
 }scanner;
 
 bool Scanner::has_key(map<string, vector<string>> map, const string& key){
@@ -232,6 +236,27 @@ bool Scanner::compare_strings(const string & left, const string & right) {
     reconstruct_left = Scanner::transform_to_lower_case(reconstruct_left);
     reconstruct_right = Scanner::transform_to_lower_case(reconstruct_right);
     return reconstruct_left < reconstruct_right;
+}
+
+string Scanner::concatenate_current_path_with_another_path(string current_path, string path) {
+    //if the path starts with / dont do anything
+    if (path[0] == '/')
+        return path;
+
+    //else concatenate
+    return current_path + "/" + path;
+}
+
+string Scanner::extract_file_name_from_path(string path) {
+    //get the string after the last slash
+    int index = path.rfind("/");
+
+
+    if (index != -1)
+    {
+        return path.substr(index + 1, path.size() - 1);
+    }
+    return path;
 }
 
 #endif //TERMINAL_SCANNER_H

@@ -5,6 +5,7 @@
 #ifndef PROJECT_DISPLAY_H
 #define PROJECT_DISPLAY_H
 using namespace std;
+#include <fstream>
 class Display{
 private:
     int prefix_length; // backspace could potentially delete the prefix, so each time we display_new_command() we also change thi
@@ -24,8 +25,11 @@ public:
     void display_prefix(vector<string>, vector<int>);
     void display_debug(string);
     void display_message(string);
+    void display_message_with_color(string, int);
 
     void scroll_screen(int i);
+
+    void display_debug_file(string message);
 }display;
 
 void Display::display_prefix(vector<string> prefix, vector<int> colors)
@@ -107,6 +111,23 @@ void Display::display_message(string command) {
 void Display::scroll_screen(int direction) {
     wscrl(stdscr, direction);
     wrefresh(stdscr);
+}
+
+void Display::display_message_with_color(string message, int color) {
+
+    attron(COLOR_PAIR( color ));
+    display_message(message);
+    attroff(COLOR_PAIR( color ));
+}
+
+void Display::display_debug_file(string message) {
+    if (DEBUG){
+
+        string command = "echo '";
+        command += message + "'" + " >> debug_file.txt";
+        FILE * file = popen(command.c_str(), "r");
+        pclose(file);
+    }
 }
 
 #endif //PROJECT_DISPLAY_H

@@ -44,6 +44,7 @@ class Ls{
 
     bool default_path = true;
     bool display_real_path_of_file = true;
+    int total_size_in_blocks = 0;
     string help = "Usage: ls [PATH]... [FLAGS]...\n"
                   "Lists all the files inside the directory which path is what you provided\n"
                   "You can provide more paths, and it will display the result for each one, if it's a valid one\n"
@@ -183,6 +184,8 @@ public:
     bool is_unknown_flag(string flag);
 
     void initialize_rows_when_the_path_is_a_file();
+
+    void display_total_directory_size_in_blocks();
 }ls_command;
 
 Ls::File::File(string file_path) {
@@ -322,6 +325,7 @@ void Ls::run(const string& command)
     //clear the memory
     default_path = true;
     display_real_path_of_file = true;
+    total_size_in_blocks = 0;
     files_in_lexicographic_order.clear();
     file_name_lengths.clear();
     directories_provided.clear();
@@ -385,10 +389,13 @@ void Ls::identify_next_step() {
     ls_command.display_real_path_of_file = false;
     for (int i=0; i<directories_provided.size(); i++)
     {
+        //foe each of the directories the size must be reset
+        total_size_in_blocks = 0;
         string path_to_show = Scanner::get_relative_path_to_terminal_path(terminal.getPath(), directories_provided[i]);
         display.display_message_with_endl(path_to_show + ":");
         initialize_rows_when_the_path_is_a_directory(directories_provided[i]);
         create_file_distribution();
+        display_total_directory_size_in_blocks();
         display_file_distribution();
         display.display_message_with_endl("");
     }
@@ -473,6 +480,7 @@ void Ls::simple_view() {
     //now time to create
     display.display_debug("Creating the file distribution");
     create_file_distribution();
+    display_total_directory_size_in_blocks();
     display.display_debug("Displaying the file distribution");
     display_file_distribution();
 }
@@ -492,6 +500,7 @@ int Ls::File::get_theoretical_length() const
         length += int ( file_size.length() ); //counting the size
 
         length += 1; //again an extra space;
+
     }
     //now i count the space of the file itlsef
     length += int ( word.length() );
@@ -621,6 +630,9 @@ void Ls::initialize_rows_when_the_path_is_a_directory(string path) {
         display.display_debug_file("This is the second real path " + real_path_of_file);
         File * new_file = new File(real_path_of_file);
 
+        //keep the size
+        this->total_size_in_blocks += new_file->getSizeInBlocks();
+
 
         files_in_lexicographic_order.push_back(new_file->getRealPath());
         file_name_lengths.insert( - new_file->get_theoretical_length() );
@@ -743,6 +755,13 @@ void Ls::validate_flags() {
         {
             throw InvalidFlag(short_flag);
         }
+    }
+}
+
+void Ls::display_total_directory_size_in_blocks() {
+    if (scanner.found_short_flag(accepted_flags::s))
+    {
+        display.display_message_with_endl("total " + std::to_string(this->total_size_in_blocks));
     }
 }
 

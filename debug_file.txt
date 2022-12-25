@@ -2484,3 +2484,917 @@ This is the fourth path /home/area51/faculta/OS/terminal/proba//test
 This is the fourth path /home/area51/faculta/OS/terminal/proba//unsigned_int.cpp
 This is the fourth path /home/area51/faculta/OS/terminal/proba//valideaza_path.cpp
 This is the fourth path /home/area51/faculta/OS/terminal/proba//with_popen.cpp
+This is the fifth arg_path /home/area51/faculta/OS/terminal/proba
+This is the fifth arg_path /home/area51/faculta/OS/terminal/proba/
+This is the fifth arg_path /home/area51/faculta/OS/terminal/proba/scrollable
+This is the sixth arg_path /home/area51/faculta/OS/terminal/proba/scrollable
+This is the fifth arg_path /home/area51/faculta/OS/terminal/unu.txt
+This is the sixth arg_path /home/area51/faculta/OS/terminal/unu.txt
+This is the third real path /home/area51/faculta/OS/terminal/proba/scrollable
+This is the third real path /home/area51/faculta/OS/terminal/unu.txt
+This is the fourth path /home/area51/faculta/OS/terminal/proba/scrollable
+This is the fourth path /home/area51/faculta/OS/terminal/unu.txt
+This is the second real path /home/area51/faculta/OS/terminal/proba/scrollable
+This is the second real path /home/area51/faculta/OS/terminal/proba/scrollable_simlpe_c.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba/command_not_found.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba/scrollable_simlpe_c
+This is the second real path /home/area51/faculta/OS/terminal/proba/unsigned_int.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba/scrolling_form.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba/culori
+This is the second real path /home/area51/faculta/OS/terminal/proba/get_file_type.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba/learning_set.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba/multiline.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba/terminalu_sa_separe_commandu.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba/read_write_through_pipe.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba/test
+This is the second real path /home/area51/faculta/OS/terminal/proba/.
+This is the second real path /home/area51/faculta/OS/terminal/proba/get_file_size.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba/..
+This is the second real path /home/area51/faculta/OS/terminal/proba/valideaza_path.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba/scrollable.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba/with_popen.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba/chat_gpt_scroll.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba/strcmp_debug.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba/columnar_output.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba/scroll_from_you_video
+This is the second real path /home/area51/faculta/OS/terminal/proba/if_exec.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba/culori.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba/scroll_from_you_video.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba/.
+This is the fourth path /home/area51/faculta/OS/terminal/proba/..
+This is the fourth path /home/area51/faculta/OS/terminal/proba/chat_gpt_scroll.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba/columnar_output.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba/command_not_found.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba/culori
+This is the fourth path /home/area51/faculta/OS/terminal/proba/culori.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba/get_file_size.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba/get_file_type.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba/if_exec.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba/learning_set.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba/multiline.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba/read_write_through_pipe.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba/scroll_from_you_video
+This is the fourth path /home/area51/faculta/OS/terminal/proba/scroll_from_you_video.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba/scrollable
+This is the fourth path /home/area51/faculta/OS/terminal/proba/scrollable.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba/scrollable_simlpe_c
+This is the fourth path /home/area51/faculta/OS/terminal/proba/scrollable_simlpe_c.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba/scrolling_form.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba/strcmp_debug.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba/terminalu_sa_separe_commandu.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba/test
+This is the fourth path /home/area51/faculta/OS/terminal/proba/unsigned_int.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba/valideaza_path.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba/with_popen.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//scrollable
+This is the second real path /home/area51/faculta/OS/terminal/proba//scrollable_simlpe_c.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//command_not_found.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//scrollable_simlpe_c
+This is the second real path /home/area51/faculta/OS/terminal/proba//unsigned_int.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//scrolling_form.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//culori
+This is the second real path /home/area51/faculta/OS/terminal/proba//get_file_type.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//learning_set.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//multiline.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//terminalu_sa_separe_commandu.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//read_write_through_pipe.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//test
+This is the second real path /home/area51/faculta/OS/terminal/proba//.
+This is the second real path /home/area51/faculta/OS/terminal/proba//get_file_size.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//..
+This is the second real path /home/area51/faculta/OS/terminal/proba//valideaza_path.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//scrollable.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//with_popen.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//chat_gpt_scroll.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//strcmp_debug.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//columnar_output.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//scroll_from_you_video
+This is the second real path /home/area51/faculta/OS/terminal/proba//if_exec.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//culori.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//scroll_from_you_video.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//.
+This is the fourth path /home/area51/faculta/OS/terminal/proba//..
+This is the fourth path /home/area51/faculta/OS/terminal/proba//chat_gpt_scroll.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//columnar_output.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//command_not_found.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//culori
+This is the fourth path /home/area51/faculta/OS/terminal/proba//culori.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//get_file_size.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//get_file_type.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//if_exec.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//learning_set.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//multiline.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//read_write_through_pipe.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//scroll_from_you_video
+This is the fourth path /home/area51/faculta/OS/terminal/proba//scroll_from_you_video.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//scrollable
+This is the fourth path /home/area51/faculta/OS/terminal/proba//scrollable.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//scrollable_simlpe_c
+This is the fourth path /home/area51/faculta/OS/terminal/proba//scrollable_simlpe_c.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//scrolling_form.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//strcmp_debug.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//terminalu_sa_separe_commandu.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//test
+This is the fourth path /home/area51/faculta/OS/terminal/proba//unsigned_int.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//valideaza_path.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//with_popen.cpp
+This is the second real path /home/area51/faculta/OS/terminal/strcmp_debug
+This is the second real path /home/area51/faculta/OS/terminal/MYFIFO
+This is the second real path /home/area51/faculta/OS/terminal/if_exec
+This is the second real path /home/area51/faculta/OS/terminal/libraries
+This is the second real path /home/area51/faculta/OS/terminal/commands
+This is the second real path /home/area51/faculta/OS/terminal/CMakeLists.txt
+This is the second real path /home/area51/faculta/OS/terminal/build.sh
+This is the second real path /home/area51/faculta/OS/terminal/cmake-build-debug
+This is the second real path /home/area51/faculta/OS/terminal/temp.txt
+This is the second real path /home/area51/faculta/OS/terminal/culori
+This is the second real path /home/area51/faculta/OS/terminal/build_and_run
+This is the second real path /home/area51/faculta/OS/terminal/with_popen
+This is the second real path /home/area51/faculta/OS/terminal/command_not_found
+This is the second real path /home/area51/faculta/OS/terminal/terminal.cpp
+This is the second real path /home/area51/faculta/OS/terminal/venv
+This is the second real path /home/area51/faculta/OS/terminal/columnar_output
+This is the second real path /home/area51/faculta/OS/terminal/terminalu_sa_separe_commandu
+This is the second real path /home/area51/faculta/OS/terminal/cinci.txt
+This is the second real path /home/area51/faculta/OS/terminal/multiline
+This is the second real path /home/area51/faculta/OS/terminal/trei.txt
+This is the second real path /home/area51/faculta/OS/terminal/proba
+This is the second real path /home/area51/faculta/OS/terminal/terminal
+This is the second real path /home/area51/faculta/OS/terminal/debug_file.txt
+This is the second real path /home/area51/faculta/OS/terminal/opt.txt
+This is the second real path /home/area51/faculta/OS/terminal/unu.txt
+This is the second real path /home/area51/faculta/OS/terminal/unsigned_int
+This is the second real path /home/area51/faculta/OS/terminal/references
+This is the second real path /home/area51/faculta/OS/terminal/build_and_run.cpp
+This is the second real path /home/area51/faculta/OS/terminal/get_file_type
+This is the second real path /home/area51/faculta/OS/terminal/get_file_size
+This is the second real path /home/area51/faculta/OS/terminal/learning_set
+This is the second real path /home/area51/faculta/OS/terminal/nou.txt
+This is the second real path /home/area51/faculta/OS/terminal/doi.txt
+This is the second real path /home/area51/faculta/OS/terminal/read_write_through_pipe
+This is the second real path /home/area51/faculta/OS/terminal/valideaza_path
+This is the second real path /home/area51/faculta/OS/terminal/sase.txt
+This is the second real path /home/area51/faculta/OS/terminal/patru.txt
+This is the second real path /home/area51/faculta/OS/terminal/symbolic_link
+This is the second real path /home/area51/faculta/OS/terminal/sapte.txt
+This is the second real path /home/area51/faculta/OS/terminal/scandal
+This is the fourth path /home/area51/faculta/OS/terminal/build.sh
+This is the fourth path /home/area51/faculta/OS/terminal/build_and_run
+This is the fourth path /home/area51/faculta/OS/terminal/build_and_run.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/cinci.txt
+This is the fourth path /home/area51/faculta/OS/terminal/cmake-build-debug
+This is the fourth path /home/area51/faculta/OS/terminal/CMakeLists.txt
+This is the fourth path /home/area51/faculta/OS/terminal/columnar_output
+This is the fourth path /home/area51/faculta/OS/terminal/commands
+This is the fourth path /home/area51/faculta/OS/terminal/command_not_found
+This is the fourth path /home/area51/faculta/OS/terminal/culori
+This is the fourth path /home/area51/faculta/OS/terminal/debug_file.txt
+This is the fourth path /home/area51/faculta/OS/terminal/doi.txt
+This is the fourth path /home/area51/faculta/OS/terminal/get_file_size
+This is the fourth path /home/area51/faculta/OS/terminal/get_file_type
+This is the fourth path /home/area51/faculta/OS/terminal/if_exec
+This is the fourth path /home/area51/faculta/OS/terminal/learning_set
+This is the fourth path /home/area51/faculta/OS/terminal/libraries
+This is the fourth path /home/area51/faculta/OS/terminal/multiline
+This is the fourth path /home/area51/faculta/OS/terminal/MYFIFO
+This is the fourth path /home/area51/faculta/OS/terminal/nou.txt
+This is the fourth path /home/area51/faculta/OS/terminal/opt.txt
+This is the fourth path /home/area51/faculta/OS/terminal/patru.txt
+This is the fourth path /home/area51/faculta/OS/terminal/proba
+This is the fourth path /home/area51/faculta/OS/terminal/read_write_through_pipe
+This is the fourth path /home/area51/faculta/OS/terminal/references
+This is the fourth path /home/area51/faculta/OS/terminal/sapte.txt
+This is the fourth path /home/area51/faculta/OS/terminal/sase.txt
+This is the fourth path /home/area51/faculta/OS/terminal/scandal
+This is the fourth path /home/area51/faculta/OS/terminal/strcmp_debug
+This is the fourth path /home/area51/faculta/OS/terminal/symbolic_link
+This is the fourth path /home/area51/faculta/OS/terminal/temp.txt
+This is the fourth path /home/area51/faculta/OS/terminal/terminal
+This is the fourth path /home/area51/faculta/OS/terminal/terminal.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/terminalu_sa_separe_commandu
+This is the fourth path /home/area51/faculta/OS/terminal/trei.txt
+This is the fourth path /home/area51/faculta/OS/terminal/unsigned_int
+This is the fourth path /home/area51/faculta/OS/terminal/unu.txt
+This is the fourth path /home/area51/faculta/OS/terminal/valideaza_path
+This is the fourth path /home/area51/faculta/OS/terminal/venv
+This is the fourth path /home/area51/faculta/OS/terminal/with_popen
+This is the second real path /home/area51/faculta/OS/terminal/venv/bin
+This is the second real path /home/area51/faculta/OS/terminal/venv/pyvenv.cfg
+This is the second real path /home/area51/faculta/OS/terminal/venv/include
+This is the second real path /home/area51/faculta/OS/terminal/venv/lib
+This is the fourth path /home/area51/faculta/OS/terminal/venv/bin
+This is the fourth path /home/area51/faculta/OS/terminal/venv/include
+This is the fourth path /home/area51/faculta/OS/terminal/venv/lib
+This is the fourth path /home/area51/faculta/OS/terminal/venv/pyvenv.cfg
+This is the second real path /home/area51/faculta/OS/terminal/venv/bin
+This is the second real path /home/area51/faculta/OS/terminal/venv/pyvenv.cfg
+This is the second real path /home/area51/faculta/OS/terminal/venv/include
+This is the second real path /home/area51/faculta/OS/terminal/venv/.gitignore
+This is the second real path /home/area51/faculta/OS/terminal/venv/.
+This is the second real path /home/area51/faculta/OS/terminal/venv/..
+This is the second real path /home/area51/faculta/OS/terminal/venv/lib
+This is the fourth path /home/area51/faculta/OS/terminal/venv/.
+This is the fourth path /home/area51/faculta/OS/terminal/venv/..
+This is the fourth path /home/area51/faculta/OS/terminal/venv/.gitignore
+This is the fourth path /home/area51/faculta/OS/terminal/venv/bin
+This is the fourth path /home/area51/faculta/OS/terminal/venv/include
+This is the fourth path /home/area51/faculta/OS/terminal/venv/lib
+This is the fourth path /home/area51/faculta/OS/terminal/venv/pyvenv.cfg
+This is the second real path /home/area51/faculta/OS/terminal/strcmp_debug
+This is the second real path /home/area51/faculta/OS/terminal/MYFIFO
+This is the second real path /home/area51/faculta/OS/terminal/if_exec
+This is the second real path /home/area51/faculta/OS/terminal/libraries
+This is the second real path /home/area51/faculta/OS/terminal/commands
+This is the second real path /home/area51/faculta/OS/terminal/CMakeLists.txt
+This is the second real path /home/area51/faculta/OS/terminal/build.sh
+This is the second real path /home/area51/faculta/OS/terminal/cmake-build-debug
+This is the second real path /home/area51/faculta/OS/terminal/temp.txt
+This is the second real path /home/area51/faculta/OS/terminal/culori
+This is the second real path /home/area51/faculta/OS/terminal/build_and_run
+This is the second real path /home/area51/faculta/OS/terminal/with_popen
+This is the second real path /home/area51/faculta/OS/terminal/command_not_found
+This is the second real path /home/area51/faculta/OS/terminal/terminal.cpp
+This is the second real path /home/area51/faculta/OS/terminal/venv
+This is the second real path /home/area51/faculta/OS/terminal/columnar_output
+This is the second real path /home/area51/faculta/OS/terminal/terminalu_sa_separe_commandu
+This is the second real path /home/area51/faculta/OS/terminal/cinci.txt
+This is the second real path /home/area51/faculta/OS/terminal/multiline
+This is the second real path /home/area51/faculta/OS/terminal/trei.txt
+This is the second real path /home/area51/faculta/OS/terminal/proba
+This is the second real path /home/area51/faculta/OS/terminal/terminal
+This is the second real path /home/area51/faculta/OS/terminal/debug_file.txt
+This is the second real path /home/area51/faculta/OS/terminal/opt.txt
+This is the second real path /home/area51/faculta/OS/terminal/unu.txt
+This is the second real path /home/area51/faculta/OS/terminal/unsigned_int
+This is the second real path /home/area51/faculta/OS/terminal/references
+This is the second real path /home/area51/faculta/OS/terminal/build_and_run.cpp
+This is the second real path /home/area51/faculta/OS/terminal/get_file_type
+This is the second real path /home/area51/faculta/OS/terminal/get_file_size
+This is the second real path /home/area51/faculta/OS/terminal/learning_set
+This is the second real path /home/area51/faculta/OS/terminal/nou.txt
+This is the second real path /home/area51/faculta/OS/terminal/doi.txt
+This is the second real path /home/area51/faculta/OS/terminal/read_write_through_pipe
+This is the second real path /home/area51/faculta/OS/terminal/valideaza_path
+This is the second real path /home/area51/faculta/OS/terminal/sase.txt
+This is the second real path /home/area51/faculta/OS/terminal/patru.txt
+This is the second real path /home/area51/faculta/OS/terminal/symbolic_link
+This is the second real path /home/area51/faculta/OS/terminal/sapte.txt
+This is the second real path /home/area51/faculta/OS/terminal/scandal
+This is the fourth path /home/area51/faculta/OS/terminal/build.sh
+This is the fourth path /home/area51/faculta/OS/terminal/build_and_run
+This is the fourth path /home/area51/faculta/OS/terminal/build_and_run.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/cinci.txt
+This is the fourth path /home/area51/faculta/OS/terminal/cmake-build-debug
+This is the fourth path /home/area51/faculta/OS/terminal/CMakeLists.txt
+This is the fourth path /home/area51/faculta/OS/terminal/columnar_output
+This is the fourth path /home/area51/faculta/OS/terminal/commands
+This is the fourth path /home/area51/faculta/OS/terminal/command_not_found
+This is the fourth path /home/area51/faculta/OS/terminal/culori
+This is the fourth path /home/area51/faculta/OS/terminal/debug_file.txt
+This is the fourth path /home/area51/faculta/OS/terminal/doi.txt
+This is the fourth path /home/area51/faculta/OS/terminal/get_file_size
+This is the fourth path /home/area51/faculta/OS/terminal/get_file_type
+This is the fourth path /home/area51/faculta/OS/terminal/if_exec
+This is the fourth path /home/area51/faculta/OS/terminal/learning_set
+This is the fourth path /home/area51/faculta/OS/terminal/libraries
+This is the fourth path /home/area51/faculta/OS/terminal/multiline
+This is the fourth path /home/area51/faculta/OS/terminal/MYFIFO
+This is the fourth path /home/area51/faculta/OS/terminal/nou.txt
+This is the fourth path /home/area51/faculta/OS/terminal/opt.txt
+This is the fourth path /home/area51/faculta/OS/terminal/patru.txt
+This is the fourth path /home/area51/faculta/OS/terminal/proba
+This is the fourth path /home/area51/faculta/OS/terminal/read_write_through_pipe
+This is the fourth path /home/area51/faculta/OS/terminal/references
+This is the fourth path /home/area51/faculta/OS/terminal/sapte.txt
+This is the fourth path /home/area51/faculta/OS/terminal/sase.txt
+This is the fourth path /home/area51/faculta/OS/terminal/scandal
+This is the fourth path /home/area51/faculta/OS/terminal/strcmp_debug
+This is the fourth path /home/area51/faculta/OS/terminal/symbolic_link
+This is the fourth path /home/area51/faculta/OS/terminal/temp.txt
+This is the fourth path /home/area51/faculta/OS/terminal/terminal
+This is the fourth path /home/area51/faculta/OS/terminal/terminal.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/terminalu_sa_separe_commandu
+This is the fourth path /home/area51/faculta/OS/terminal/trei.txt
+This is the fourth path /home/area51/faculta/OS/terminal/unsigned_int
+This is the fourth path /home/area51/faculta/OS/terminal/unu.txt
+This is the fourth path /home/area51/faculta/OS/terminal/valideaza_path
+This is the fourth path /home/area51/faculta/OS/terminal/venv
+This is the fourth path /home/area51/faculta/OS/terminal/with_popen
+This is the second real path /home/area51/faculta/OS/terminal/strcmp_debug
+This is the second real path /home/area51/faculta/OS/terminal/MYFIFO
+This is the second real path /home/area51/faculta/OS/terminal/if_exec
+This is the second real path /home/area51/faculta/OS/terminal/libraries
+This is the second real path /home/area51/faculta/OS/terminal/commands
+This is the second real path /home/area51/faculta/OS/terminal/CMakeLists.txt
+This is the second real path /home/area51/faculta/OS/terminal/build.sh
+This is the second real path /home/area51/faculta/OS/terminal/cmake-build-debug
+This is the second real path /home/area51/faculta/OS/terminal/temp.txt
+This is the second real path /home/area51/faculta/OS/terminal/culori
+This is the second real path /home/area51/faculta/OS/terminal/build_and_run
+This is the second real path /home/area51/faculta/OS/terminal/with_popen
+This is the second real path /home/area51/faculta/OS/terminal/command_not_found
+This is the second real path /home/area51/faculta/OS/terminal/terminal.cpp
+This is the second real path /home/area51/faculta/OS/terminal/venv
+This is the second real path /home/area51/faculta/OS/terminal/columnar_output
+This is the second real path /home/area51/faculta/OS/terminal/terminalu_sa_separe_commandu
+This is the second real path /home/area51/faculta/OS/terminal/cinci.txt
+This is the second real path /home/area51/faculta/OS/terminal/multiline
+This is the second real path /home/area51/faculta/OS/terminal/trei.txt
+This is the second real path /home/area51/faculta/OS/terminal/proba
+This is the second real path /home/area51/faculta/OS/terminal/terminal
+This is the second real path /home/area51/faculta/OS/terminal/debug_file.txt
+This is the second real path /home/area51/faculta/OS/terminal/opt.txt
+This is the second real path /home/area51/faculta/OS/terminal/unu.txt
+This is the second real path /home/area51/faculta/OS/terminal/unsigned_int
+This is the second real path /home/area51/faculta/OS/terminal/references
+This is the second real path /home/area51/faculta/OS/terminal/build_and_run.cpp
+This is the second real path /home/area51/faculta/OS/terminal/get_file_type
+This is the second real path /home/area51/faculta/OS/terminal/get_file_size
+This is the second real path /home/area51/faculta/OS/terminal/learning_set
+This is the second real path /home/area51/faculta/OS/terminal/nou.txt
+This is the second real path /home/area51/faculta/OS/terminal/doi.txt
+This is the second real path /home/area51/faculta/OS/terminal/read_write_through_pipe
+This is the second real path /home/area51/faculta/OS/terminal/valideaza_path
+This is the second real path /home/area51/faculta/OS/terminal/sase.txt
+This is the second real path /home/area51/faculta/OS/terminal/patru.txt
+This is the second real path /home/area51/faculta/OS/terminal/symbolic_link
+This is the second real path /home/area51/faculta/OS/terminal/sapte.txt
+This is the second real path /home/area51/faculta/OS/terminal/scandal
+This is the fourth path /home/area51/faculta/OS/terminal/build.sh
+This is the fourth path /home/area51/faculta/OS/terminal/build_and_run
+This is the fourth path /home/area51/faculta/OS/terminal/build_and_run.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/cinci.txt
+This is the fourth path /home/area51/faculta/OS/terminal/cmake-build-debug
+This is the fourth path /home/area51/faculta/OS/terminal/CMakeLists.txt
+This is the fourth path /home/area51/faculta/OS/terminal/columnar_output
+This is the fourth path /home/area51/faculta/OS/terminal/commands
+This is the fourth path /home/area51/faculta/OS/terminal/command_not_found
+This is the fourth path /home/area51/faculta/OS/terminal/culori
+This is the fourth path /home/area51/faculta/OS/terminal/debug_file.txt
+This is the fourth path /home/area51/faculta/OS/terminal/doi.txt
+This is the fourth path /home/area51/faculta/OS/terminal/get_file_size
+This is the fourth path /home/area51/faculta/OS/terminal/get_file_type
+This is the fourth path /home/area51/faculta/OS/terminal/if_exec
+This is the fourth path /home/area51/faculta/OS/terminal/learning_set
+This is the fourth path /home/area51/faculta/OS/terminal/libraries
+This is the fourth path /home/area51/faculta/OS/terminal/multiline
+This is the fourth path /home/area51/faculta/OS/terminal/MYFIFO
+This is the fourth path /home/area51/faculta/OS/terminal/nou.txt
+This is the fourth path /home/area51/faculta/OS/terminal/opt.txt
+This is the fourth path /home/area51/faculta/OS/terminal/patru.txt
+This is the fourth path /home/area51/faculta/OS/terminal/proba
+This is the fourth path /home/area51/faculta/OS/terminal/read_write_through_pipe
+This is the fourth path /home/area51/faculta/OS/terminal/references
+This is the fourth path /home/area51/faculta/OS/terminal/sapte.txt
+This is the fourth path /home/area51/faculta/OS/terminal/sase.txt
+This is the fourth path /home/area51/faculta/OS/terminal/scandal
+This is the fourth path /home/area51/faculta/OS/terminal/strcmp_debug
+This is the fourth path /home/area51/faculta/OS/terminal/symbolic_link
+This is the fourth path /home/area51/faculta/OS/terminal/temp.txt
+This is the fourth path /home/area51/faculta/OS/terminal/terminal
+This is the fourth path /home/area51/faculta/OS/terminal/terminal.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/terminalu_sa_separe_commandu
+This is the fourth path /home/area51/faculta/OS/terminal/trei.txt
+This is the fourth path /home/area51/faculta/OS/terminal/unsigned_int
+This is the fourth path /home/area51/faculta/OS/terminal/unu.txt
+This is the fourth path /home/area51/faculta/OS/terminal/valideaza_path
+This is the fourth path /home/area51/faculta/OS/terminal/venv
+This is the fourth path /home/area51/faculta/OS/terminal/with_popen
+This is the second real path /home/area51/faculta/OS/terminal/strcmp_debug
+This is the second real path /home/area51/faculta/OS/terminal/MYFIFO
+This is the second real path /home/area51/faculta/OS/terminal/if_exec
+This is the second real path /home/area51/faculta/OS/terminal/libraries
+This is the second real path /home/area51/faculta/OS/terminal/commands
+This is the second real path /home/area51/faculta/OS/terminal/CMakeLists.txt
+This is the second real path /home/area51/faculta/OS/terminal/build.sh
+This is the second real path /home/area51/faculta/OS/terminal/cmake-build-debug
+This is the second real path /home/area51/faculta/OS/terminal/temp.txt
+This is the second real path /home/area51/faculta/OS/terminal/culori
+This is the second real path /home/area51/faculta/OS/terminal/build_and_run
+This is the second real path /home/area51/faculta/OS/terminal/with_popen
+This is the second real path /home/area51/faculta/OS/terminal/command_not_found
+This is the second real path /home/area51/faculta/OS/terminal/terminal.cpp
+This is the second real path /home/area51/faculta/OS/terminal/venv
+This is the second real path /home/area51/faculta/OS/terminal/columnar_output
+This is the second real path /home/area51/faculta/OS/terminal/terminalu_sa_separe_commandu
+This is the second real path /home/area51/faculta/OS/terminal/cinci.txt
+This is the second real path /home/area51/faculta/OS/terminal/multiline
+This is the second real path /home/area51/faculta/OS/terminal/trei.txt
+This is the second real path /home/area51/faculta/OS/terminal/proba
+This is the second real path /home/area51/faculta/OS/terminal/terminal
+This is the second real path /home/area51/faculta/OS/terminal/debug_file.txt
+This is the second real path /home/area51/faculta/OS/terminal/opt.txt
+This is the second real path /home/area51/faculta/OS/terminal/unu.txt
+This is the second real path /home/area51/faculta/OS/terminal/unsigned_int
+This is the second real path /home/area51/faculta/OS/terminal/references
+This is the second real path /home/area51/faculta/OS/terminal/build_and_run.cpp
+This is the second real path /home/area51/faculta/OS/terminal/get_file_type
+This is the second real path /home/area51/faculta/OS/terminal/get_file_size
+This is the second real path /home/area51/faculta/OS/terminal/learning_set
+This is the second real path /home/area51/faculta/OS/terminal/nou.txt
+This is the second real path /home/area51/faculta/OS/terminal/doi.txt
+This is the second real path /home/area51/faculta/OS/terminal/read_write_through_pipe
+This is the second real path /home/area51/faculta/OS/terminal/valideaza_path
+This is the second real path /home/area51/faculta/OS/terminal/sase.txt
+This is the second real path /home/area51/faculta/OS/terminal/patru.txt
+This is the second real path /home/area51/faculta/OS/terminal/symbolic_link
+This is the second real path /home/area51/faculta/OS/terminal/sapte.txt
+This is the second real path /home/area51/faculta/OS/terminal/scandal
+This is the fourth path /home/area51/faculta/OS/terminal/build.sh
+This is the fourth path /home/area51/faculta/OS/terminal/build_and_run
+This is the fourth path /home/area51/faculta/OS/terminal/build_and_run.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/cinci.txt
+This is the fourth path /home/area51/faculta/OS/terminal/cmake-build-debug
+This is the fourth path /home/area51/faculta/OS/terminal/CMakeLists.txt
+This is the fourth path /home/area51/faculta/OS/terminal/columnar_output
+This is the fourth path /home/area51/faculta/OS/terminal/commands
+This is the fourth path /home/area51/faculta/OS/terminal/command_not_found
+This is the fourth path /home/area51/faculta/OS/terminal/culori
+This is the fourth path /home/area51/faculta/OS/terminal/debug_file.txt
+This is the fourth path /home/area51/faculta/OS/terminal/doi.txt
+This is the fourth path /home/area51/faculta/OS/terminal/get_file_size
+This is the fourth path /home/area51/faculta/OS/terminal/get_file_type
+This is the fourth path /home/area51/faculta/OS/terminal/if_exec
+This is the fourth path /home/area51/faculta/OS/terminal/learning_set
+This is the fourth path /home/area51/faculta/OS/terminal/libraries
+This is the fourth path /home/area51/faculta/OS/terminal/multiline
+This is the fourth path /home/area51/faculta/OS/terminal/MYFIFO
+This is the fourth path /home/area51/faculta/OS/terminal/nou.txt
+This is the fourth path /home/area51/faculta/OS/terminal/opt.txt
+This is the fourth path /home/area51/faculta/OS/terminal/patru.txt
+This is the fourth path /home/area51/faculta/OS/terminal/proba
+This is the fourth path /home/area51/faculta/OS/terminal/read_write_through_pipe
+This is the fourth path /home/area51/faculta/OS/terminal/references
+This is the fourth path /home/area51/faculta/OS/terminal/sapte.txt
+This is the fourth path /home/area51/faculta/OS/terminal/sase.txt
+This is the fourth path /home/area51/faculta/OS/terminal/scandal
+This is the fourth path /home/area51/faculta/OS/terminal/strcmp_debug
+This is the fourth path /home/area51/faculta/OS/terminal/symbolic_link
+This is the fourth path /home/area51/faculta/OS/terminal/temp.txt
+This is the fourth path /home/area51/faculta/OS/terminal/terminal
+This is the fourth path /home/area51/faculta/OS/terminal/terminal.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/terminalu_sa_separe_commandu
+This is the fourth path /home/area51/faculta/OS/terminal/trei.txt
+This is the fourth path /home/area51/faculta/OS/terminal/unsigned_int
+This is the fourth path /home/area51/faculta/OS/terminal/unu.txt
+This is the fourth path /home/area51/faculta/OS/terminal/valideaza_path
+This is the fourth path /home/area51/faculta/OS/terminal/venv
+This is the fourth path /home/area51/faculta/OS/terminal/with_popen
+This is the second real path /home/area51/faculta/OS/terminal/strcmp_debug
+This is the second real path /home/area51/faculta/OS/terminal/MYFIFO
+This is the second real path /home/area51/faculta/OS/terminal/if_exec
+This is the second real path /home/area51/faculta/OS/terminal/libraries
+This is the second real path /home/area51/faculta/OS/terminal/commands
+This is the second real path /home/area51/faculta/OS/terminal/CMakeLists.txt
+This is the second real path /home/area51/faculta/OS/terminal/build.sh
+This is the second real path /home/area51/faculta/OS/terminal/cmake-build-debug
+This is the second real path /home/area51/faculta/OS/terminal/temp.txt
+This is the second real path /home/area51/faculta/OS/terminal/culori
+This is the second real path /home/area51/faculta/OS/terminal/build_and_run
+This is the second real path /home/area51/faculta/OS/terminal/with_popen
+This is the second real path /home/area51/faculta/OS/terminal/command_not_found
+This is the second real path /home/area51/faculta/OS/terminal/terminal.cpp
+This is the second real path /home/area51/faculta/OS/terminal/venv
+This is the second real path /home/area51/faculta/OS/terminal/columnar_output
+This is the second real path /home/area51/faculta/OS/terminal/terminalu_sa_separe_commandu
+This is the second real path /home/area51/faculta/OS/terminal/cinci.txt
+This is the second real path /home/area51/faculta/OS/terminal/multiline
+This is the second real path /home/area51/faculta/OS/terminal/trei.txt
+This is the second real path /home/area51/faculta/OS/terminal/proba
+This is the second real path /home/area51/faculta/OS/terminal/terminal
+This is the second real path /home/area51/faculta/OS/terminal/debug_file.txt
+This is the second real path /home/area51/faculta/OS/terminal/opt.txt
+This is the second real path /home/area51/faculta/OS/terminal/unu.txt
+This is the second real path /home/area51/faculta/OS/terminal/unsigned_int
+This is the second real path /home/area51/faculta/OS/terminal/references
+This is the second real path /home/area51/faculta/OS/terminal/build_and_run.cpp
+This is the second real path /home/area51/faculta/OS/terminal/get_file_type
+This is the second real path /home/area51/faculta/OS/terminal/get_file_size
+This is the second real path /home/area51/faculta/OS/terminal/learning_set
+This is the second real path /home/area51/faculta/OS/terminal/nou.txt
+This is the second real path /home/area51/faculta/OS/terminal/doi.txt
+This is the second real path /home/area51/faculta/OS/terminal/read_write_through_pipe
+This is the second real path /home/area51/faculta/OS/terminal/valideaza_path
+This is the second real path /home/area51/faculta/OS/terminal/sase.txt
+This is the second real path /home/area51/faculta/OS/terminal/patru.txt
+This is the second real path /home/area51/faculta/OS/terminal/symbolic_link
+This is the second real path /home/area51/faculta/OS/terminal/sapte.txt
+This is the second real path /home/area51/faculta/OS/terminal/scandal
+This is the fourth path /home/area51/faculta/OS/terminal/build.sh
+This is the fourth path /home/area51/faculta/OS/terminal/build_and_run
+This is the fourth path /home/area51/faculta/OS/terminal/build_and_run.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/cinci.txt
+This is the fourth path /home/area51/faculta/OS/terminal/cmake-build-debug
+This is the fourth path /home/area51/faculta/OS/terminal/CMakeLists.txt
+This is the fourth path /home/area51/faculta/OS/terminal/columnar_output
+This is the fourth path /home/area51/faculta/OS/terminal/commands
+This is the fourth path /home/area51/faculta/OS/terminal/command_not_found
+This is the fourth path /home/area51/faculta/OS/terminal/culori
+This is the fourth path /home/area51/faculta/OS/terminal/debug_file.txt
+This is the fourth path /home/area51/faculta/OS/terminal/doi.txt
+This is the fourth path /home/area51/faculta/OS/terminal/get_file_size
+This is the fourth path /home/area51/faculta/OS/terminal/get_file_type
+This is the fourth path /home/area51/faculta/OS/terminal/if_exec
+This is the fourth path /home/area51/faculta/OS/terminal/learning_set
+This is the fourth path /home/area51/faculta/OS/terminal/libraries
+This is the fourth path /home/area51/faculta/OS/terminal/multiline
+This is the fourth path /home/area51/faculta/OS/terminal/MYFIFO
+This is the fourth path /home/area51/faculta/OS/terminal/nou.txt
+This is the fourth path /home/area51/faculta/OS/terminal/opt.txt
+This is the fourth path /home/area51/faculta/OS/terminal/patru.txt
+This is the fourth path /home/area51/faculta/OS/terminal/proba
+This is the fourth path /home/area51/faculta/OS/terminal/read_write_through_pipe
+This is the fourth path /home/area51/faculta/OS/terminal/references
+This is the fourth path /home/area51/faculta/OS/terminal/sapte.txt
+This is the fourth path /home/area51/faculta/OS/terminal/sase.txt
+This is the fourth path /home/area51/faculta/OS/terminal/scandal
+This is the fourth path /home/area51/faculta/OS/terminal/strcmp_debug
+This is the fourth path /home/area51/faculta/OS/terminal/symbolic_link
+This is the fourth path /home/area51/faculta/OS/terminal/temp.txt
+This is the fourth path /home/area51/faculta/OS/terminal/terminal
+This is the fourth path /home/area51/faculta/OS/terminal/terminal.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/terminalu_sa_separe_commandu
+This is the fourth path /home/area51/faculta/OS/terminal/trei.txt
+This is the fourth path /home/area51/faculta/OS/terminal/unsigned_int
+This is the fourth path /home/area51/faculta/OS/terminal/unu.txt
+This is the fourth path /home/area51/faculta/OS/terminal/valideaza_path
+This is the fourth path /home/area51/faculta/OS/terminal/venv
+This is the fourth path /home/area51/faculta/OS/terminal/with_popen
+This is the second real path /home/area51/faculta/OS/terminal/strcmp_debug
+This is the second real path /home/area51/faculta/OS/terminal/MYFIFO
+This is the second real path /home/area51/faculta/OS/terminal/if_exec
+This is the second real path /home/area51/faculta/OS/terminal/libraries
+This is the second real path /home/area51/faculta/OS/terminal/commands
+This is the second real path /home/area51/faculta/OS/terminal/CMakeLists.txt
+This is the second real path /home/area51/faculta/OS/terminal/build.sh
+This is the second real path /home/area51/faculta/OS/terminal/cmake-build-debug
+This is the second real path /home/area51/faculta/OS/terminal/temp.txt
+This is the second real path /home/area51/faculta/OS/terminal/culori
+This is the second real path /home/area51/faculta/OS/terminal/build_and_run
+This is the second real path /home/area51/faculta/OS/terminal/with_popen
+This is the second real path /home/area51/faculta/OS/terminal/command_not_found
+This is the second real path /home/area51/faculta/OS/terminal/terminal.cpp
+This is the second real path /home/area51/faculta/OS/terminal/venv
+This is the second real path /home/area51/faculta/OS/terminal/columnar_output
+This is the second real path /home/area51/faculta/OS/terminal/terminalu_sa_separe_commandu
+This is the second real path /home/area51/faculta/OS/terminal/cinci.txt
+This is the second real path /home/area51/faculta/OS/terminal/multiline
+This is the second real path /home/area51/faculta/OS/terminal/trei.txt
+This is the second real path /home/area51/faculta/OS/terminal/proba
+This is the second real path /home/area51/faculta/OS/terminal/terminal
+This is the second real path /home/area51/faculta/OS/terminal/debug_file.txt
+This is the second real path /home/area51/faculta/OS/terminal/opt.txt
+This is the second real path /home/area51/faculta/OS/terminal/unu.txt
+This is the second real path /home/area51/faculta/OS/terminal/unsigned_int
+This is the second real path /home/area51/faculta/OS/terminal/references
+This is the second real path /home/area51/faculta/OS/terminal/build_and_run.cpp
+This is the second real path /home/area51/faculta/OS/terminal/get_file_type
+This is the second real path /home/area51/faculta/OS/terminal/get_file_size
+This is the second real path /home/area51/faculta/OS/terminal/learning_set
+This is the second real path /home/area51/faculta/OS/terminal/nou.txt
+This is the second real path /home/area51/faculta/OS/terminal/doi.txt
+This is the second real path /home/area51/faculta/OS/terminal/read_write_through_pipe
+This is the second real path /home/area51/faculta/OS/terminal/valideaza_path
+This is the second real path /home/area51/faculta/OS/terminal/sase.txt
+This is the second real path /home/area51/faculta/OS/terminal/patru.txt
+This is the second real path /home/area51/faculta/OS/terminal/symbolic_link
+This is the second real path /home/area51/faculta/OS/terminal/sapte.txt
+This is the second real path /home/area51/faculta/OS/terminal/scandal
+This is the fourth path /home/area51/faculta/OS/terminal/build.sh
+This is the fourth path /home/area51/faculta/OS/terminal/build_and_run
+This is the fourth path /home/area51/faculta/OS/terminal/build_and_run.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/cinci.txt
+This is the fourth path /home/area51/faculta/OS/terminal/cmake-build-debug
+This is the fourth path /home/area51/faculta/OS/terminal/CMakeLists.txt
+This is the fourth path /home/area51/faculta/OS/terminal/columnar_output
+This is the fourth path /home/area51/faculta/OS/terminal/commands
+This is the fourth path /home/area51/faculta/OS/terminal/command_not_found
+This is the fourth path /home/area51/faculta/OS/terminal/culori
+This is the fourth path /home/area51/faculta/OS/terminal/debug_file.txt
+This is the fourth path /home/area51/faculta/OS/terminal/doi.txt
+This is the fourth path /home/area51/faculta/OS/terminal/get_file_size
+This is the fourth path /home/area51/faculta/OS/terminal/get_file_type
+This is the fourth path /home/area51/faculta/OS/terminal/if_exec
+This is the fourth path /home/area51/faculta/OS/terminal/learning_set
+This is the fourth path /home/area51/faculta/OS/terminal/libraries
+This is the fourth path /home/area51/faculta/OS/terminal/multiline
+This is the fourth path /home/area51/faculta/OS/terminal/MYFIFO
+This is the fourth path /home/area51/faculta/OS/terminal/nou.txt
+This is the fourth path /home/area51/faculta/OS/terminal/opt.txt
+This is the fourth path /home/area51/faculta/OS/terminal/patru.txt
+This is the fourth path /home/area51/faculta/OS/terminal/proba
+This is the fourth path /home/area51/faculta/OS/terminal/read_write_through_pipe
+This is the fourth path /home/area51/faculta/OS/terminal/references
+This is the fourth path /home/area51/faculta/OS/terminal/sapte.txt
+This is the fourth path /home/area51/faculta/OS/terminal/sase.txt
+This is the fourth path /home/area51/faculta/OS/terminal/scandal
+This is the fourth path /home/area51/faculta/OS/terminal/strcmp_debug
+This is the fourth path /home/area51/faculta/OS/terminal/symbolic_link
+This is the fourth path /home/area51/faculta/OS/terminal/temp.txt
+This is the fourth path /home/area51/faculta/OS/terminal/terminal
+This is the fourth path /home/area51/faculta/OS/terminal/terminal.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/terminalu_sa_separe_commandu
+This is the fourth path /home/area51/faculta/OS/terminal/trei.txt
+This is the fourth path /home/area51/faculta/OS/terminal/unsigned_int
+This is the fourth path /home/area51/faculta/OS/terminal/unu.txt
+This is the fourth path /home/area51/faculta/OS/terminal/valideaza_path
+This is the fourth path /home/area51/faculta/OS/terminal/venv
+This is the fourth path /home/area51/faculta/OS/terminal/with_popen
+This is the fifth arg_path /home/area51/faculta/OS/terminal/proba/
+This is the fifth arg_path /home/area51/faculta/OS/terminal/./
+This is the fifth arg_path /home/area51/faculta/OS/terminal/unu.txt
+This is the sixth arg_path /home/area51/faculta/OS/terminal/unu.txt
+This is the fifth arg_path /home/area51/faculta/OS/terminal/patru.txt
+This is the sixth arg_path /home/area51/faculta/OS/terminal/patru.txt
+This is the third real path /home/area51/faculta/OS/terminal/unu.txt
+This is the third real path /home/area51/faculta/OS/terminal/patru.txt
+This is the fourth path /home/area51/faculta/OS/terminal/patru.txt
+This is the fourth path /home/area51/faculta/OS/terminal/unu.txt
+This is the second real path /home/area51/faculta/OS/terminal/proba//scrollable
+This is the second real path /home/area51/faculta/OS/terminal/proba//scrollable_simlpe_c.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//command_not_found.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//scrollable_simlpe_c
+This is the second real path /home/area51/faculta/OS/terminal/proba//unsigned_int.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//scrolling_form.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//culori
+This is the second real path /home/area51/faculta/OS/terminal/proba//get_file_type.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//learning_set.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//multiline.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//terminalu_sa_separe_commandu.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//read_write_through_pipe.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//test
+This is the second real path /home/area51/faculta/OS/terminal/proba//get_file_size.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//valideaza_path.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//scrollable.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//with_popen.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//chat_gpt_scroll.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//strcmp_debug.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//columnar_output.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//scroll_from_you_video
+This is the second real path /home/area51/faculta/OS/terminal/proba//if_exec.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//culori.cpp
+This is the second real path /home/area51/faculta/OS/terminal/proba//scroll_from_you_video.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//chat_gpt_scroll.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//columnar_output.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//command_not_found.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//culori
+This is the fourth path /home/area51/faculta/OS/terminal/proba//culori.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//get_file_size.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//get_file_type.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//if_exec.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//learning_set.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//multiline.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//read_write_through_pipe.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//scroll_from_you_video
+This is the fourth path /home/area51/faculta/OS/terminal/proba//scroll_from_you_video.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//scrollable
+This is the fourth path /home/area51/faculta/OS/terminal/proba//scrollable.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//scrollable_simlpe_c
+This is the fourth path /home/area51/faculta/OS/terminal/proba//scrollable_simlpe_c.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//scrolling_form.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//strcmp_debug.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//terminalu_sa_separe_commandu.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//test
+This is the fourth path /home/area51/faculta/OS/terminal/proba//unsigned_int.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//valideaza_path.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/proba//with_popen.cpp
+This is the second real path /home/area51/faculta/OS/terminal/.//strcmp_debug
+This is the second real path /home/area51/faculta/OS/terminal/.//MYFIFO
+This is the second real path /home/area51/faculta/OS/terminal/.//if_exec
+This is the second real path /home/area51/faculta/OS/terminal/.//libraries
+This is the second real path /home/area51/faculta/OS/terminal/.//commands
+This is the second real path /home/area51/faculta/OS/terminal/.//CMakeLists.txt
+This is the second real path /home/area51/faculta/OS/terminal/.//build.sh
+This is the second real path /home/area51/faculta/OS/terminal/.//cmake-build-debug
+This is the second real path /home/area51/faculta/OS/terminal/.//temp.txt
+This is the second real path /home/area51/faculta/OS/terminal/.//culori
+This is the second real path /home/area51/faculta/OS/terminal/.//build_and_run
+This is the second real path /home/area51/faculta/OS/terminal/.//with_popen
+This is the second real path /home/area51/faculta/OS/terminal/.//command_not_found
+This is the second real path /home/area51/faculta/OS/terminal/.//terminal.cpp
+This is the second real path /home/area51/faculta/OS/terminal/.//venv
+This is the second real path /home/area51/faculta/OS/terminal/.//columnar_output
+This is the second real path /home/area51/faculta/OS/terminal/.//terminalu_sa_separe_commandu
+This is the second real path /home/area51/faculta/OS/terminal/.//cinci.txt
+This is the second real path /home/area51/faculta/OS/terminal/.//multiline
+This is the second real path /home/area51/faculta/OS/terminal/.//trei.txt
+This is the second real path /home/area51/faculta/OS/terminal/.//proba
+This is the second real path /home/area51/faculta/OS/terminal/.//terminal
+This is the second real path /home/area51/faculta/OS/terminal/.//debug_file.txt
+This is the second real path /home/area51/faculta/OS/terminal/.//opt.txt
+This is the second real path /home/area51/faculta/OS/terminal/.//unu.txt
+This is the second real path /home/area51/faculta/OS/terminal/.//unsigned_int
+This is the second real path /home/area51/faculta/OS/terminal/.//references
+This is the second real path /home/area51/faculta/OS/terminal/.//build_and_run.cpp
+This is the second real path /home/area51/faculta/OS/terminal/.//get_file_type
+This is the second real path /home/area51/faculta/OS/terminal/.//get_file_size
+This is the second real path /home/area51/faculta/OS/terminal/.//learning_set
+This is the second real path /home/area51/faculta/OS/terminal/.//nou.txt
+This is the second real path /home/area51/faculta/OS/terminal/.//doi.txt
+This is the second real path /home/area51/faculta/OS/terminal/.//read_write_through_pipe
+This is the second real path /home/area51/faculta/OS/terminal/.//valideaza_path
+This is the second real path /home/area51/faculta/OS/terminal/.//sase.txt
+This is the second real path /home/area51/faculta/OS/terminal/.//patru.txt
+This is the second real path /home/area51/faculta/OS/terminal/.//symbolic_link
+This is the second real path /home/area51/faculta/OS/terminal/.//sapte.txt
+This is the second real path /home/area51/faculta/OS/terminal/.//scandal
+This is the fourth path /home/area51/faculta/OS/terminal/.//build.sh
+This is the fourth path /home/area51/faculta/OS/terminal/.//build_and_run
+This is the fourth path /home/area51/faculta/OS/terminal/.//build_and_run.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/.//cinci.txt
+This is the fourth path /home/area51/faculta/OS/terminal/.//cmake-build-debug
+This is the fourth path /home/area51/faculta/OS/terminal/.//CMakeLists.txt
+This is the fourth path /home/area51/faculta/OS/terminal/.//columnar_output
+This is the fourth path /home/area51/faculta/OS/terminal/.//commands
+This is the fourth path /home/area51/faculta/OS/terminal/.//command_not_found
+This is the fourth path /home/area51/faculta/OS/terminal/.//culori
+This is the fourth path /home/area51/faculta/OS/terminal/.//debug_file.txt
+This is the fourth path /home/area51/faculta/OS/terminal/.//doi.txt
+This is the fourth path /home/area51/faculta/OS/terminal/.//get_file_size
+This is the fourth path /home/area51/faculta/OS/terminal/.//get_file_type
+This is the fourth path /home/area51/faculta/OS/terminal/.//if_exec
+This is the fourth path /home/area51/faculta/OS/terminal/.//learning_set
+This is the fourth path /home/area51/faculta/OS/terminal/.//libraries
+This is the fourth path /home/area51/faculta/OS/terminal/.//multiline
+This is the fourth path /home/area51/faculta/OS/terminal/.//MYFIFO
+This is the fourth path /home/area51/faculta/OS/terminal/.//nou.txt
+This is the fourth path /home/area51/faculta/OS/terminal/.//opt.txt
+This is the fourth path /home/area51/faculta/OS/terminal/.//patru.txt
+This is the fourth path /home/area51/faculta/OS/terminal/.//proba
+This is the fourth path /home/area51/faculta/OS/terminal/.//read_write_through_pipe
+This is the fourth path /home/area51/faculta/OS/terminal/.//references
+This is the fourth path /home/area51/faculta/OS/terminal/.//sapte.txt
+This is the fourth path /home/area51/faculta/OS/terminal/.//sase.txt
+This is the fourth path /home/area51/faculta/OS/terminal/.//scandal
+This is the fourth path /home/area51/faculta/OS/terminal/.//strcmp_debug
+This is the fourth path /home/area51/faculta/OS/terminal/.//symbolic_link
+This is the fourth path /home/area51/faculta/OS/terminal/.//temp.txt
+This is the fourth path /home/area51/faculta/OS/terminal/.//terminal
+This is the fourth path /home/area51/faculta/OS/terminal/.//terminal.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/.//terminalu_sa_separe_commandu
+This is the fourth path /home/area51/faculta/OS/terminal/.//trei.txt
+This is the fourth path /home/area51/faculta/OS/terminal/.//unsigned_int
+This is the fourth path /home/area51/faculta/OS/terminal/.//unu.txt
+This is the fourth path /home/area51/faculta/OS/terminal/.//valideaza_path
+This is the fourth path /home/area51/faculta/OS/terminal/.//venv
+This is the fourth path /home/area51/faculta/OS/terminal/.//with_popen
+This is the second real path /home/area51/faculta/OS/terminal/strcmp_debug
+This is the second real path /home/area51/faculta/OS/terminal/MYFIFO
+This is the second real path /home/area51/faculta/OS/terminal/if_exec
+This is the second real path /home/area51/faculta/OS/terminal/libraries
+This is the second real path /home/area51/faculta/OS/terminal/commands
+This is the second real path /home/area51/faculta/OS/terminal/CMakeLists.txt
+This is the second real path /home/area51/faculta/OS/terminal/build.sh
+This is the second real path /home/area51/faculta/OS/terminal/cmake-build-debug
+This is the second real path /home/area51/faculta/OS/terminal/temp.txt
+This is the second real path /home/area51/faculta/OS/terminal/culori
+This is the second real path /home/area51/faculta/OS/terminal/build_and_run
+This is the second real path /home/area51/faculta/OS/terminal/with_popen
+This is the second real path /home/area51/faculta/OS/terminal/command_not_found
+This is the second real path /home/area51/faculta/OS/terminal/terminal.cpp
+This is the second real path /home/area51/faculta/OS/terminal/venv
+This is the second real path /home/area51/faculta/OS/terminal/columnar_output
+This is the second real path /home/area51/faculta/OS/terminal/terminalu_sa_separe_commandu
+This is the second real path /home/area51/faculta/OS/terminal/cinci.txt
+This is the second real path /home/area51/faculta/OS/terminal/multiline
+This is the second real path /home/area51/faculta/OS/terminal/trei.txt
+This is the second real path /home/area51/faculta/OS/terminal/proba
+This is the second real path /home/area51/faculta/OS/terminal/terminal
+This is the second real path /home/area51/faculta/OS/terminal/debug_file.txt
+This is the second real path /home/area51/faculta/OS/terminal/opt.txt
+This is the second real path /home/area51/faculta/OS/terminal/unu.txt
+This is the second real path /home/area51/faculta/OS/terminal/unsigned_int
+This is the second real path /home/area51/faculta/OS/terminal/references
+This is the second real path /home/area51/faculta/OS/terminal/build_and_run.cpp
+This is the second real path /home/area51/faculta/OS/terminal/get_file_type
+This is the second real path /home/area51/faculta/OS/terminal/get_file_size
+This is the second real path /home/area51/faculta/OS/terminal/learning_set
+This is the second real path /home/area51/faculta/OS/terminal/nou.txt
+This is the second real path /home/area51/faculta/OS/terminal/doi.txt
+This is the second real path /home/area51/faculta/OS/terminal/read_write_through_pipe
+This is the second real path /home/area51/faculta/OS/terminal/valideaza_path
+This is the second real path /home/area51/faculta/OS/terminal/sase.txt
+This is the second real path /home/area51/faculta/OS/terminal/patru.txt
+This is the second real path /home/area51/faculta/OS/terminal/symbolic_link
+This is the second real path /home/area51/faculta/OS/terminal/sapte.txt
+This is the second real path /home/area51/faculta/OS/terminal/scandal
+This is the fourth path /home/area51/faculta/OS/terminal/build.sh
+This is the fourth path /home/area51/faculta/OS/terminal/build_and_run
+This is the fourth path /home/area51/faculta/OS/terminal/build_and_run.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/cinci.txt
+This is the fourth path /home/area51/faculta/OS/terminal/cmake-build-debug
+This is the fourth path /home/area51/faculta/OS/terminal/CMakeLists.txt
+This is the fourth path /home/area51/faculta/OS/terminal/columnar_output
+This is the fourth path /home/area51/faculta/OS/terminal/commands
+This is the fourth path /home/area51/faculta/OS/terminal/command_not_found
+This is the fourth path /home/area51/faculta/OS/terminal/culori
+This is the fourth path /home/area51/faculta/OS/terminal/debug_file.txt
+This is the fourth path /home/area51/faculta/OS/terminal/doi.txt
+This is the fourth path /home/area51/faculta/OS/terminal/get_file_size
+This is the fourth path /home/area51/faculta/OS/terminal/get_file_type
+This is the fourth path /home/area51/faculta/OS/terminal/if_exec
+This is the fourth path /home/area51/faculta/OS/terminal/learning_set
+This is the fourth path /home/area51/faculta/OS/terminal/libraries
+This is the fourth path /home/area51/faculta/OS/terminal/multiline
+This is the fourth path /home/area51/faculta/OS/terminal/MYFIFO
+This is the fourth path /home/area51/faculta/OS/terminal/nou.txt
+This is the fourth path /home/area51/faculta/OS/terminal/opt.txt
+This is the fourth path /home/area51/faculta/OS/terminal/patru.txt
+This is the fourth path /home/area51/faculta/OS/terminal/proba
+This is the fourth path /home/area51/faculta/OS/terminal/read_write_through_pipe
+This is the fourth path /home/area51/faculta/OS/terminal/references
+This is the fourth path /home/area51/faculta/OS/terminal/sapte.txt
+This is the fourth path /home/area51/faculta/OS/terminal/sase.txt
+This is the fourth path /home/area51/faculta/OS/terminal/scandal
+This is the fourth path /home/area51/faculta/OS/terminal/strcmp_debug
+This is the fourth path /home/area51/faculta/OS/terminal/symbolic_link
+This is the fourth path /home/area51/faculta/OS/terminal/temp.txt
+This is the fourth path /home/area51/faculta/OS/terminal/terminal
+This is the fourth path /home/area51/faculta/OS/terminal/terminal.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/terminalu_sa_separe_commandu
+This is the fourth path /home/area51/faculta/OS/terminal/trei.txt
+This is the fourth path /home/area51/faculta/OS/terminal/unsigned_int
+This is the fourth path /home/area51/faculta/OS/terminal/unu.txt
+This is the fourth path /home/area51/faculta/OS/terminal/valideaza_path
+This is the fourth path /home/area51/faculta/OS/terminal/venv
+This is the fourth path /home/area51/faculta/OS/terminal/with_popen
+This is the second real path /home/area51/faculta/OS/terminal/strcmp_debug
+This is the second real path /home/area51/faculta/OS/terminal/MYFIFO
+This is the second real path /home/area51/faculta/OS/terminal/if_exec
+This is the second real path /home/area51/faculta/OS/terminal/libraries
+This is the second real path /home/area51/faculta/OS/terminal/commands
+This is the second real path /home/area51/faculta/OS/terminal/CMakeLists.txt
+This is the second real path /home/area51/faculta/OS/terminal/build.sh
+This is the second real path /home/area51/faculta/OS/terminal/cmake-build-debug
+This is the second real path /home/area51/faculta/OS/terminal/temp.txt
+This is the second real path /home/area51/faculta/OS/terminal/culori
+This is the second real path /home/area51/faculta/OS/terminal/build_and_run
+This is the second real path /home/area51/faculta/OS/terminal/with_popen
+This is the second real path /home/area51/faculta/OS/terminal/command_not_found
+This is the second real path /home/area51/faculta/OS/terminal/terminal.cpp
+This is the second real path /home/area51/faculta/OS/terminal/venv
+This is the second real path /home/area51/faculta/OS/terminal/columnar_output
+This is the second real path /home/area51/faculta/OS/terminal/terminalu_sa_separe_commandu
+This is the second real path /home/area51/faculta/OS/terminal/cinci.txt
+This is the second real path /home/area51/faculta/OS/terminal/multiline
+This is the second real path /home/area51/faculta/OS/terminal/trei.txt
+This is the second real path /home/area51/faculta/OS/terminal/proba
+This is the second real path /home/area51/faculta/OS/terminal/terminal
+This is the second real path /home/area51/faculta/OS/terminal/debug_file.txt
+This is the second real path /home/area51/faculta/OS/terminal/opt.txt
+This is the second real path /home/area51/faculta/OS/terminal/unu.txt
+This is the second real path /home/area51/faculta/OS/terminal/unsigned_int
+This is the second real path /home/area51/faculta/OS/terminal/references
+This is the second real path /home/area51/faculta/OS/terminal/build_and_run.cpp
+This is the second real path /home/area51/faculta/OS/terminal/get_file_type
+This is the second real path /home/area51/faculta/OS/terminal/get_file_size
+This is the second real path /home/area51/faculta/OS/terminal/learning_set
+This is the second real path /home/area51/faculta/OS/terminal/nou.txt
+This is the second real path /home/area51/faculta/OS/terminal/doi.txt
+This is the second real path /home/area51/faculta/OS/terminal/read_write_through_pipe
+This is the second real path /home/area51/faculta/OS/terminal/valideaza_path
+This is the second real path /home/area51/faculta/OS/terminal/sase.txt
+This is the second real path /home/area51/faculta/OS/terminal/patru.txt
+This is the second real path /home/area51/faculta/OS/terminal/symbolic_link
+This is the second real path /home/area51/faculta/OS/terminal/sapte.txt
+This is the second real path /home/area51/faculta/OS/terminal/scandal
+This is the fourth path /home/area51/faculta/OS/terminal/build.sh
+This is the fourth path /home/area51/faculta/OS/terminal/build_and_run
+This is the fourth path /home/area51/faculta/OS/terminal/build_and_run.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/cinci.txt
+This is the fourth path /home/area51/faculta/OS/terminal/cmake-build-debug
+This is the fourth path /home/area51/faculta/OS/terminal/CMakeLists.txt
+This is the fourth path /home/area51/faculta/OS/terminal/columnar_output
+This is the fourth path /home/area51/faculta/OS/terminal/commands
+This is the fourth path /home/area51/faculta/OS/terminal/command_not_found
+This is the fourth path /home/area51/faculta/OS/terminal/culori
+This is the fourth path /home/area51/faculta/OS/terminal/debug_file.txt
+This is the fourth path /home/area51/faculta/OS/terminal/doi.txt
+This is the fourth path /home/area51/faculta/OS/terminal/get_file_size
+This is the fourth path /home/area51/faculta/OS/terminal/get_file_type
+This is the fourth path /home/area51/faculta/OS/terminal/if_exec
+This is the fourth path /home/area51/faculta/OS/terminal/learning_set
+This is the fourth path /home/area51/faculta/OS/terminal/libraries
+This is the fourth path /home/area51/faculta/OS/terminal/multiline
+This is the fourth path /home/area51/faculta/OS/terminal/MYFIFO
+This is the fourth path /home/area51/faculta/OS/terminal/nou.txt
+This is the fourth path /home/area51/faculta/OS/terminal/opt.txt
+This is the fourth path /home/area51/faculta/OS/terminal/patru.txt
+This is the fourth path /home/area51/faculta/OS/terminal/proba
+This is the fourth path /home/area51/faculta/OS/terminal/read_write_through_pipe
+This is the fourth path /home/area51/faculta/OS/terminal/references
+This is the fourth path /home/area51/faculta/OS/terminal/sapte.txt
+This is the fourth path /home/area51/faculta/OS/terminal/sase.txt
+This is the fourth path /home/area51/faculta/OS/terminal/scandal
+This is the fourth path /home/area51/faculta/OS/terminal/strcmp_debug
+This is the fourth path /home/area51/faculta/OS/terminal/symbolic_link
+This is the fourth path /home/area51/faculta/OS/terminal/temp.txt
+This is the fourth path /home/area51/faculta/OS/terminal/terminal
+This is the fourth path /home/area51/faculta/OS/terminal/terminal.cpp
+This is the fourth path /home/area51/faculta/OS/terminal/terminalu_sa_separe_commandu
+This is the fourth path /home/area51/faculta/OS/terminal/trei.txt
+This is the fourth path /home/area51/faculta/OS/terminal/unsigned_int
+This is the fourth path /home/area51/faculta/OS/terminal/unu.txt
+This is the fourth path /home/area51/faculta/OS/terminal/valideaza_path
+This is the fourth path /home/area51/faculta/OS/terminal/venv
+This is the fourth path /home/area51/faculta/OS/terminal/with_popen

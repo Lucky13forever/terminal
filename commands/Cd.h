@@ -1,7 +1,6 @@
 //
 // Created by area51 on 22.12.22.
 //
-
 #ifndef TERMINAL_CD_H
 #define TERMINAL_CD_H
 class Cd{
@@ -66,6 +65,9 @@ void Cd::action() {
     //if it's valid -> send to the terminal so it change it
     terminal.update_path(true_path);
 }
+
+//if i am in /home/area51/faculta and the arg is ../..
+//then instead of /home/area51/faculta/../.. if should display only /home
 
 string Cd::is_this_a_valid_path(string path){
 

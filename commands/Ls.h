@@ -40,6 +40,14 @@ namespace keywords{
     const char * SYMBOLIC_KEY = "symbolic link";
 }
 
+namespace permission_type{
+    const char * DIRECTORY = "d";
+    const char * FIFO = "p"; //pipe
+    const char * SYMBOLIC = "l";
+    const char * SOCKET = "s";
+    const char * REGULAR = "-";
+}
+
 class Ls{
 
     bool default_path = true;
@@ -69,10 +77,14 @@ class Ls{
 //the structure we will keep inside a vector, meaning a row and this will contain everything so to make ls -l easier
 
     class File{
+    private:
         string name;
         string real_path;
+        string permissions;
+        const char * permission_type;
         int theoretical_length; //this is the length that this file will consume on screen consider the extra spaces the size and the type
         int size_in_blocks;
+        int n_links;
         int exists;
         int color;
         const char * type; //that thing at the end /*@=
@@ -80,7 +92,11 @@ class Ls{
         int prefix_extra_space_for_size_in_simple_view = 1; // minimal;
         bool is_this_null=false;
 
+
     public:
+        const string &getPermissions() const;
+
+        int getNLinks() const;
 
         const string &getName() const {
             return name;
@@ -114,12 +130,18 @@ class Ls{
         bool is_symbolic_link();
         string get_path_to_show_to_screen() const;
 
+        void create_permission_string();
+
+        const char *getPermissionType() const;
+
+        const char *get_permission_type();
     };
 
     class Col_info{
         vector<File> files;
         int longest_theoretical_length = 0;
         int longest_file_name_length = 0;
+        int longest_n_links = 0;
         const char * type_of_the_file_with_longest_name = classifier::REGULAR;
         int longest_size = 0;
     public:
@@ -139,6 +161,10 @@ class Ls{
         void show_file_name(File file);
 
         void show_suffix_spaces(File file);
+
+        void show_permissions(File file);
+
+        void show_n_links(File file);
     };
     vector< string > files_in_lexicographic_order; //this will keep the files in order, but will be light weight, will only keep the name of the files in an ascending order
     vector< Col_info > columns; //this will be used for displaying
@@ -147,6 +173,7 @@ class Ls{
     int file_number = 0;
 
     bool consider_starting_with_dot{};
+    bool l_flag_present = false;
 
 public:
     void run(const string&);
@@ -196,19 +223,28 @@ Ls::File::File(string file_path) {
     //gotta test the relative path of the file
     this->exists = stat(file_path.c_str(), &st) == 0;
 
-
     //must stop the code if it doesnt exist;
     if (!this->exists)
     {
-        display.display_debug_file("This is the first path " + real_path + "|");
         this->type = classifier::NOT_FOUND;
         throw NoSuchFileOrDirectory(this->real_path);
     }
 
     this->size_in_blocks = st.st_blocks / 2;
     this->type = classifier::REGULAR;
+    this->permission_type = permission_type::REGULAR;
+    this->n_links = 0;
 
     determine_type();
+
+    //now for the l argument i could need more information about the file
+
+    if (ls_command.l_flag_present)
+    {
+        //the permisions;
+        create_permission_string();
+        this->n_links = int (st.st_nlink);
+    }
 }
 void Ls::Col_info::insert_file(File file) {
 
@@ -231,6 +267,14 @@ void Ls::Col_info::insert_file(File file) {
         longest_file_name_length = file_name_length;
         type_of_the_file_with_longest_name = file.getType();
     }
+    int file_n_links_length = std::to_string(file.getNLinks()).length();
+    display.display_debug_file("This is from the file " + std::to_string(file_n_links_length));
+    if (file_n_links_length > longest_n_links)
+    {
+        longest_n_links = file_n_links_length;
+    }
+    display.display_debug_file("This is from the longest " + std::to_string(longest_n_links));
+
 }
 
 bool Ls::Col_info::is_there_a_file_with_this_index(int index)
@@ -308,6 +352,10 @@ void Ls::Col_info::show_file_info_on_screen(int index) {
         //do i have to show the size? 's'
         show_size_information(file);
 
+        show_permissions(file);
+
+        show_n_links(file);
+
         //display_the_name_of_the_file
         show_file_name(file);
 
@@ -319,6 +367,23 @@ void Ls::Col_info::show_file_info_on_screen(int index) {
     }
 }
 
+void Ls::Col_info::show_permissions(Ls::File file) {
+    if (scanner.found_short_flag(accepted_flags::l))
+    {
+        display.display_message(file.getPermissions() + " ");
+    }
+}
+
+void Ls::Col_info::show_n_links(Ls::File file) {
+    if (scanner.found_short_flag(accepted_flags::l))
+    {
+        //longest_n_links_is the length not the value itself
+        int normal_length = int ( to_string(file.getNLinks()).length() );
+        display.display_front_spaces(longest_n_links, normal_length);
+        display.display_message(std::to_string(file.getNLinks()) + " ");
+    }
+}
+
 void Ls::run(const string& command)
 {
 
@@ -326,6 +391,7 @@ void Ls::run(const string& command)
     default_path = true;
     display_real_path_of_file = true;
     total_size_in_blocks = 0;
+    l_flag_present = false;
     files_in_lexicographic_order.clear();
     file_name_lengths.clear();
     directories_provided.clear();
@@ -411,6 +477,13 @@ void Ls::identify_next_step() {
 }
 
 int Ls::get_number_of_files_per_line(){
+    //if the flag l is present, then beacuse i need to display everything in a list -> this function will return 1
+    if (scanner.found_short_flag(accepted_flags::l))
+    {
+        return 1;
+    }
+
+
 //    in order to replcate the simple 'ls' view, we need to calculate how many rown we will have
 //    i will first calculate the average length of the files;
 
@@ -532,21 +605,25 @@ void Ls::File::determine_type() {
     if (S_ISLNK(fstat.st_mode))
     {
         type = classifier::SYMBOLIC;
+        permission_type = permission_type::SYMBOLIC;
         color = COLOR_CYAN_CODE;
     }
     else if (S_ISDIR(st.st_mode))
     {
         type = classifier::DIRECTORY;
+        permission_type = permission_type::DIRECTORY;
         color = COLOR_BLUE_CODE;
     }
     else if (S_ISFIFO(st.st_mode))
     {
         type = classifier::FIFO;
+        permission_type = permission_type::FIFO;
         color = COLOR_YELLOW_CODE;
     }
     else if (S_ISSOCK(st.st_mode))
     {
         type = classifier::SOCKET;
+        permission_type = permission_type::SOCKET;
         color = COLOR_MAGENTA_CODE;
     }
     else if (st.st_mode & S_IXUSR)
@@ -559,6 +636,30 @@ void Ls::File::determine_type() {
         type = classifier::REGULAR;
         color = COLOR_WHITE_CODE;
     }
+}
+
+void Ls::File::create_permission_string()
+{
+    struct stat st;
+    stat(this->getRealPath().c_str(), &st);
+
+    //asta voi face cu functie de type la fisier
+    //primul append este type-ul
+    string result;
+    result += this->getPermissionType();
+    result.append( (st.st_mode & S_IRUSR) ? "r" : "-" );
+    result.append( (st.st_mode & S_IWUSR) ? "w" : "-" );
+    result.append( (st.st_mode & S_IXUSR) ? "x" : "-" );
+    result.append( (st.st_mode & S_IRGRP) ? "r" : "-" );
+    result.append( (st.st_mode & S_IWGRP) ? "w" : "-" );
+    result.append( (st.st_mode & S_IXGRP) ? "x" : "-" );
+    result.append( (st.st_mode & S_IROTH) ? "r" : "-" );
+    result.append( (st.st_mode & S_IWOTH) ? "w" : "-" );
+    result.append( (st.st_mode & S_IXOTH) ? "x" : "-" );
+
+    this->permissions = result;
+    display.display_debug_file(this->permissions);
+
 }
 
 bool Ls::File::is_directory() {
@@ -596,6 +697,18 @@ string Ls::File::get_path_to_show_to_screen() const {
     return this->getName();
 }
 
+const char *Ls::File::getPermissionType() const {
+    return permission_type;
+}
+
+const string &Ls::File::getPermissions() const {
+    return permissions;
+}
+
+int Ls::File::getNLinks() const {
+    return n_links;
+}
+
 
 //keep how many files are there, and the set in desc order of length
 void Ls::initialize_rows_when_the_path_is_a_directory(string path) {
@@ -627,7 +740,6 @@ void Ls::initialize_rows_when_the_path_is_a_directory(string path) {
 
         string real_path_without_file_name = Scanner::concatenate_two_paths(terminal.getPath(), path);
         string real_path_of_file = Scanner::concatenate_two_paths(real_path_without_file_name, file_name);
-        display.display_debug_file("This is the second real path " + real_path_of_file);
         File * new_file = new File(real_path_of_file);
 
         //keep the size
@@ -647,7 +759,6 @@ void Ls::initialize_rows_when_the_path_is_a_file(){
 
     for(string file_ : files_in_lexicographic_order)
     {
-        display.display_debug_file("This is the third real path " + file_);
         File * new_file = new File(file_);
         file_name_lengths.insert( - new_file->get_theoretical_length() );
     }
@@ -674,7 +785,6 @@ void Ls::create_file_distribution() {
         aux = new Col_info();
         for (int j=i; j < i + final_num_of_files_per_column and j < total_num_of_files; j++)
         {
-            display.display_debug_file("This is the fourth path " + files_in_lexicographic_order[j]);
             File new_file = *new File(files_in_lexicographic_order[j]);
             aux->insert_file(new_file );
         }
@@ -707,7 +817,6 @@ void Ls::validate_path(string arg_path) {
 
         //get the real_path
         string real_path = Scanner::concatenate_two_paths(terminal.getPath(), arg_path);
-        display.display_debug_file("This is the fifth arg_path " + real_path);
         File path_provided = *new File(real_path);
 
         //if it is a directory continue with the normal design
@@ -720,7 +829,6 @@ void Ls::validate_path(string arg_path) {
         //if it is a file. think of it like a new directory that only has that file, we will only modify the files_in_lexicographic_order
         else{
             display.display_debug("It seems to be just a file");
-            display.display_debug_file("This is the sixth arg_path " + path_provided.getRealPath());
             files_in_lexicographic_order.push_back(path_provided.getRealPath());
         }
 
@@ -755,6 +863,11 @@ void Ls::validate_flags() {
         {
             throw InvalidFlag(short_flag);
         }
+    }
+
+    if (scanner.found_short_flag(accepted_flags::l))
+    {
+        this->l_flag_present = true;
     }
 }
 

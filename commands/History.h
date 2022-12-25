@@ -1,7 +1,6 @@
 #ifndef PROJECT_HISTORY_H
 #define PROJECT_HISTORY_H
 using namespace std;
-
 class History{
 private:
     vector<string>all_commands; // all official commands ran by the user, so each of these command were followed by an ENTER
@@ -26,7 +25,6 @@ History::History(){
 
 //this will take place when ENTER key is pressed
 void History::push_command(string command) {
-
 //    remove backup command
     if (enters < all_commands.size())
     {

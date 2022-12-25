@@ -54,12 +54,19 @@ string User_Input::user_types_command() {
 
     }
     printw("\n");
+    //remove spaces in front
+    while(result[0] == ' ')
+    {
+        result.erase(0, 1);
+    }
     history_command.push_command(result);
     return result;
 }
 
 void User_Input::check_if_command_is_internal(string command)
 {
+
+    //i should remove the space in front
     if ( command.rfind(string(EXIT).append(" "), 0) == 0 or strcmp(command.c_str(), EXIT) == 0 )
     {
         exit_command.run(command);

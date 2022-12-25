@@ -26,10 +26,13 @@ public:
     void display_debug(string);
     void display_message(string);
     void display_message_with_color(string, int);
+    void display_front_spaces(string longest, string normal);
 
     void scroll_screen(int i);
 
     void display_debug_file(string message);
+
+    void display_front_spaces(int longest, int normal);
 }display;
 
 void Display::display_prefix(vector<string> prefix, vector<int> colors)
@@ -128,6 +131,19 @@ void Display::display_debug_file(string message) {
         FILE * file = popen(command.c_str(), "r");
         pclose(file);
     }
+}
+
+void Display::display_front_spaces(int longest, int normal) {
+    //12345 - longest
+    //  123 - normal
+
+//    scope, display those 2 extra space in front
+    string extra_spaces;
+    for(int i=0; i<longest - normal; i++)
+    {
+        extra_spaces += " ";
+    }
+    display.display_message(extra_spaces);
 }
 
 #endif //PROJECT_DISPLAY_H

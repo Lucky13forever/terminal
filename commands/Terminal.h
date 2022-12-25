@@ -1,6 +1,7 @@
 //
 // Created by area51 on 10.12.22.
 //
+//TODO what is going on when pressing tab
 #ifndef TERMINAL_TERMINAL_H
 #define TERMINAL_TERMINAL_H
 class Terminal{
@@ -37,6 +38,7 @@ public:
     string extract_name_of_command(string);
     static bool check_file_type(string, string);
 
+    string trim_path_received(string path);
 }terminal;
 
 Terminal::Terminal()
@@ -189,11 +191,73 @@ const string &Terminal::getPath() const {
     return path;
 }
 
+string Terminal::trim_path_received(string path)
+{
+    //if i have /../ somewhere in the path -> remove the dir before it
+    // maybe i have this /faculta/OS/terminal/../terminal/../unu/, also remove any /./
+
+    vector<string>dirs;
+    int start = 0;
+    int next_slash = path.find("/");
+    string new_dir;
+    while(next_slash != string::npos)
+    {
+        new_dir = path.substr(start, next_slash - start);
+        if (!new_dir.empty()) // to avoid the first / getting put as a dir later on
+            dirs.push_back(path.substr(start, next_slash - start));
+        start = next_slash + 1;
+        next_slash = path.find("/", start);
+    }
+    new_dir = path.substr(start, next_slash - start);
+    if (!new_dir.empty())
+        dirs.push_back(path.substr(start, next_slash - start));
+
+    vector<string>trimmed;
+
+    for (string dir : dirs)
+    {
+        if (dir == ".")
+        {
+            //ignore it
+            continue;
+        } else if (dir == "..")
+        {
+            //now i should pop the previous folder, but if i have any
+            if (!trimmed.empty())
+            {
+                trimmed.pop_back();
+            }
+        } else {
+            //well at this stage, it is a normal name
+            trimmed.push_back(dir);
+        }
+    }
+
+    //now to reconstruct the string
+    string result;
+    for (string trim : trimmed)
+    {
+        result += "/" + trim;
+    }
+
+    //there could be that result is empty, if too many ../ were writen
+    if (result.empty())
+    {
+        result = "/";
+    }
+    return result;
+
+}
+
 void Terminal::update_path(string path) {
-    display.display_debug("Variable this->path chaging to " + path);
-    this->path = path;
+    //this path could be home/area51/faculta/../../
+
+    string trimmed_path = trim_path_received(path);
+
+    display.display_debug("Variable this->path chaging to " + trimmed_path);
+    this->path = trimmed_path;
     prefix[2] = "~";
-    prefix[2].append(path);
+    prefix[2].append(trimmed_path);
     display.display_debug("Prefix[2] is now " + prefix[2]);
     return;
 }

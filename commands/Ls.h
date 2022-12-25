@@ -43,6 +43,7 @@ namespace keywords{
 class Ls{
 
     bool default_path = true;
+    bool display_real_path_of_file = true;
     string help = "Usage: ls [PATH]... [FLAGS]...\n"
                   "Lists all the files inside the directory which path is what you provided\n"
                   "You can provide more paths, and it will display the result for each one, if it's a valid one\n"
@@ -110,6 +111,7 @@ class Ls{
         int get_theoretical_length() const;
         bool is_directory();
         bool is_symbolic_link();
+        string get_path_to_show_to_screen() const;
 
     };
 
@@ -170,7 +172,7 @@ public:
 
     void display_file_distribution();
 
-    void validate_path(string basicString);
+    void validate_path(string arg_path);
 
     void initialize_rows_when_the_path_is_a_file(const string &path);
 
@@ -186,6 +188,7 @@ public:
 Ls::File::File(string file_path) {
     this->real_path = file_path;
     this->name = Scanner::extract_file_name_from_path(this->real_path);
+    this->color = COLOR_WHITE_CODE; //this can change afterwads when the type of file is determined
     struct stat st;
     //gotta test the relative path of the file
     this->exists = stat(file_path.c_str(), &st) == 0;
@@ -194,15 +197,14 @@ Ls::File::File(string file_path) {
     //must stop the code if it doesnt exist;
     if (!this->exists)
     {
-        display.display_debug_file("This is the first path " + real_path);
-        return;
+        display.display_debug_file("This is the first path " + real_path + "|");
         this->type = classifier::NOT_FOUND;
         throw NoSuchFileOrDirectory(this->real_path);
     }
 
     this->size_in_blocks = st.st_blocks / 2;
-
     this->type = classifier::REGULAR;
+
     determine_type();
 }
 void Ls::Col_info::insert_file(File file) {
@@ -220,7 +222,7 @@ void Ls::Col_info::insert_file(File file) {
     {
         longest_size = size;
     }
-    int file_name_length = file.getName().length();
+    int file_name_length = file.get_path_to_show_to_screen().length();
     if (file_name_length > longest_file_name_length)
     {
         longest_file_name_length = file_name_length;
@@ -278,14 +280,14 @@ void Ls::Col_info::show_file_type(File file)
 
 void Ls::Col_info::show_file_name(File file)
 {
-    display.display_message_with_color(file.getName(), file.getColor());
+    display.display_message_with_color(file.get_path_to_show_to_screen(), file.getColor());
 }
 
 void Ls::Col_info::show_suffix_spaces(File file)
 {
     int also_the_type = 1;
     string suffix_spaces;
-    for(int i=file.getName().length(); i<longest_file_name_length + also_the_type; i++)
+    for(int i=file.get_path_to_show_to_screen().length(); i<longest_file_name_length + also_the_type; i++)
     {
         suffix_spaces += " ";
     }
@@ -319,6 +321,7 @@ void Ls::run(const string& command)
 
     //clear the memory
     default_path = true;
+    display_real_path_of_file = true;
     files_in_lexicographic_order.clear();
     file_name_lengths.clear();
     directories_provided.clear();
@@ -377,10 +380,13 @@ void Ls::identify_next_step() {
         display.display_message_with_endl("");
     }
 
-    //now for each of the directories
+    //now for each of the directories\
+    //if this happens, then surely the file arguments have been displayed already so ->
+    ls_command.display_real_path_of_file = false;
     for (int i=0; i<directories_provided.size(); i++)
     {
-        display.display_message_with_endl(directories_provided[i] + ":");
+        string path_to_show = Scanner::get_relative_path_to_terminal_path(terminal.getPath(), directories_provided[i]);
+        display.display_message_with_endl(path_to_show + ":");
         initialize_rows_when_the_path_is_a_directory(directories_provided[i]);
         create_file_distribution();
         display_file_distribution();
@@ -475,7 +481,7 @@ void Ls::simple_view() {
 //                                                                type   2 spaces
 int Ls::File::get_theoretical_length() const
 {
-    string word = this->getName();
+    string word = this->get_path_to_show_to_screen();
     int length = 0;
 
     if (scanner.found_short_flag(accepted_flags::s))
@@ -507,7 +513,7 @@ const char *Ls::File::getType() const {
 }
 
 void Ls::File::determine_type() {
-    string file = this->getName();
+    string file = this->getRealPath();
     struct stat st;
     stat(file.c_str(), &st);
 
@@ -547,7 +553,7 @@ void Ls::File::determine_type() {
 }
 
 bool Ls::File::is_directory() {
-    string file = this->getName();
+    string file = this->getRealPath();
     struct stat st;
     stat(file.c_str(), &st);
     if (S_ISDIR(st.st_mode))
@@ -558,7 +564,7 @@ bool Ls::File::is_directory() {
 }
 
 bool Ls::File::is_symbolic_link() {
-    string file = this->getName();
+    string file = this->getRealPath();
     struct stat fstat;
     lstat(file.c_str(), &fstat);
     if (S_ISLNK(fstat.st_mode))
@@ -572,9 +578,20 @@ const string &Ls::File::getRealPath() const {
     return real_path;
 }
 
+string Ls::File::get_path_to_show_to_screen() const {
+    //i may not want to full path, but rather the relative path to the terminal path
+    if (ls_command.display_real_path_of_file)
+    {
+        return Scanner::get_relative_path_to_terminal_path(terminal.getPath(), this->getRealPath());
+    }
+    return this->getName();
+}
+
 
 //keep how many files are there, and the set in desc order of length
 void Ls::initialize_rows_when_the_path_is_a_directory(string path) {
+
+
 //    first clear the memory
     files_in_lexicographic_order.clear();
     file_name_lengths.clear();
@@ -599,13 +616,13 @@ void Ls::initialize_rows_when_the_path_is_a_directory(string path) {
         if (Scanner::is_string_starting_with_dot(file_name) and !consider_starting_with_dot)
             continue;
 
-        files_in_lexicographic_order.push_back(file_name);
-        //add the length to the set
-        //place with - cause i want desc order
-        //TODO get relative path of the file
-        string real_path = Scanner::concatenate_current_path_with_another_path(path, file_name);
-        display.display_debug_file("This is the second real path " + real_path);
-        File * new_file = new File(real_path);
+        string real_path_without_file_name = Scanner::concatenate_two_paths(terminal.getPath(), path);
+        string real_path_of_file = Scanner::concatenate_two_paths(real_path_without_file_name, file_name);
+        display.display_debug_file("This is the second real path " + real_path_of_file);
+        File * new_file = new File(real_path_of_file);
+
+
+        files_in_lexicographic_order.push_back(new_file->getRealPath());
         file_name_lengths.insert( - new_file->get_theoretical_length() );
 
     }
@@ -668,34 +685,35 @@ void Ls::display_file_distribution() {
 
 }
 
-void Ls::validate_path(string path) {
-    //if i got any path
+void Ls::validate_path(string arg_path) {
+    //arg path could be just a name, a relative path or a full path -> we need to change it to full path
+    //if i got any arg_path
     default_path = false;
     try{
-        display.display_debug("This is the path received : " + path);
+        display.display_debug("This is the arg_path received : " + arg_path);
 
 
         //get the real_path
-        string real_path = Scanner::concatenate_current_path_with_another_path(terminal.getPath(), path);
-        display.display_debug_file("This is the fifth path " + real_path);
-        File path_provided = new File(real_path);
+        string real_path = Scanner::concatenate_two_paths(terminal.getPath(), arg_path);
+        display.display_debug_file("This is the fifth arg_path " + real_path);
+        File path_provided = *new File(real_path);
 
         //if it is a directory continue with the normal design
         //be carefull that a symbolic link could be a directory
         if (path_provided.is_directory()){
 
             display.display_debug("It seems to be a directory");
-            directories_provided.push_back(real_path);
+            directories_provided.push_back(path_provided.getRealPath());
         }
         //if it is a file. think of it like a new directory that only has that file, we will only modify the files_in_lexicographic_order
         else{
             display.display_debug("It seems to be just a file");
-            display.display_debug_file("This is the sixth path " + path_provided.getRealPath());
+            display.display_debug_file("This is the sixth arg_path " + path_provided.getRealPath());
             files_in_lexicographic_order.push_back(path_provided.getRealPath());
         }
 
     } catch (const NoSuchFileOrDirectory & ex) {
-        errors.no_such_file_or_directory(path);
+        errors.no_such_file_or_directory(arg_path);
     }
 
 }

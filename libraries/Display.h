@@ -97,7 +97,7 @@ void Display::display_char(char c) {
 }
 
 void Display::display_debug(string debug) {
-    if (DEBUG){
+    if (DEBUG == 1 or DEBUG == 3){
         printw("\n------------------------------\n\n");
         printw("%s", debug.c_str());
         printw("\n\n------------------------------\n");
@@ -121,7 +121,7 @@ void Display::display_message_with_color(string message, int color) {
 }
 
 void Display::display_debug_file(string message) {
-    if (DEBUG){
+    if (DEBUG >= 2){
 
         string command = "echo '";
         command += message + "'" + " >> debug_file.txt";

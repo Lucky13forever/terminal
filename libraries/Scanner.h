@@ -43,7 +43,9 @@ public:
 
     bool found_short_flag(string flag);
 
-    static string concatenate_current_path_with_another_path(string current_path, string path);
+    static string concatenate_two_paths(string current_path, string path);
+
+    static string get_relative_path_to_terminal_path(const string &terminal_path, const string &path_file);
 }scanner;
 
 bool Scanner::has_key(map<string, vector<string>> map, const string& key){
@@ -238,7 +240,7 @@ bool Scanner::compare_strings(const string & left, const string & right) {
     return reconstruct_left < reconstruct_right;
 }
 
-string Scanner::concatenate_current_path_with_another_path(string current_path, string path) {
+string Scanner::concatenate_two_paths(string current_path, string path) {
     //if the path starts with / dont do anything
     if (path[0] == '/')
         return path;
@@ -257,6 +259,18 @@ string Scanner::extract_file_name_from_path(string path) {
         return path.substr(index + 1, path.size() - 1);
     }
     return path;
+}
+
+string Scanner::get_relative_path_to_terminal_path(const string & terminal_path, const string & path_file) {
+
+    //so i have the real_path in path_file
+    //i need to separate them and remove the / in between
+    //path_file is definitely having something extra, like the name of a dict or a file
+
+    //they overlap, and the path_file starts with the terminal path so
+    int terminal_path_length = terminal_path.length();
+    string relative_path = path_file.substr(terminal_path_length + 1, path_file.length() - 1); // in the left, +1 to eliminate the /
+    return relative_path;
 }
 
 #endif //TERMINAL_SCANNER_H

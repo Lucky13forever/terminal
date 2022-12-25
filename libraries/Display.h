@@ -37,6 +37,8 @@ public:
 
 void Display::display_prefix(vector<string> prefix, vector<int> colors)
 {
+    //clear anything in front
+    clear_line();
     this->prefix = prefix;
     this->colors = colors;
 

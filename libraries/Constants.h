@@ -20,5 +20,6 @@ const int COLOR_BLUE_CODE = 4;
 const int COLOR_RED_CODE = 5;
 const int COLOR_YELLOW_CODE = 6;
 const int COLOR_MAGENTA_CODE = 7;
+const int BUFFER_SIZE = 1024;
 
 #endif //PROJECT_CONSTANTS_H

@@ -28,6 +28,7 @@ public:
     vector<string> get_arguments() {return scan[ARGUMENTS];};
     vector<string> get_short_flags() {return scan[SHORT_FLAGS];};
     vector<string> get_long_flags() {return scan[LONG_FLAGS];};
+    vector<string> get_everything();
     void show_command();
     void show_arguments();
     void show_short_flags();
@@ -46,6 +47,8 @@ public:
     static string concatenate_two_paths(string current_path, string path);
 
     static string get_relative_path_to_terminal_path(const string &terminal_path, const string &path_file);
+
+    vector<string> concatenate_all_arguments();
 }scanner;
 
 bool Scanner::has_key(map<string, vector<string>> map, const string& key){
@@ -271,6 +274,24 @@ string Scanner::get_relative_path_to_terminal_path(const string & terminal_path,
     int terminal_path_length = terminal_path.length();
     string relative_path = path_file.substr(terminal_path_length + 1, path_file.length() - 1); // in the left, +1 to eliminate the /
     return relative_path;
+}
+
+vector<string> Scanner::get_everything()
+{
+    vector<string>unu = {scanner.get_command()};
+    vector<string>doi = scanner.get_arguments();
+    vector<string>trei = scanner.get_short_flags();
+    vector<string>patru = scanner.get_long_flags();
+
+    vector<string> result;
+
+    result.reserve(unu.size() + doi.size() + trei.size() + patru.size());
+    result.insert(result.end(), unu.begin(), unu.end());
+    result.insert(result.end(), doi.begin(), doi.end());
+    result.insert(result.end(), trei.begin(), trei.end());
+    result.insert(result.end(), patru.begin(), patru.end());
+
+    return result;
 }
 
 #endif //TERMINAL_SCANNER_H

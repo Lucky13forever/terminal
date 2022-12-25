@@ -39,6 +39,8 @@ public:
     static bool check_file_type(string, string);
 
     string trim_path_received(string path);
+
+    char **return_char_pointer_from_vector_of_strings(vector<string> argv_vector);
 }terminal;
 
 Terminal::Terminal()
@@ -143,17 +145,70 @@ void Terminal::check_if_external_command_exists(string command) {
     }
 }
 
-string Terminal::execute_external_command(string command) {
-    FILE * file = popen(command.c_str(), "r");
+char ** Terminal::return_char_pointer_from_vector_of_strings(vector<string> argv_vector)
+{
+    char ** argv = new char *[argv_vector.size() + 1];
 
-    char * buffer = new char[1024];
-    string result;
-    while (std::fgets(buffer, 1024, file) != NULL)
+    for(int i=0; i<argv_vector.size(); i++)
     {
-        result += buffer;
-        display.display_message(buffer);
+        argv[i] = new char[ argv_vector[i].length() + 1 ];
+        strcpy(argv[i], argv_vector[i].c_str());
+        argv[i][argv_vector[i].length()] = 0;
     }
-    return result;
+    argv[argv_vector.size()] = NULL;
+    return argv;
+}
+
+string Terminal::execute_external_command(string command) {
+
+    scanner.scan_command(command);
+    display.display_debug_file("EHM YOU HERE?");
+    int pipe_fd[2];
+    pipe(pipe_fd);
+
+    int pid = fork();
+    if (pid == 0){
+        //child
+        close(pipe_fd[0]);
+
+
+        //to construct argv, i need to make a vector of all arguments, i will use scanner for this
+        char ** argv = return_char_pointer_from_vector_of_strings(scanner.get_everything());
+
+        //redirect everything to pipe
+        dup2(pipe_fd[1], STDERR_FILENO);
+        dup2(pipe_fd[1], STDOUT_FILENO);
+        close(pipe_fd[1]);
+        execvp(argv[0], argv);
+    } else {
+
+        //if execvp runs but returns an error, the error code should be different then 0
+        close(pipe_fd[1]);
+
+        int status;
+        string result;
+        waitpid(pid, &status, 0);
+        if (WIFEXITED(status)){
+            int es = WEXITSTATUS(status);
+            if (es == 0)
+            {
+                //success;
+            }
+            else {
+                //got an error, so result will keep the error
+            }
+            int num_of_bytes;
+            char buffer[BUFFER_SIZE];
+            while ( ( num_of_bytes = read(pipe_fd[0], buffer, BUFFER_SIZE) ) > 0 )
+            {
+                result += buffer;
+            }
+            display.display_message(result);
+        }
+        close(pipe_fd[0]);
+    }
+    string mt;
+    return mt;
 }
 
 bool Terminal::this_command_exists(string name)

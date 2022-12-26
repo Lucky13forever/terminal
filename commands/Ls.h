@@ -1,7 +1,6 @@
 //
 // Created by area51 on 22.12.22.
 //
-
 #ifndef TERMINAL_LS_H
 #define TERMINAL_LS_H
 using namespace std;
@@ -81,11 +80,17 @@ class Ls{
         string name;
         string real_path;
         string permissions;
+        string owner;
+        string group;
+        string date;
+        File * symbolic_link_file;
+        struct stat st; // this we call only if exists is set to true
         const char * permission_type;
         int theoretical_length; //this is the length that this file will consume on screen consider the extra spaces the size and the type
         int size_in_blocks;
+        int size_in_bytes;
         int n_links;
-        int exists;
+        bool exists;
         int color;
         const char * type; //that thing at the end /*@=
         int sufix_extra_space_for_simple_view = 1; //this is the minim
@@ -95,6 +100,16 @@ class Ls{
 
     public:
         const string &getPermissions() const;
+
+        File *getSymbolicLinkFile() const;
+
+        const string &getOwner() const;
+
+        const string &getDate() const;
+
+        int getSizeInBytes() const;
+
+        const string &getGroup() const;
 
         int getNLinks() const;
 
@@ -123,7 +138,7 @@ class Ls{
 
         const char *getType() const;
 
-        File(string);
+        File(string, bool);
         File(void *) {is_this_null=true;};
         int get_theoretical_length() const;
         bool is_directory();
@@ -135,6 +150,15 @@ class Ls{
         const char *getPermissionType() const;
 
         const char *get_permission_type();
+
+        void create_owner_string();
+
+        void create_group_string();
+
+
+        void create_symbolic_link_file();
+
+        void create_date_string();
     };
 
     class Col_info{
@@ -142,8 +166,11 @@ class Ls{
         int longest_theoretical_length = 0;
         int longest_file_name_length = 0;
         int longest_n_links = 0;
+        int longest_owner = 0;
+        int longest_group = 0;
+        int longest_size_in_bytes;
         const char * type_of_the_file_with_longest_name = classifier::REGULAR;
-        int longest_size = 0;
+        int longest_size_in_blocks = 0;
     public:
 
         int get_file_number() {return files.size();};
@@ -165,6 +192,16 @@ class Ls{
         void show_permissions(File file);
 
         void show_n_links(File file);
+
+        void show_owner(File file);
+
+        void show_group(File file);
+
+        void show_size_in_bytes(File file);
+
+        void show_symbolic_link_file(File file);
+
+        void show_date(File file);
     };
     vector< string > files_in_lexicographic_order; //this will keep the files in order, but will be light weight, will only keep the name of the files in an ascending order
     vector< Col_info > columns; //this will be used for displaying
@@ -215,9 +252,16 @@ public:
     void display_total_directory_size_in_blocks();
 }ls_command;
 
-Ls::File::File(string file_path) {
+Ls::File::File(string file_path, bool symbolic_bro = false) {
+
     this->real_path = file_path;
     this->name = Scanner::extract_file_name_from_path(this->real_path);
+
+    if (symbolic_bro == true)
+    {
+        this->name = file_path;
+        this->real_path = Scanner::concatenate_two_paths(terminal.getPath(), this->name);
+    }
     this->color = COLOR_WHITE_CODE; //this can change afterwads when the type of file is determined
     struct stat st;
     //gotta test the relative path of the file
@@ -230,6 +274,8 @@ Ls::File::File(string file_path) {
         throw NoSuchFileOrDirectory(this->real_path);
     }
 
+    //if i reach this -> the file exists
+    this->st = st;
     this->size_in_blocks = st.st_blocks / 2;
     this->type = classifier::REGULAR;
     this->permission_type = permission_type::REGULAR;
@@ -244,6 +290,11 @@ Ls::File::File(string file_path) {
         //the permisions;
         create_permission_string();
         this->n_links = int (st.st_nlink);
+        create_owner_string();
+        create_group_string();
+        this->size_in_bytes = st.st_size;
+        create_symbolic_link_file();
+        create_date_string();
     }
 }
 void Ls::Col_info::insert_file(File file) {
@@ -257,9 +308,9 @@ void Ls::Col_info::insert_file(File file) {
         longest_theoretical_length = length;
     }
     int size = std::to_string(file.getSizeInBlocks()).length();
-    if (size > longest_size)
+    if (size > longest_size_in_blocks)
     {
-        longest_size = size;
+        longest_size_in_blocks = size;
     }
     int file_name_length = file.get_path_to_show_to_screen().length();
     if (file_name_length > longest_file_name_length)
@@ -274,6 +325,21 @@ void Ls::Col_info::insert_file(File file) {
         longest_n_links = file_n_links_length;
     }
     display.display_debug_file("This is from the longest " + std::to_string(longest_n_links));
+    int owner_length = file.getOwner().length();
+    if (owner_length > longest_owner)
+    {
+        longest_owner = owner_length;
+    }
+    int group_length = file.getGroup().length();
+    if (group_length > longest_group)
+    {
+        longest_group = group_length;
+    }
+    int size_bytes_length = int (to_string(file.getSizeInBytes()).length());
+    if (size_bytes_length > longest_size_in_bytes)
+    {
+        longest_size_in_bytes = size_bytes_length;
+    }
 
 }
 
@@ -299,7 +365,7 @@ void Ls::Col_info::show_size_information(File file)
         //the first space
         front_spaces = " ";
         //add any extra space to line up the names of the files
-        for(int i=0; i<longest_size - file.get_length_of_size_as_string(); i++)
+        for(int i=0; i < longest_size_in_blocks - file.get_length_of_size_as_string(); i++)
         {
             front_spaces += " ";
         }
@@ -356,6 +422,14 @@ void Ls::Col_info::show_file_info_on_screen(int index) {
 
         show_n_links(file);
 
+        show_owner(file);
+
+        show_group(file);
+
+        show_size_in_bytes(file);
+
+        show_date(file);
+
         //display_the_name_of_the_file
         show_file_name(file);
 
@@ -363,7 +437,10 @@ void Ls::Col_info::show_file_info_on_screen(int index) {
         show_file_type(file);
 
         //fill in the suffix spaces
-        show_suffix_spaces(file);
+        if (!scanner.found_short_flag(accepted_flags::l))
+            show_suffix_spaces(file);
+
+        show_symbolic_link_file(file);
     }
 }
 
@@ -383,6 +460,53 @@ void Ls::Col_info::show_n_links(Ls::File file) {
         display.display_message(std::to_string(file.getNLinks()) + " ");
     }
 }
+
+void Ls::Col_info::show_owner(Ls::File file) {
+    if (scanner.found_short_flag(accepted_flags::l))
+    {
+        int normal_length = int (file.getOwner().length());
+        display.display_front_spaces(longest_owner, normal_length);
+        display.display_message(file.getOwner() + " ");
+    }
+}
+
+void Ls::Col_info::show_group(Ls::File file) {
+    if (scanner.found_short_flag(accepted_flags::l))
+    {
+        int normal_length = int (file.getGroup().length());
+        display.display_front_spaces(longest_group, normal_length);
+        display.display_message(file.getGroup() + " ");
+    }
+}
+
+void Ls::Col_info::show_size_in_bytes(Ls::File file) {
+    if (scanner.found_short_flag(accepted_flags::l))
+    {
+        int normal_length = int (to_string(file.getSizeInBytes()).length());
+        display.display_front_spaces(longest_size_in_bytes, normal_length);
+        display.display_message(to_string(file.getSizeInBytes()) + " ");
+    }
+}
+
+void Ls::Col_info::show_symbolic_link_file(Ls::File file) {
+    if (scanner.found_short_flag(accepted_flags::l))
+    {
+        //if this is also a sym link
+        if (strcmp(file.getType(), classifier::SYMBOLIC) == 0)
+        {
+            display.display_message(" -> ");
+            display.display_message_with_color(file.getSymbolicLinkFile()->getName(), file.getSymbolicLinkFile()->getColor());
+        }
+    }
+}
+
+void Ls::Col_info::show_date(Ls::File file) {
+    if (scanner.found_short_flag(accepted_flags::l))
+    {
+        display.display_message(file.getDate() + " ");
+    }
+}
+
 
 void Ls::run(const string& command)
 {
@@ -607,6 +731,8 @@ void Ls::File::determine_type() {
         type = classifier::SYMBOLIC;
         permission_type = permission_type::SYMBOLIC;
         color = COLOR_CYAN_CODE;
+        //this is having actually different size, only needs to keep the num of bytes of the path
+        this->size_in_blocks = fstat.st_blocks;
     }
     else if (S_ISDIR(st.st_mode))
     {
@@ -709,6 +835,77 @@ int Ls::File::getNLinks() const {
     return n_links;
 }
 
+void Ls::File::create_owner_string() {
+    struct passwd * pw = getpwuid(st.st_uid);
+    this->owner = pw->pw_name;
+}
+
+void Ls::File::create_group_string() {
+    struct group * gr = getgrgid(st.st_gid);
+    this->group = gr->gr_name;
+}
+
+const string &Ls::File::getOwner() const {
+    return owner;
+}
+
+const string &Ls::File::getGroup() const {
+    return group;
+}
+
+int Ls::File::getSizeInBytes() const {
+    return size_in_bytes;
+}
+
+void Ls::File::create_symbolic_link_file() {
+
+    if (!this->is_symbolic_link()){
+        return;
+    }
+
+    char buffer[1024];
+
+    ssize_t length = readlink(this->getRealPath().c_str(), buffer, sizeof(buffer));
+    if (length < 0) {
+        // An error occurred, so the sym link will stay empty
+        return;
+    }
+    buffer[length] = '\0';
+
+    //this is the path kept in the symbolic link
+    string path_kept_in_symbolic_link = buffer;
+    //now i need to find it's color -> so i will simply create a new file with it
+    //no need to check if it exists, if this file exists -> stat returned 1 -> so the link exists
+    this->symbolic_link_file = new File(path_kept_in_symbolic_link, true);
+
+    //also update the size of the syml link
+    this->size_in_bytes = path_kept_in_symbolic_link.length();
+
+}
+
+Ls::File *Ls::File::getSymbolicLinkFile() const {
+    return symbolic_link_file;
+}
+
+void Ls::File::create_date_string() {
+
+    struct tm* tm_time = localtime(&this->st.st_mtime);
+    if (tm_time == nullptr) {
+        // An error occurred
+        return;
+    }
+
+    // Format the date and time in the same way as the ls -l command
+    char buffer[BUFFER_SIZE];
+    strftime(buffer, sizeof(buffer), "%b %e %H:%M", tm_time);
+
+    this->date = buffer;
+}
+
+const string &Ls::File::getDate() const {
+    return date;
+}
+
 
 //keep how many files are there, and the set in desc order of length
 void Ls::initialize_rows_when_the_path_is_a_directory(string path) {
@@ -740,14 +937,21 @@ void Ls::initialize_rows_when_the_path_is_a_directory(string path) {
 
         string real_path_without_file_name = Scanner::concatenate_two_paths(terminal.getPath(), path);
         string real_path_of_file = Scanner::concatenate_two_paths(real_path_without_file_name, file_name);
-        File * new_file = new File(real_path_of_file);
 
-        //keep the size
-        this->total_size_in_blocks += new_file->getSizeInBlocks();
+        try{
+
+            File * new_file = new File(real_path_of_file);
+            //keep the size
+            this->total_size_in_blocks += new_file->getSizeInBlocks();
 
 
-        files_in_lexicographic_order.push_back(new_file->getRealPath());
-        file_name_lengths.insert( - new_file->get_theoretical_length() );
+            files_in_lexicographic_order.push_back(new_file->getRealPath());
+            file_name_lengths.insert( - new_file->get_theoretical_length() );
+        } catch (NoSuchFileOrDirectory error)
+        {
+            //continue;
+        }
+
 
     }
 
@@ -817,6 +1021,7 @@ void Ls::validate_path(string arg_path) {
 
         //get the real_path
         string real_path = Scanner::concatenate_two_paths(terminal.getPath(), arg_path);
+
         File path_provided = *new File(real_path);
 
         //if it is a directory continue with the normal design

@@ -12,6 +12,8 @@
 #include <algorithm>
 #include <cctype>
 #include <exception>
+#include <pwd.h>
+#include <grp.h>
 #include "Scanner.h"
 #include "Constants.h"
 #include "Status.h"

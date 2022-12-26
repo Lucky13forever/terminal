@@ -1,0 +1,4 @@
+-rwxrwxr-x 1 area51 area51  16344 Dez 22 16:37 build_and_run
+-rw-rw-r-- 1 area51 area51    193 Dez 21 21:38 build_and_run.cpp
+-rw-rw-r-- 1 area51 area51     51 Dez 21 20:16 build.sh
+drwxrwxr-x 5 area51 area51   4096 Dez 24 23:43 cmake-build-debug

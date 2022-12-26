@@ -18,35 +18,35 @@ public:
 
 //    internal meaning, implemented by this program
 void Errors::internal_command_not_found() {
-    display.display_message_with_endl("\nCommand not found!\n");
+    display.display_message_with_endl("Command not found!");
 }
 
 void Errors::shell_popen_failed() {
-    display.display_message_with_endl("\nWhen running in shell, popen failed\n");
+    display.display_message_with_endl("When running in shell, popen failed");
 }
 
 void Errors::too_many_arguments() {
-    display.display_message_with_endl("\nToo many arguments!\n");
+    display.display_message_with_endl("Too many arguments!");
 }
 
 void Errors::invalid_path_provided() {
-    display.display_message_with_endl("\nInvalid path provided!\n");
+    display.display_message_with_endl("Invalid path provided!");
 }
 
 void Errors::cannot_open_dir() {
-    display.display_message_with_endl("\nCannot open the current directory, you are probably missing permisions to do so!\n");
+    display.display_message_with_endl("Cannot open the current directory, you are probably missing permisions to do so!");
 }
 
 void Errors::no_such_file_or_directory(string file_name) {
-    display.display_message_with_endl("\nCannot access '" + file_name + "'" + " -> No such file or directory!\n");
+    display.display_message_with_endl("Cannot access '" + file_name + "'" + " -> No such file or directory!");
 }
 
 void Errors::invalid_flag_provided(string flag) {
-    display.display_message_with_endl("\nUnknown flag, '" + flag + "'" + " -> Invalid flag provided!\n");
+    display.display_message_with_endl("Unknown flag, '" + flag + "'" + " -> Invalid flag provided!");
 }
 
 void Errors::use_help_flag_on_command(string command) {
-    display.display_message_with_endl("\nTry running the '" + command + " --help command for more details!\n");
+    display.display_message_with_endl("Try running the '" + command + " --help command for more details!");
 }
 
 #endif //TERMINAL_ERRORS_H

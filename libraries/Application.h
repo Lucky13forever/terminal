@@ -12,10 +12,11 @@ public:
 void Application::start_terminal()
 {
     initscr();
-    raw();
+//    raw();
+    noecho();
     keypad(stdscr, TRUE);
     scrollok(stdscr,TRUE);
-    noecho();
+    mousemask(BUTTON4_PRESSED | BUTTON5_PRESSED, NULL);
     start_color();
 
     init_pair(COLOR_WHITE_CODE, COLOR_WHITE, 0);
@@ -33,7 +34,8 @@ void Application::start_terminal()
     {
         display.display_prefix(terminal.getPrefix(), terminal.getColorPairs());
         string result = user_input.user_types_command();
-        user_input.check_if_command_is_internal(result);
+        if (!result.empty())
+            user_input.check_if_command_is_internal(result);
     }
     refresh();
     endwin();

@@ -16,11 +16,10 @@
 #include <grp.h>
 #include "Scanner.h"
 #include "Constants.h"
-#include "Status.h"
+#include "Scroll.h"
 #include "Display.h"
 #include "Errors.h"
 #include "Exceptions.h"
-#include "Utils.h"
 
 //Terminal needs to be before all the rest of commands
 //Commands can't exist without the terminal, commands in the future might alter the state of the terminal

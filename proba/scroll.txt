@@ -1,0 +1,133 @@
+//#include <ncurses.h>
+//#include <string>
+//#include <vector>
+
+using namespace std;
+int get_nr_lines()
+{
+    int rows, cols;
+    getmaxyx(stdscr, rows, cols);
+    return rows;
+}
+vector<string>line;
+int start_line = 0;
+int current_line_pos;
+int max_lines = 0;
+int end_line;
+void go_up()
+{
+    if (current_line_pos == max_lines)
+    {
+        return;
+    }
+    clear();
+    end_line = current_line_pos - 1; // go a line up
+    if (end_line < max_lines)
+        end_line = max_lines;
+    //calculate the start
+    start_line = end_line - max_lines;
+    if (start_line < 0)
+    {
+        start_line = 0;
+    }
+    //current_line_pos is the index of the line aboove the cursor
+
+    int i;
+    for(i=start_line; i<end_line - 1; i++)
+    {
+        printw("%s\n", line[i].c_str());
+    }
+    printw("%s", line[i].c_str());
+
+    //cause i went up
+    current_line_pos = end_line;
+}
+void go_down()
+{
+    if (current_line_pos == line.size())
+    {
+        return;
+    }
+    clear();
+    start_line = current_line_pos - max_lines + 1;
+    if (start_line < 0)
+        start_line = 0;
+
+    end_line = start_line + max_lines ;
+    if (end_line >= line.size())
+        end_line = line.size();
+
+    int i;
+    for(i=start_line; i<end_line - 1; i++)
+    {
+        printw("%s\n", line[i].c_str());
+    }
+    printw("%s", line[i].c_str());
+
+    current_line_pos = end_line;
+}
+int main() {
+    // Initialize ncursed and enable mouse input
+    initscr();
+    keypad(stdscr, TRUE);
+    scrollok(stdscr, TRUE);
+    noecho();
+    mousemask(BUTTON4_PRESSED | BUTTON5_PRESSED, NULL);
+
+    // Loop to listen for key events
+
+
+    max_lines = get_nr_lines();
+    string message;
+    for(int i=0; i<100; i++) {
+        message.clear();
+        message = "This is line: ";
+        message += std::to_string(i);
+        line.push_back(message);
+        printw("%s\n", line[i].c_str());
+        current_line_pos += 1;
+    }
+    line.push_back("Prefix area51$: ");
+    printw("%s", line[ line.size() - 1].c_str());
+    current_line_pos += 1;
+
+    //on screen i can see 51 lines
+
+
+    MEVENT event;
+    while (true) {
+        int ch = getch();
+        if (ch == KEY_MOUSE)
+        {
+            if(getmouse(&event) == OK)
+            {
+                if (event.bstate & BUTTON5_PRESSED)
+                {\
+                    //down
+//                    printw("Mouse wheel 5\n");
+                    //let's insert a line up
+                    go_down();
+
+                }
+                if (event.bstate & BUTTON4_PRESSED)
+                {
+                    //up
+//                    printw("Mouse wheel 4\n");
+                    go_up();
+                }
+            }
+        } else{
+            //if no scroll movement detected -> input
+            if (current_line_pos == line.size())
+            {
+                //only this time i listen
+                printw("%c", ch);
+            }
+        }
+
+    }
+
+    // Clean up ncursed
+    endwin();
+    return 0;
+}

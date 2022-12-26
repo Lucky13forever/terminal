@@ -33,33 +33,65 @@ string User_Input::user_types_command() {
     int key;
 
     string result = "";
+    MEVENT event;
     while ((key = getch()) != ENTER) {
 
-        switch (key) {
-            case KEY_UP:
-            case KEY_DOWN:
-                result = detect_arrow_key(key, result);
-                display.display_after_key_press(result);
-                break;
-            case BACKSPACE:
-                display.backspace();
-                if (result.empty() == 0)
-                    result.pop_back();
-                break;
-            default:
-                printw("%c", key);
-                result += key;
+
+        if (key == KEY_MOUSE)
+        {
+            if (getmouse(&event) == OK)
+            {
+                if (event.bstate & BUTTON5_PRESSED)
+                {
+                    //down
+                    display.scroll_down();
+                }
+                if (event.bstate & BUTTON4_PRESSED)
+                {
+                    //up
+                    display.scroll_up();
+                }
+            }
+        }
+        else{
+
+            //listen only if i am at last line
+            if(display.am_i_at_the_last_line())
+            {
+
+                switch (key) {
+                    case KEY_UP:
+                    case KEY_DOWN:
+                        result = detect_arrow_key(key, result);
+                        display.display_after_key_press(result);
+                        break;
+                    case BACKSPACE:
+                        display.backspace();
+                        if (result.empty() == 0)
+                            result.pop_back();
+                        break;
+                    default:
+
+                        display.display_char(key);
+                        result += key;
+
+                }
+
+            }
 
         }
 
+
     }
-    printw("\n");
+    //enter
+    display.display_message_with_endl("");
     //remove spaces in front
     while(result[0] == ' ')
     {
         result.erase(0, 1);
     }
-    history_command.push_command(result);
+    if (!result.empty())
+        history_command.push_command(result);
     return result;
 }
 

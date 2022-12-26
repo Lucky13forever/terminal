@@ -14,7 +14,6 @@ public:
     void decrement(); // DOWN key is pressed
     string desired_command(); // return the command after KEYS have been used
     string command_on_index(int index){ return all_commands[index];};
-    void run(int (*Output_Stream) (const char *, ...)); // means running the history command
     void run(string);
 }history_command;
 
@@ -42,7 +41,6 @@ void History::keep_progress(string command) {
 
     if (enters == all_commands.size()){
 
-//        printw("da man\n");
         all_commands.push_back(command);
     }
 }
@@ -76,17 +74,15 @@ string History::desired_command()
     return result;
 }
 
-void History::run(int (*Output_Stream) (const char *, ...)) {
-    for(int i=0; i<all_commands.size(); i++)
-    {
-        Output_Stream("%d %s\n", i + 1, all_commands[i].c_str());
-    }
-}
-
 void History::run(string command = "") {
+    string message;
     for(int i=0; i<all_commands.size(); i++)
     {
-        printw("%d %s\n", i + 1, all_commands[i].c_str());
+        message.clear();
+        message += std::to_string(i + 1);
+        message += " ";
+        message += all_commands[i];
+        display.display_message_with_endl(message);
     }
 }
 

@@ -1,7 +1,6 @@
 //
 // Created by area51 on 10.12.22.
 //
-//TODO what is going on when pressing tab
 #ifndef TERMINAL_TERMINAL_H
 #define TERMINAL_TERMINAL_H
 class Terminal{

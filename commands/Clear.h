@@ -30,12 +30,11 @@ void Clear::backspace(){
     {
         return;
     }
-//        printw("%d | %dt\n", x - i, display.get_prefix_length());
     move(y, x - 1);
     clrtoeol();
 }
 
 void Clear::run(string command="") {
-    erase();
+    display.clear_screen(true);
 }
 #endif //PROJECT_CLEAR_H

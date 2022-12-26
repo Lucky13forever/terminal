@@ -29,11 +29,6 @@ public:
     vector<string> get_short_flags() {return scan[SHORT_FLAGS];};
     vector<string> get_long_flags() {return scan[LONG_FLAGS];};
     vector<string> get_everything();
-    void show_command();
-    void show_arguments();
-    void show_short_flags();
-    void show_long_flags();
-    void show_all();
     bool found_long_flag(string flag);
     static bool is_string_starting_with_dot(string word) {return word[0] == '.';};
     static string remove_starting_dots_from_string(string word);
@@ -142,47 +137,6 @@ bool Scanner::missing(const vector<string>& v, const string& word) {
         }
     }
     return true;
-}
-
-void Scanner::show_command() {
-    cout << "\nCommand\n";
-    cout << scanner.get_command();
-    cout << "\n";
-}
-
-void Scanner::show_arguments() {
-
-    cout << "\nArguments\n";
-    for (const string& arg : scanner.get_arguments())
-    {
-        cout << arg << "\n";
-    }
-    cout << "\n";
-}
-
-void Scanner::show_short_flags() {
-
-    cout << "\nShort flags\n";
-    for (const string& arg : scanner.get_short_flags())
-    {
-        cout << arg << "\n";
-    }
-}
-
-void Scanner::show_long_flags() {
-
-    cout << "\nLong Flags\n";
-    for (const string& arg : scanner.get_long_flags())
-    {
-        cout << arg << "\n";
-    }
-}
-
-void Scanner::show_all() {
-    scanner.show_command();
-    scanner.show_arguments();
-    scanner.show_short_flags();
-    scanner.show_long_flags();
 }
 
 bool Scanner::found_long_flag(string flag) {

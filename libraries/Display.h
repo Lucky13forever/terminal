@@ -10,7 +10,6 @@ using namespace std;
 struct SE{
     int start_line;
     int end_line;
-    bool action;
 };
 
 //this will keep track of every line in the terminal
@@ -53,6 +52,10 @@ public:
     struct SE starting_line_when_scrolling_up();
 
     int starting_line_when_scrolling_down();
+
+    void scroll_effect(SE index);
+
+    void display_endl();
 }display;
 
 void Display::display_prefix(vector<string> prefix, vector<int> colors)
@@ -72,6 +75,8 @@ void Display::display_prefix(vector<string> prefix, vector<int> colors)
 
 void Display::display_after_key_press(string result)
 {
+    //woh, so if i try to use history -> then i must clear the last line from scroll_object
+    scroll_object.clear_last_line();
     display.display_prefix(this->prefix, this->colors);
     display_message(result);
 }
@@ -178,12 +183,16 @@ void Display::display_message_with_color(string message, int color, bool keep) {
     attroff(COLOR_PAIR( color ));
 
     if(keep)
-        scroll_object.append_message_to_current_line(message, color);
+        scroll_object.add_message_to_current_line(message, color);
+}
+
+void Display::display_endl()
+{
+    printw("\n");
 }
 
 void Display::display_message_with_endl(string message, bool keep) {
     display_message(message);
-    display_message("\n");
 
     if (keep){
         //when "\n" encounterd i need to make new line
@@ -193,6 +202,8 @@ void Display::display_message_with_endl(string message, bool keep) {
         current_line_pos += 1;
     }
 
+    display_endl();
+
 }
 
 bool Display::am_i_at_the_last_line()
@@ -201,58 +212,54 @@ bool Display::am_i_at_the_last_line()
     return current_line_pos == scroll_object.get_nr_of_lines() - 1;
 }
 
-struct SE Display::starting_line_when_scrolling_up()
+void Display::scroll_up()
 {
     int screen_rows, screen_cols;
     getmaxyx(stdscr, screen_rows, screen_cols);
 
-    display.display_debug_file("si maxu : " + std::to_string(screen_rows));
-    if (current_line_pos <= screen_rows)
+    //    if i exceed the screen capacity
+    if (current_line_pos > screen_rows - 1)
     {
-        //the text is fitting on the screen, no where to go
         struct SE index;
-        index.action = false;
-        return index;
+        index.end_line = current_line_pos - 1;
+        index.start_line = index.end_line - screen_rows + 1;
+        //cause i went up
+        current_line_pos = index.end_line;
+        this->scroll_effect(index);
     }
 
-    struct SE index;
-    index.action = true;
-    index.end_line = current_line_pos - 1;
-    index.start_line = index.end_line - screen_rows;
-    if (index.start_line < 0)
-    {
-        index.start_line = 0;
-    }
-    //cause i went up
-    current_line_pos = index.end_line;
-    return index;
+
 }
 
-int Display::starting_line_when_scrolling_down()
+void Display::scroll_down()
 {
-    return 1;
-}
+    int screen_rows, screen_cols;
+    getmaxyx(stdscr, screen_rows, screen_cols);
 
-void Display::scroll_down() {
-    return;
-}
-
-void Display::scroll_up() {
-    struct SE index = starting_line_when_scrolling_up();
-    if (index.action)
+    //               i am not at the last line                            the nr of lines exceeds the screen capacity
+    if (current_line_pos < scroll_object.get_nr_of_lines() - 1 and scroll_object.get_nr_of_lines() - 1 > screen_rows - 1)
     {
-        //clear the screen
-        display.clear_screen();
-        display.display_debug_file("start " + std::to_string(index.start_line) + " | end : " + std::to_string(index.end_line));
-        for(int i=index.start_line; i<index.end_line; i++)
+        struct SE index;
+        index.start_line = current_line_pos - screen_rows + 1;
+        index.end_line = current_line_pos + 1;
+        current_line_pos = index.end_line;
+        this->scroll_effect(index);
+    }
+
+}
+
+void Display::scroll_effect(struct SE index) {
+    //clear the screen
+    display.clear_screen();
+    for(int i=index.start_line; i<=index.end_line; i++)
+    {
+        Line line_to_display = scroll_object.get_line(i);
+        for (Message messages_to_display : line_to_display.getMessages())
         {
-            Line line_to_display = scroll_object.get_line(i);
-            for (Message messages_to_display : line_to_display.getMessages())
-            {
-                display.display_debug_file("display: " + messages_to_display.getMessage());
-                display.display_message_with_color(messages_to_display.getMessage(), messages_to_display.getColor(), false);
-            }
+            display.display_message_with_color(messages_to_display.getMessage(), messages_to_display.getColor(), false);
         }
+        if (i != index.end_line )
+            display.display_endl();
     }
 }
 

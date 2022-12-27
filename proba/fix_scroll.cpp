@@ -1,11 +1,6 @@
-//
-// Created by area51 on 26.12.22.
-//
-
-#ifndef TERMINAL_SCROLL_H
-#define TERMINAL_SCROLL_H
+#include <iostream>
+#include <vector>
 using namespace std;
-
 class Message{
 private:
     string message;
@@ -53,17 +48,13 @@ class Scroll{
 private:
     vector<Line> lines;
 public:
-    void clear() {lines.clear();};
-    void clear_last_line() {lines.pop_back(); lines.push_back(*new Line);};
     void new_line();
     void add_message_to_current_line(const string & message, const int color);
 
     const vector<Line> &getLines() const;
-    const int get_nr_of_lines() const;
+    const int get_nr_lines() const;
 
     void delete_last_message_from_current_line();
-
-    Line get_line(int i) {return this->lines[i];};
 }scroll_object;
 
 const vector<Line> &Scroll::getLines() const {
@@ -74,8 +65,6 @@ void Scroll::new_line(){
 }
 
 void Scroll::add_message_to_current_line(const string & message, const int color) {
-    if (this->lines.empty())
-        this->new_line();
     this->lines[ this->lines.size() - 1 ].add_message(message, color);
 }
 
@@ -83,8 +72,29 @@ void Scroll::delete_last_message_from_current_line() {
     this->lines[ this->lines.size() - 1].delete_last_message();
 }
 
-const int Scroll::get_nr_of_lines() const {
+const int Scroll::get_nr_lines() const {
     return this->lines.size();
 }
 
-#endif //TERMINAL_SCROLL_H
+int main()
+{
+    scroll_object.new_line();
+    scroll_object.add_message_to_current_line("ohio", 42);
+    scroll_object.add_message_to_current_line("batman", 50);
+
+    scroll_object.new_line();
+    scroll_object.add_message_to_current_line("ana", 49);
+    scroll_object.add_message_to_current_line("manu", 51);
+
+    scroll_object.delete_last_message_from_current_line();
+
+    for(Line line : scroll_object.getLines())
+    {
+        for (Message message : line.getMessages())
+        {
+            cout << message.getColor() << " " << message.getMessage() << "\n";
+        }
+    }
+
+    return 0;
+}

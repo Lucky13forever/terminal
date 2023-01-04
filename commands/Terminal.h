@@ -3,7 +3,9 @@
 //
 #ifndef TERMINAL_TERMINAL_H
 #define TERMINAL_TERMINAL_H
+
 class Terminal{
+    Scanner terminal_scanner;
     int state = RUNNING;
 public:
     const string &getPath() const;
@@ -32,7 +34,7 @@ public:
     Terminal();
     void configure();
     void check_if_external_command_exists(string command);
-    string execute_external_command(string command);
+    string execute_external_command(string command, string previous_command);
     bool this_command_exists(string);
     string extract_name_of_command(string);
     static bool check_file_type(string, string);
@@ -136,7 +138,7 @@ void Terminal::check_if_external_command_exists(string command) {
     if (this_command_exists(name) == 1)
     {
         //run exec on it
-        execute_external_command(command);
+        execute_external_command(command, "");
 
     }
     else{
@@ -158,34 +160,59 @@ char ** Terminal::return_char_pointer_from_vector_of_strings(vector<string> argv
     return argv;
 }
 
-string Terminal::execute_external_command(string command) {
+string Terminal::execute_external_command(string command, string previous_command_result) {
 
-    scanner.scan_command(command);
-    display.display_debug_file("EHM YOU HERE?");
+    string result;
+    terminal_scanner.scan_command(command);
     int pipe_fd[2];
     pipe(pipe_fd);
 
     int pid = fork();
     if (pid == 0){
-        //child
-        close(pipe_fd[0]);
 
+        int second_fd[2];
+        pipe(second_fd);
+        int second_pid = fork();
+        if (second_pid == 0) {
+            // This is the child process
 
-        //to construct argv, i need to make a vector of all arguments, i will use scanner for this
-        char ** argv = return_char_pointer_from_vector_of_strings(scanner.get_everything());
+            // Close the write end of the pipe
+            close(second_fd[1]);
 
-        //redirect everything to pipe
-        dup2(pipe_fd[1], STDERR_FILENO);
-        dup2(pipe_fd[1], STDOUT_FILENO);
-        close(pipe_fd[1]);
-        execvp(argv[0], argv);
+            // Redirect the read end of the pipe to the STDIN of the child
+            dup2(second_fd[0], STDIN_FILENO);
+            close(second_fd[0]);
+
+            // Run the "grep" command using execvp
+            char ** argv = return_char_pointer_from_vector_of_strings(terminal_scanner.get_everything());
+
+            dup2(pipe_fd[1], STDERR_FILENO);
+            dup2(pipe_fd[1], STDOUT_FILENO);
+            execvp(argv[0], argv);
+
+            // If execvp returns, it must have failed
+            perror("execvp failed");
+            exit(1);
+        } else {
+            // This is the parent process
+
+            // Close the read end of the pipe
+            close(second_fd[0]);
+
+            // Write the output of "ls" to the write end of the pipe
+            write(second_fd[1], previous_command_result.c_str(), previous_command_result.length());
+            close(second_fd[1]);
+
+            // Wait for the child to complete
+            wait(NULL);
+        }
+
     } else {
 
         //if execvp runs but returns an error, the error code should be different then 0
         close(pipe_fd[1]);
 
         int status;
-        string result;
         waitpid(pid, &status, 0);
         if (WIFEXITED(status)){
             int es = WEXITSTATUS(status);
@@ -206,8 +233,7 @@ string Terminal::execute_external_command(string command) {
         }
         close(pipe_fd[0]);
     }
-    string mt;
-    return mt;
+    return result;
 }
 
 bool Terminal::this_command_exists(string name)

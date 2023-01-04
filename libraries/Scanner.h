@@ -13,16 +13,17 @@ class Scanner{
     const char * LONG_FLAGS = "long_flags";
 
 
-    static bool has_key(map<string, vector<string>> map, const string& key);
-    static bool is_short_flag(string word);
-    static bool is_long_flag(string word);
-    static bool is_argument(string word);
+    bool has_key(map<string, vector<string>> map, const string& key);
+    bool is_short_flag(string word);
+    bool is_long_flag(string word);
+    bool is_argument(string word);
     void add_argument(const string&);
     void find_place(const string& word);
     void add_short_flag(string word);
     void add_long_flag(const string& word);
-    static bool missing(const vector<string>&,const string&);
+    bool missing(const vector<string>&,const string&);
 public:
+    Scanner() {};
     void scan_command(const string& command);
     string get_command() {return scan[COMMAND][0];};
     vector<string> get_arguments() {return scan[ARGUMENTS];};
@@ -30,21 +31,24 @@ public:
     vector<string> get_long_flags() {return scan[LONG_FLAGS];};
     vector<string> get_everything();
     bool found_long_flag(string flag);
-    static bool is_string_starting_with_dot(string word) {return word[0] == '.';};
+    bool is_string_starting_with_dot(string word) {return word[0] == '.';};
+
+    //for sorting
     static string remove_starting_dots_from_string(string word);
     static string transform_to_lower_case(string word);
     static bool compare_strings(const string &, const string &);
-    static string concatenate_path_with_file_name(string, string);
-    static string extract_file_name_from_path(string);
+
+    string concatenate_path_with_file_name(string, string);
+    string extract_file_name_from_path(string);
 
     bool found_short_flag(string flag);
 
-    static string concatenate_two_paths(string current_path, string path);
+    string concatenate_two_paths(string current_path, string path);
 
-    static string get_relative_path_to_terminal_path(const string &terminal_path, const string &path_file);
+    string get_relative_path_to_terminal_path(const string &terminal_path, const string &path_file);
 
     vector<string> concatenate_all_arguments();
-}scanner;
+};
 
 bool Scanner::has_key(map<string, vector<string>> map, const string& key){
 
@@ -232,10 +236,10 @@ string Scanner::get_relative_path_to_terminal_path(const string & terminal_path,
 
 vector<string> Scanner::get_everything()
 {
-    vector<string>unu = {scanner.get_command()};
-    vector<string>doi = scanner.get_arguments();
-    vector<string>trei = scanner.get_short_flags();
-    vector<string>patru = scanner.get_long_flags();
+    vector<string>unu = {this->get_command()};
+    vector<string>doi = this->get_arguments();
+    vector<string>trei = this->get_short_flags();
+    vector<string>patru = this->get_long_flags();
 
     vector<string> result;
 
@@ -247,5 +251,6 @@ vector<string> Scanner::get_everything()
 
     return result;
 }
+
 
 #endif //TERMINAL_SCANNER_H

@@ -5,6 +5,8 @@
 #define TERMINAL_LS_H
 using namespace std;
 
+Scanner scanner_for_command = *new Scanner();
+
 namespace accepted_flags{
     const char * a = "a";
     const char * all = "all";
@@ -255,12 +257,12 @@ public:
 Ls::File::File(string file_path, bool symbolic_bro = false) {
 
     this->real_path = file_path;
-    this->name = Scanner::extract_file_name_from_path(this->real_path);
+    this->name = scanner_for_command.extract_file_name_from_path(this->real_path);
 
     if (symbolic_bro == true)
     {
         this->name = file_path;
-        this->real_path = Scanner::concatenate_two_paths(terminal.getPath(), this->name);
+        this->real_path = scanner_for_command.concatenate_two_paths(terminal.getPath(), this->name);
     }
     this->color = COLOR_WHITE_CODE; //this can change afterwads when the type of file is determined
     struct stat st;
@@ -360,7 +362,7 @@ void Ls::Col_info::show_size_information(File file)
 {
     //do i have to show the size? 's'
     string front_spaces;
-    if (scanner.found_short_flag(accepted_flags::s))
+    if (scanner_for_command.found_short_flag(accepted_flags::s))
     {
         //the first space
         front_spaces = " ";
@@ -382,7 +384,7 @@ void Ls::Col_info::show_size_information(File file)
 void Ls::Col_info::show_file_type(File file)
 {
     //do i have to show the type of the file? 'F'
-    if (scanner.found_short_flag(accepted_flags::F))
+    if (scanner_for_command.found_short_flag(accepted_flags::F))
     {
         //this is only one char
         //for now i will display ? because the type is not yet configured
@@ -437,7 +439,7 @@ void Ls::Col_info::show_file_info_on_screen(int index) {
         show_file_type(file);
 
         //fill in the suffix spaces
-        if (!scanner.found_short_flag(accepted_flags::l))
+        if (!scanner_for_command.found_short_flag(accepted_flags::l))
             show_suffix_spaces(file);
 
         show_symbolic_link_file(file);
@@ -445,14 +447,14 @@ void Ls::Col_info::show_file_info_on_screen(int index) {
 }
 
 void Ls::Col_info::show_permissions(Ls::File file) {
-    if (scanner.found_short_flag(accepted_flags::l))
+    if (scanner_for_command.found_short_flag(accepted_flags::l))
     {
         display.display_message(file.getPermissions() + " ");
     }
 }
 
 void Ls::Col_info::show_n_links(Ls::File file) {
-    if (scanner.found_short_flag(accepted_flags::l))
+    if (scanner_for_command.found_short_flag(accepted_flags::l))
     {
         //longest_n_links_is the length not the value itself
         int normal_length = int ( to_string(file.getNLinks()).length() );
@@ -462,7 +464,7 @@ void Ls::Col_info::show_n_links(Ls::File file) {
 }
 
 void Ls::Col_info::show_owner(Ls::File file) {
-    if (scanner.found_short_flag(accepted_flags::l))
+    if (scanner_for_command.found_short_flag(accepted_flags::l))
     {
         int normal_length = int (file.getOwner().length());
         display.display_front_spaces(longest_owner, normal_length);
@@ -471,7 +473,7 @@ void Ls::Col_info::show_owner(Ls::File file) {
 }
 
 void Ls::Col_info::show_group(Ls::File file) {
-    if (scanner.found_short_flag(accepted_flags::l))
+    if (scanner_for_command.found_short_flag(accepted_flags::l))
     {
         int normal_length = int (file.getGroup().length());
         display.display_front_spaces(longest_group, normal_length);
@@ -480,7 +482,7 @@ void Ls::Col_info::show_group(Ls::File file) {
 }
 
 void Ls::Col_info::show_size_in_bytes(Ls::File file) {
-    if (scanner.found_short_flag(accepted_flags::l))
+    if (scanner_for_command.found_short_flag(accepted_flags::l))
     {
         int normal_length = int (to_string(file.getSizeInBytes()).length());
         display.display_front_spaces(longest_size_in_bytes, normal_length);
@@ -489,7 +491,7 @@ void Ls::Col_info::show_size_in_bytes(Ls::File file) {
 }
 
 void Ls::Col_info::show_symbolic_link_file(Ls::File file) {
-    if (scanner.found_short_flag(accepted_flags::l))
+    if (scanner_for_command.found_short_flag(accepted_flags::l))
     {
         //if this is also a sym link
         if (strcmp(file.getType(), classifier::SYMBOLIC) == 0)
@@ -501,7 +503,7 @@ void Ls::Col_info::show_symbolic_link_file(Ls::File file) {
 }
 
 void Ls::Col_info::show_date(Ls::File file) {
-    if (scanner.found_short_flag(accepted_flags::l))
+    if (scanner_for_command.found_short_flag(accepted_flags::l))
     {
         display.display_message(file.getDate() + " ");
     }
@@ -524,21 +526,21 @@ void Ls::run(const string& command)
     //here there is no problem with more arguments
     //but if i receive more paths i should display them all
 
-    scanner.scan_command(command);
+    scanner_for_command.scan_command(command);
 
     try{
         validate_flags();
 
         //i could have more potential commands
         //let's check
-        //if i have more then one argument -> i will get a list of all the right commands from the scanner TODO
+        //if i have more then one argument -> i will get a list of all the right commands from the scanner_for_command. TODO
 
-        for(string path : scanner.get_arguments())
+        for(string path : scanner_for_command.get_arguments())
         {
             validate_path(path);
         }
 
-        consider_starting_with_dot = scanner.found_short_flag(accepted_flags::a);
+        consider_starting_with_dot = scanner_for_command.found_short_flag(accepted_flags::a);
 
     //    here we will identify what we need, we can get any amount of arguments all will be considered as paths
     //    any amount of duplicate flags will be reduced to one appeareance
@@ -558,7 +560,7 @@ void Ls::identify_next_step() {
 
     //if help is provided -> only the help message will appear
     // --help is only a long flag
-    if (scanner.found_long_flag(accepted_flags::help))
+    if (scanner_for_command.found_long_flag(accepted_flags::help))
     {
         display.display_message(help);
         return;
@@ -581,7 +583,7 @@ void Ls::identify_next_step() {
     {
         //foe each of the directories the size must be reset
         total_size_in_blocks = 0;
-        string path_to_show = Scanner::get_relative_path_to_terminal_path(terminal.getPath(), directories_provided[i]);
+        string path_to_show = scanner_for_command.get_relative_path_to_terminal_path(terminal.getPath(), directories_provided[i]);
         display.display_message_with_endl(path_to_show + ":");
         initialize_rows_when_the_path_is_a_directory(directories_provided[i]);
         create_file_distribution();
@@ -602,7 +604,7 @@ void Ls::identify_next_step() {
 
 int Ls::get_number_of_files_per_line(){
     //if the flag l is present, then beacuse i need to display everything in a list -> this function will return 1
-    if (scanner.found_short_flag(accepted_flags::l))
+    if (scanner_for_command.found_short_flag(accepted_flags::l))
     {
         return 1;
     }
@@ -689,9 +691,9 @@ int Ls::File::get_theoretical_length() const
     string word = this->get_path_to_show_to_screen();
     int length = 0;
 
-    if (scanner.found_short_flag(accepted_flags::s))
+    if (scanner_for_command.found_short_flag(accepted_flags::s))
     {
-        //if the scanner has the 's' flag -> add an extra space to the front, the size in blocks, and another space
+        //if the scanner_for_command. has the 's' flag -> add an extra space to the front, the size in blocks, and another space
         length += 1; //the first space
         string file_size = std::to_string(this->getSizeInBlocks());
         length += int ( file_size.length() ); //counting the size
@@ -701,7 +703,7 @@ int Ls::File::get_theoretical_length() const
     }
     //now i count the space of the file itlsef
     length += int ( word.length() );
-    if (scanner.found_short_flag(accepted_flags::F))
+    if (scanner_for_command.found_short_flag(accepted_flags::F))
     {
         //this will only display a char so
         length += 1;
@@ -818,7 +820,7 @@ string Ls::File::get_path_to_show_to_screen() const {
     //i may not want to full path, but rather the relative path to the terminal path
     if (ls_command.display_real_path_of_file)
     {
-        return Scanner::get_relative_path_to_terminal_path(terminal.getPath(), this->getRealPath());
+        return scanner_for_command.get_relative_path_to_terminal_path(terminal.getPath(), this->getRealPath());
     }
     return this->getName();
 }
@@ -932,11 +934,11 @@ void Ls::initialize_rows_when_the_path_is_a_directory(string path) {
     {
         file_name = entry->d_name;
         // if it start with dot but i ignore dots -> continue
-        if (Scanner::is_string_starting_with_dot(file_name) and !consider_starting_with_dot)
+        if (scanner_for_command.is_string_starting_with_dot(file_name) and !consider_starting_with_dot)
             continue;
 
-        string real_path_without_file_name = Scanner::concatenate_two_paths(terminal.getPath(), path);
-        string real_path_of_file = Scanner::concatenate_two_paths(real_path_without_file_name, file_name);
+        string real_path_without_file_name = scanner_for_command.concatenate_two_paths(terminal.getPath(), path);
+        string real_path_of_file = scanner_for_command.concatenate_two_paths(real_path_without_file_name, file_name);
 
         try{
 
@@ -971,7 +973,7 @@ void Ls::initialize_rows_when_the_path_is_a_file(){
 }
 
 void Ls::sort_rows_after_file_name() {
-    sort(files_in_lexicographic_order.begin(), files_in_lexicographic_order.end(), Scanner::compare_strings);
+    sort(files_in_lexicographic_order.begin(), files_in_lexicographic_order.end(), scanner_for_command.compare_strings);
 }
 
 void Ls::create_file_distribution() {
@@ -1020,7 +1022,7 @@ void Ls::validate_path(string arg_path) {
 
 
         //get the real_path
-        string real_path = Scanner::concatenate_two_paths(terminal.getPath(), arg_path);
+        string real_path = scanner_for_command.concatenate_two_paths(terminal.getPath(), arg_path);
 
         File path_provided = *new File(real_path);
 
@@ -1054,7 +1056,7 @@ bool Ls::is_unknown_flag(string flag)
 }
 
 void Ls::validate_flags() {
-    for (string long_flag : scanner.get_long_flags())
+    for (string long_flag : scanner_for_command.get_long_flags())
     {
         if (is_unknown_flag(long_flag))
         {
@@ -1062,7 +1064,7 @@ void Ls::validate_flags() {
         }
     }
 
-    for (string short_flag : scanner.get_short_flags())
+    for (string short_flag : scanner_for_command.get_short_flags())
     {
         if (is_unknown_flag(short_flag))
         {
@@ -1070,14 +1072,14 @@ void Ls::validate_flags() {
         }
     }
 
-    if (scanner.found_short_flag(accepted_flags::l))
+    if (scanner_for_command.found_short_flag(accepted_flags::l))
     {
         this->l_flag_present = true;
     }
 }
 
 void Ls::display_total_directory_size_in_blocks() {
-    if (scanner.found_short_flag(accepted_flags::s))
+    if (scanner_for_command.found_short_flag(accepted_flags::s))
     {
         display.display_message_with_endl("total " + std::to_string(this->total_size_in_blocks));
     }

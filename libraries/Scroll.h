@@ -20,6 +20,11 @@ public:
     int getColor() const {
         return color;
     }
+
+    void delete_last_char() {
+        if (!message.empty())
+            message.erase( message.length() - 1, 1 );
+    }
 };
 
 class Line{
@@ -32,6 +37,8 @@ public:
     const vector<Message> &getMessages() const;
 
     void delete_last_message();
+
+    void delete_last_char();
 };
 
 void Line::add_message(const string & message, const int color ) {
@@ -42,6 +49,9 @@ void Line::add_message(const string & message, const int color ) {
 void Line::delete_last_message(){
     if (!messages.empty())
         messages.pop_back();
+}
+void Line::delete_last_char(){
+    messages.back().delete_last_char();
 }
 
 const vector<Message> &Line::getMessages() const {
@@ -64,6 +74,8 @@ public:
     void delete_last_message_from_current_line();
 
     Line get_line(int i) {return this->lines[i];};
+
+    void delete_last_char_from_current_line();
 }scroll_object;
 
 const vector<Line> &Scroll::getLines() const {
@@ -81,6 +93,9 @@ void Scroll::add_message_to_current_line(const string & message, const int color
 
 void Scroll::delete_last_message_from_current_line() {
     this->lines[ this->lines.size() - 1].delete_last_message();
+}
+void Scroll::delete_last_char_from_current_line() {
+    this->lines[ this->lines.size() - 1].delete_last_char();
 }
 
 const int Scroll::get_nr_of_lines() const {

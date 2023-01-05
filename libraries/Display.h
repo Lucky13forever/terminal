@@ -116,7 +116,8 @@ void Display::backspace(){
     //when backspace is activated, meaning i reach this line
     //backspace can remove only one char at time, so if it was activated, it can only be active at user input, so it's ok to remove the last message
     //definetely the last message is a char
-    scroll_object.delete_last_message_from_current_line();
+//    scroll_object.delete_last_message_from_current_line();
+    scroll_object.delete_last_char_from_current_line();
 }
 
 void Display::clear_screen(bool from_command) {

@@ -18796,3 +18796,614 @@ Finished
 This command is =======
 exit
 ==========
+This command is =======
+ls proba/          unu.txt
+==========
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This command is =======
+ls proba/          ./
+==========
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This command is =======
+clear
+==========
+This command is =======
+exit
+==========
+This command is =======
+ls -l
+==========
+prw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+cat unu.txt
+==========
+The name of this command is |cat|
+Prev string is: 
+cat
+unu.txt
+Finished
+This command is =======
+cat unu.txt 
+==========
+The name of this command is |cat|
+Prev string is: 
+cat
+unu.txt
+Finished
+This command is =======
+ ls
+==========
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This command is =======
+cat unu.txt 
+==========
+The name of this command is |cat|
+Prev string is: 
+cat
+unu.txt
+Finished
+This command is =======
+ ls -l
+==========
+This command is =======
+exit
+==========
+This command is =======
+cat unu.txt 
+==========
+The name of this command is |cat|
+Prev string is: 
+cat
+unu.txt
+Finished
+This command is =======
+ ls
+==========
+This command is =======
+exit
+==========
+This command is =======
+cat unu.txt 
+==========
+The name of this command is |cat|
+Prev string is: 
+cat
+unu.txt
+Finished
+This command is =======
+ ls
+==========
+This command is =======
+echo "unu.txt brah.txt" 
+==========
+The name of this command is |echo|
+Prev string is: 
+echo
+"unu.txt
+brah.txt"
+Finished
+This command is =======
+ go.txt
+==========
+This command is =======
+echo here
+==========
+The name of this command is |echo|
+Prev string is: 
+echo
+here
+Finished
+This command is =======
+echo "unu.txt brah.txt" 
+==========
+The name of this command is |echo|
+Prev string is: 
+echo
+"unu.txt
+brah.txt"
+Finished
+This command is =======
+ go.tx
+==========
+This command is =======
+exit
+==========
+This command is =======
+cat go.txt
+==========
+The name of this command is |cat|
+Prev string is: 
+cat
+go.txt
+Finished
+This command is =======
+cat go.txt 
+==========
+The name of this command is |cat|
+Prev string is: 
+cat
+go.txt
+Finished
+This command is =======
+ ls
+==========
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This command is =======
+exit
+==========
+This command is =======
+cat go.txt 
+==========
+The name of this command is |cat|
+Prev string is: 
+cat
+go.txt
+Finished
+This command is =======
+ ls
+==========
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This command is =======
+clear
+==========
+This command is =======
+exit
+==========
+This command is =======
+ls -l
+==========
+prw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+ls -lsaF
+==========
+-rw-r--r--
+prw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+drwxrwxr-x
+-rwxrwxr-x
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+drwxrwxr-x
+This is from the file 2
+This is from the longest 2
+drwxrwxr-x
+This is from the file 2
+This is from the longest 2
+-rw-r--r--
+This is from the file 1
+This is from the longest 2
+drwxrwxr-x
+This is from the file 1
+This is from the longest 2
+drwxrwxr-x
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+drwxrwxr-x
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+drwxrwxr-x
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 2
+drwxrwxr-x
+This is from the file 1
+This is from the longest 2
+prw-rw-r--
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+drwxrwxr-x
+This is from the file 1
+This is from the longest 2
+drwxrwxr-x
+This is from the file 1
+This is from the longest 2
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 2
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 2
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+drwxrwxr-x
+This is from the file 1
+This is from the longest 2
+This command is =======
+cat go.txt 
+==========
+The name of this command is |cat|
+Prev string is: 
+cat
+go.txt
+Finished
+This command is =======
+ ls -lsaF
+==========
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 2
+This is from the longest 2
+drwxrwxr-x
+This is from the file 1
+This is from the longest 2
+drwxrwxr-x
+This is from the file 1
+This is from the longest 2
+This command is =======
+clear
+==========
+This command is =======
+exit
+==========

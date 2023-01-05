@@ -154,6 +154,14 @@ void Scanner::scan_command(const string& command)
     while(trim_command[ trim_command.size() - 1 ] == ' ')
         trim_command.erase( trim_command.size() - 1, 1);
 
+    //replace any \n with ' '
+    int pos = trim_command.find('\n');
+    while (pos != std::string::npos)
+    {
+        trim_command.replace(pos, 1, " ");
+        pos = trim_command.find('\n');
+    }
+
     for (char i : trim_command)
     {
         if (i == ' ')

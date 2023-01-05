@@ -1,6 +1,10 @@
 //
 // Created by area51 on 22.12.22.
 //
+//TODO orice input imi vine din exterior sa fie trimuit la \n pe mine ma intereseaza sa pastrez numa numele pathurilor
+//partea cu ' ' este facuta deja de scanner
+//deci de acum scanner va putea transforma orice comanda pe o singura linie fara \n
+
 #ifndef TERMINAL_LS_H
 #define TERMINAL_LS_H
 using namespace std;

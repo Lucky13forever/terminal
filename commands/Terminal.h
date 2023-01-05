@@ -197,6 +197,15 @@ int Terminal::execute_external_command(string command, string previous_command_r
         close(keep[1]);
 
         char ** argv = return_char_pointer_from_vector_of_strings(terminal_scanner.get_everything());
+
+        vector<string> proba = terminal_scanner.get_everything();
+
+        for (string str : proba)
+        {
+            display.display_debug_file(str);
+        }
+
+
         execvp(argv[0], argv);
         return 0;
     }
@@ -221,7 +230,7 @@ int Terminal::execute_external_command(string command, string previous_command_r
         close(keep[0]);
         display.display_debug_file("Finished");
     }
-    printw(result.c_str());
+    display.display_message(result);
     return 0;
 }
 

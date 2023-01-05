@@ -110,14 +110,14 @@ void Scanner::add_short_flag(string word) {
     {
         flag = word[i];
         if (missing(scan[SHORT_FLAGS], flag))
-            scan[SHORT_FLAGS].push_back(flag);
+            scan[SHORT_FLAGS].push_back("-" + flag);//add the - in front
     }
 }
 
 void Scanner::add_long_flag(const string& word) {
     string flag = word.substr(2, word.size() - 1);
     if (missing(scan[LONG_FLAGS], flag))
-        scan[LONG_FLAGS].push_back( flag );
+        scan[LONG_FLAGS].push_back( "--" + flag );
 }
 void Scanner::find_place(const string& word)
 {

@@ -8,13 +8,13 @@ using namespace std;
 Scanner scanner_for_command = *new Scanner();
 
 namespace accepted_flags{
-    const char * a = "a";
-    const char * all = "all";
-    const char * F = "F";
-    const char * classify = "classify";
-    const char * help = "help";
-    const char * l = "l";
-    const char * s = "s";
+    const char * a = "-a";
+    const char * all = "--all";
+    const char * F = "-F";
+    const char * classify = "--classify";
+    const char * help = "--help";
+    const char * l = "-l";
+    const char * s = "-s";
 }
 vector<const char *>accepted_flags_list = {
         accepted_flags::a,

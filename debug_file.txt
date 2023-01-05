@@ -4808,3 +4808,3158 @@ Finished
 This command is =======
 clear
 ==========
+This command is =======
+cat unu.txt
+==========
+The name of this command is |cat|
+Prev string is: 
+Finished
+This command is =======
+exit
+==========
+This command is =======
+cat unu.txt
+==========
+The name of this command is |cat|
+Prev string is: 
+Finished
+This command is =======
+cat unu.txt 
+==========
+The name of this command is |cat|
+Prev string is: 
+Finished
+This command is =======
+ grep i
+==========
+The name of this command is |grep|
+Prev string is: acii
+another
+
+Finished
+This command is =======
+cat unu.txt 
+==========
+The name of this command is |cat|
+Prev string is: 
+Finished
+This command is =======
+ grep n
+==========
+The name of this command is |grep|
+Prev string is: acii
+another
+
+Finished
+This command is =======
+clear
+==========
+This command is =======
+ls 
+==========
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This command is =======
+ grep -r
+==========
+The name of this command is |grep|
+Prev string is: brah.txt   build_and_run       cinic.txt           CMakeLists.txt   debug_file.txt   libraries   nou.txt   scandal      symbolic_link   terminal.cpp   venv   
+build.sh   build_and_run.cpp   cmake-build-debug   commands         learning_grep    MYFIFO      proba     sym_to_lab   terminal        unu.txt        
+
+Finished
+This command is =======
+ls -l 
+==========
+prw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+ grep a
+==========
+The name of this command is |grep|
+Prev string is: -rw-rw-r-- 1 area51 area51      9 Jan  4 18:48 brah.txt
+-rw-rw-r-- 1 area51 area51     51 Dec 21 20:16 build.sh
+-rwxrwxr-x 1 area51 area51  16344 Dec 22 16:37 build_and_run
+-rw-rw-r-- 1 area51 area51    193 Dec 21 21:38 build_and_run.cpp
+-rw-rw-r-- 1 area51 area51      9 Jan  4 18:49 cinic.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 24 23:43 cmake-build-debug
+-rw-rw-r-- 1 area51 area51    121 Dec 22 19:54 CMakeLists.txt
+drwxrwxr-x 2 area51 area51   4096 Jan  5 09:47 commands
+-rw-rw-r-- 1 area51 area51 116971 Jan  5 09:48 debug_file.txt
+-rwxrwxr-x 1 area51 area51  17552 Jan  4 15:42 learning_grep
+drwxrwxr-x 2 area51 area51   4096 Jan  5 09:33 libraries
+prw-rw-r-- 1 area51 area51      0 Dec 24 18:06 MYFIFO
+-rw-rw-r-- 1 area51 area51     10 Jan  4 15:44 nou.txt
+drwxrwxr-x 4 area51 area51   4096 Jan  4 15:45 proba
+drwxrwxr-x 2 area51 area51   4096 Dec 23 21:07 scandal
+lrwxrwxr-x 2 area51 area51      9 Dec 19 13:06 sym_to_lab -> ../LAB12/
+lrwxrwxr-x 4 area51 area51      6 Jan  4 15:45 symbolic_link -> proba/
+-rwxrwxr-x 1 area51 area51 353112 Jan  5 09:47 terminal
+-rw-rw-r-- 1 area51 area51    122 Dec 21 21:30 terminal.cpp
+-rw-rw-r-- 1 area51 area51     13 Jan  4 21:55 unu.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 10 10:56 venv
+
+Finished
+This command is =======
+ls -l 
+==========
+prw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+ grep b 
+==========
+The name of this command is |grep|
+Prev string is: -rw-rw-r-- 1 area51 area51      9 Jan  4 18:48 brah.txt
+-rw-rw-r-- 1 area51 area51     51 Dec 21 20:16 build.sh
+-rwxrwxr-x 1 area51 area51  16344 Dec 22 16:37 build_and_run
+-rw-rw-r-- 1 area51 area51    193 Dec 21 21:38 build_and_run.cpp
+-rw-rw-r-- 1 area51 area51      9 Jan  4 18:49 cinic.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 24 23:43 cmake-build-debug
+-rw-rw-r-- 1 area51 area51    121 Dec 22 19:54 CMakeLists.txt
+drwxrwxr-x 2 area51 area51   4096 Jan  5 09:47 commands
+-rw-rw-r-- 1 area51 area51 119934 Jan  5 09:48 debug_file.txt
+-rwxrwxr-x 1 area51 area51  17552 Jan  4 15:42 learning_grep
+drwxrwxr-x 2 area51 area51   4096 Jan  5 09:33 libraries
+prw-rw-r-- 1 area51 area51      0 Dec 24 18:06 MYFIFO
+-rw-rw-r-- 1 area51 area51     10 Jan  4 15:44 nou.txt
+drwxrwxr-x 4 area51 area51   4096 Jan  4 15:45 proba
+drwxrwxr-x 2 area51 area51   4096 Dec 23 21:07 scandal
+lrwxrwxr-x 2 area51 area51      9 Dec 19 13:06 sym_to_lab -> ../LAB12/
+lrwxrwxr-x 4 area51 area51      6 Jan  4 15:45 symbolic_link -> proba/
+-rwxrwxr-x 1 area51 area51 353112 Jan  5 09:47 terminal
+-rw-rw-r-- 1 area51 area51    122 Dec 21 21:30 terminal.cpp
+-rw-rw-r-- 1 area51 area51     13 Jan  4 21:55 unu.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 10 10:56 venv
+
+Finished
+This command is =======
+ grep a
+==========
+The name of this command is |grep|
+Prev string is: -rw-rw-r-- 1 area51 area51      9 Jan  4 18:48 brah.txt
+-rw-rw-r-- 1 area51 area51     51 Dec 21 20:16 build.sh
+-rwxrwxr-x 1 area51 area51  16344 Dec 22 16:37 build_and_run
+-rw-rw-r-- 1 area51 area51    193 Dec 21 21:38 build_and_run.cpp
+drwxrwxr-x 5 area51 area51   4096 Dec 24 23:43 cmake-build-debug
+-rw-rw-r-- 1 area51 area51 119934 Jan  5 09:48 debug_file.txt
+drwxrwxr-x 2 area51 area51   4096 Jan  5 09:33 libraries
+drwxrwxr-x 4 area51 area51   4096 Jan  4 15:45 proba
+lrwxrwxr-x 2 area51 area51      9 Dec 19 13:06 sym_to_lab -> ../LAB12/
+lrwxrwxr-x 4 area51 area51      6 Jan  4 15:45 symbolic_link -> proba/
+
+Finished
+This command is =======
+clear
+==========
+This command is =======
+ls -l 
+==========
+prw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+ grep b 
+==========
+The name of this command is |grep|
+Prev string is: -rw-rw-r-- 1 area51 area51      9 Jan  4 18:48 brah.txt
+-rw-rw-r-- 1 area51 area51     51 Dec 21 20:16 build.sh
+-rwxrwxr-x 1 area51 area51  16344 Dec 22 16:37 build_and_run
+-rw-rw-r-- 1 area51 area51    193 Dec 21 21:38 build_and_run.cpp
+-rw-rw-r-- 1 area51 area51      9 Jan  4 18:49 cinic.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 24 23:43 cmake-build-debug
+-rw-rw-r-- 1 area51 area51    121 Dec 22 19:54 CMakeLists.txt
+drwxrwxr-x 2 area51 area51   4096 Jan  5 09:47 commands
+-rw-rw-r-- 1 area51 area51 123660 Jan  5 09:48 debug_file.txt
+-rwxrwxr-x 1 area51 area51  17552 Jan  4 15:42 learning_grep
+drwxrwxr-x 2 area51 area51   4096 Jan  5 09:33 libraries
+prw-rw-r-- 1 area51 area51      0 Dec 24 18:06 MYFIFO
+-rw-rw-r-- 1 area51 area51     10 Jan  4 15:44 nou.txt
+drwxrwxr-x 4 area51 area51   4096 Jan  4 15:45 proba
+drwxrwxr-x 2 area51 area51   4096 Dec 23 21:07 scandal
+lrwxrwxr-x 2 area51 area51      9 Dec 19 13:06 sym_to_lab -> ../LAB12/
+lrwxrwxr-x 4 area51 area51      6 Jan  4 15:45 symbolic_link -> proba/
+-rwxrwxr-x 1 area51 area51 353112 Jan  5 09:47 terminal
+-rw-rw-r-- 1 area51 area51    122 Dec 21 21:30 terminal.cpp
+-rw-rw-r-- 1 area51 area51     13 Jan  4 21:55 unu.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 10 10:56 venv
+
+Finished
+This command is =======
+ grep a
+==========
+The name of this command is |grep|
+Prev string is: -rw-rw-r-- 1 area51 area51      9 Jan  4 18:48 brah.txt
+-rw-rw-r-- 1 area51 area51     51 Dec 21 20:16 build.sh
+-rwxrwxr-x 1 area51 area51  16344 Dec 22 16:37 build_and_run
+-rw-rw-r-- 1 area51 area51    193 Dec 21 21:38 build_and_run.cpp
+drwxrwxr-x 5 area51 area51   4096 Dec 24 23:43 cmake-build-debug
+-rw-rw-r-- 1 area51 area51 123660 Jan  5 09:48 debug_file.txt
+drwxrwxr-x 2 area51 area51   4096 Jan  5 09:33 libraries
+drwxrwxr-x 4 area51 area51   4096 Jan  4 15:45 proba
+lrwxrwxr-x 2 area51 area51      9 Dec 19 13:06 sym_to_lab -> ../LAB12/
+lrwxrwxr-x 4 area51 area51      6 Jan  4 15:45 symbolic_link -> proba/
+
+Finished
+This command is =======
+ls -l 
+==========
+prw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+ grep area
+==========
+The name of this command is |grep|
+Prev string is: -rw-rw-r-- 1 area51 area51      9 Jan  4 18:48 brah.txt
+-rw-rw-r-- 1 area51 area51     51 Dec 21 20:16 build.sh
+-rwxrwxr-x 1 area51 area51  16344 Dec 22 16:37 build_and_run
+-rw-rw-r-- 1 area51 area51    193 Dec 21 21:38 build_and_run.cpp
+-rw-rw-r-- 1 area51 area51      9 Jan  4 18:49 cinic.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 24 23:43 cmake-build-debug
+-rw-rw-r-- 1 area51 area51    121 Dec 22 19:54 CMakeLists.txt
+drwxrwxr-x 2 area51 area51   4096 Jan  5 09:47 commands
+-rw-rw-r-- 1 area51 area51 127345 Jan  5 09:49 debug_file.txt
+-rwxrwxr-x 1 area51 area51  17552 Jan  4 15:42 learning_grep
+drwxrwxr-x 2 area51 area51   4096 Jan  5 09:33 libraries
+prw-rw-r-- 1 area51 area51      0 Dec 24 18:06 MYFIFO
+-rw-rw-r-- 1 area51 area51     10 Jan  4 15:44 nou.txt
+drwxrwxr-x 4 area51 area51   4096 Jan  4 15:45 proba
+drwxrwxr-x 2 area51 area51   4096 Dec 23 21:07 scandal
+lrwxrwxr-x 2 area51 area51      9 Dec 19 13:06 sym_to_lab -> ../LAB12/
+lrwxrwxr-x 4 area51 area51      6 Jan  4 15:45 symbolic_link -> proba/
+-rwxrwxr-x 1 area51 area51 353112 Jan  5 09:47 terminal
+-rw-rw-r-- 1 area51 area51    122 Dec 21 21:30 terminal.cpp
+-rw-rw-r-- 1 area51 area51     13 Jan  4 21:55 unu.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 10 10:56 venv
+
+Finished
+This command is =======
+ls -l 
+==========
+prw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+ grep area51
+==========
+The name of this command is |grep|
+Prev string is: -rw-rw-r-- 1 area51 area51      9 Jan  4 18:48 brah.txt
+-rw-rw-r-- 1 area51 area51     51 Dec 21 20:16 build.sh
+-rwxrwxr-x 1 area51 area51  16344 Dec 22 16:37 build_and_run
+-rw-rw-r-- 1 area51 area51    193 Dec 21 21:38 build_and_run.cpp
+-rw-rw-r-- 1 area51 area51      9 Jan  4 18:49 cinic.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 24 23:43 cmake-build-debug
+-rw-rw-r-- 1 area51 area51    121 Dec 22 19:54 CMakeLists.txt
+drwxrwxr-x 2 area51 area51   4096 Jan  5 09:47 commands
+-rw-rw-r-- 1 area51 area51 130311 Jan  5 09:49 debug_file.txt
+-rwxrwxr-x 1 area51 area51  17552 Jan  4 15:42 learning_grep
+drwxrwxr-x 2 area51 area51   4096 Jan  5 09:33 libraries
+prw-rw-r-- 1 area51 area51      0 Dec 24 18:06 MYFIFO
+-rw-rw-r-- 1 area51 area51     10 Jan  4 15:44 nou.txt
+drwxrwxr-x 4 area51 area51   4096 Jan  4 15:45 proba
+drwxrwxr-x 2 area51 area51   4096 Dec 23 21:07 scandal
+lrwxrwxr-x 2 area51 area51      9 Dec 19 13:06 sym_to_lab -> ../LAB12/
+lrwxrwxr-x 4 area51 area51      6 Jan  4 15:45 symbolic_link -> proba/
+-rwxrwxr-x 1 area51 area51 353112 Jan  5 09:47 terminal
+-rw-rw-r-- 1 area51 area51    122 Dec 21 21:30 terminal.cpp
+-rw-rw-r-- 1 area51 area51     13 Jan  4 21:55 unu.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 10 10:56 venv
+
+Finished
+This command is =======
+clear
+==========
+This command is =======
+ls -l 
+==========
+prw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+ grep lib
+==========
+The name of this command is |grep|
+Prev string is: -rw-rw-r-- 1 area51 area51      9 Jan  4 18:48 brah.txt
+-rw-rw-r-- 1 area51 area51     51 Dec 21 20:16 build.sh
+-rwxrwxr-x 1 area51 area51  16344 Dec 22 16:37 build_and_run
+-rw-rw-r-- 1 area51 area51    193 Dec 21 21:38 build_and_run.cpp
+-rw-rw-r-- 1 area51 area51      9 Jan  4 18:49 cinic.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 24 23:43 cmake-build-debug
+-rw-rw-r-- 1 area51 area51    121 Dec 22 19:54 CMakeLists.txt
+drwxrwxr-x 2 area51 area51   4096 Jan  5 09:47 commands
+-rw-rw-r-- 1 area51 area51 133320 Jan  5 09:49 debug_file.txt
+-rwxrwxr-x 1 area51 area51  17552 Jan  4 15:42 learning_grep
+drwxrwxr-x 2 area51 area51   4096 Jan  5 09:33 libraries
+prw-rw-r-- 1 area51 area51      0 Dec 24 18:06 MYFIFO
+-rw-rw-r-- 1 area51 area51     10 Jan  4 15:44 nou.txt
+drwxrwxr-x 4 area51 area51   4096 Jan  4 15:45 proba
+drwxrwxr-x 2 area51 area51   4096 Dec 23 21:07 scandal
+lrwxrwxr-x 2 area51 area51      9 Dec 19 13:06 sym_to_lab -> ../LAB12/
+lrwxrwxr-x 4 area51 area51      6 Jan  4 15:45 symbolic_link -> proba/
+-rwxrwxr-x 1 area51 area51 353112 Jan  5 09:47 terminal
+-rw-rw-r-- 1 area51 area51    122 Dec 21 21:30 terminal.cpp
+-rw-rw-r-- 1 area51 area51     13 Jan  4 21:55 unu.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 10 10:56 venv
+
+Finished
+This command is =======
+clear
+==========
+This command is =======
+ls -l 
+==========
+prw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+ sort
+==========
+The name of this command is |sort|
+Prev string is: -rw-rw-r-- 1 area51 area51      9 Jan  4 18:48 brah.txt
+-rw-rw-r-- 1 area51 area51     51 Dec 21 20:16 build.sh
+-rwxrwxr-x 1 area51 area51  16344 Dec 22 16:37 build_and_run
+-rw-rw-r-- 1 area51 area51    193 Dec 21 21:38 build_and_run.cpp
+-rw-rw-r-- 1 area51 area51      9 Jan  4 18:49 cinic.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 24 23:43 cmake-build-debug
+-rw-rw-r-- 1 area51 area51    121 Dec 22 19:54 CMakeLists.txt
+drwxrwxr-x 2 area51 area51   4096 Jan  5 09:47 commands
+-rw-rw-r-- 1 area51 area51 136326 Jan  5 09:49 debug_file.txt
+-rwxrwxr-x 1 area51 area51  17552 Jan  4 15:42 learning_grep
+drwxrwxr-x 2 area51 area51   4096 Jan  5 09:33 libraries
+prw-rw-r-- 1 area51 area51      0 Dec 24 18:06 MYFIFO
+-rw-rw-r-- 1 area51 area51     10 Jan  4 15:44 nou.txt
+drwxrwxr-x 4 area51 area51   4096 Jan  4 15:45 proba
+drwxrwxr-x 2 area51 area51   4096 Dec 23 21:07 scandal
+lrwxrwxr-x 2 area51 area51      9 Dec 19 13:06 sym_to_lab -> ../LAB12/
+lrwxrwxr-x 4 area51 area51      6 Jan  4 15:45 symbolic_link -> proba/
+-rwxrwxr-x 1 area51 area51 353112 Jan  5 09:47 terminal
+-rw-rw-r-- 1 area51 area51    122 Dec 21 21:30 terminal.cpp
+-rw-rw-r-- 1 area51 area51     13 Jan  4 21:55 unu.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 10 10:56 venv
+
+Finished
+This command is =======
+ls -l 
+==========
+prw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+ sort -r
+==========
+The name of this command is |sort|
+Prev string is: -rw-rw-r-- 1 area51 area51      9 Jan  4 18:48 brah.txt
+-rw-rw-r-- 1 area51 area51     51 Dec 21 20:16 build.sh
+-rwxrwxr-x 1 area51 area51  16344 Dec 22 16:37 build_and_run
+-rw-rw-r-- 1 area51 area51    193 Dec 21 21:38 build_and_run.cpp
+-rw-rw-r-- 1 area51 area51      9 Jan  4 18:49 cinic.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 24 23:43 cmake-build-debug
+-rw-rw-r-- 1 area51 area51    121 Dec 22 19:54 CMakeLists.txt
+drwxrwxr-x 2 area51 area51   4096 Jan  5 09:47 commands
+-rw-rw-r-- 1 area51 area51 139287 Jan  5 09:49 debug_file.txt
+-rwxrwxr-x 1 area51 area51  17552 Jan  4 15:42 learning_grep
+drwxrwxr-x 2 area51 area51   4096 Jan  5 09:33 libraries
+prw-rw-r-- 1 area51 area51      0 Dec 24 18:06 MYFIFO
+-rw-rw-r-- 1 area51 area51     10 Jan  4 15:44 nou.txt
+drwxrwxr-x 4 area51 area51   4096 Jan  4 15:45 proba
+drwxrwxr-x 2 area51 area51   4096 Dec 23 21:07 scandal
+lrwxrwxr-x 2 area51 area51      9 Dec 19 13:06 sym_to_lab -> ../LAB12/
+lrwxrwxr-x 4 area51 area51      6 Jan  4 15:45 symbolic_link -> proba/
+-rwxrwxr-x 1 area51 area51 353112 Jan  5 09:47 terminal
+-rw-rw-r-- 1 area51 area51    122 Dec 21 21:30 terminal.cpp
+-rw-rw-r-- 1 area51 area51     13 Jan  4 21:55 unu.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 10 10:56 venv
+
+Finished
+This command is =======
+ls -l 
+==========
+prw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+ sort --recursive
+==========
+The name of this command is |sort|
+Prev string is: -rw-rw-r-- 1 area51 area51      9 Jan  4 18:48 brah.txt
+-rw-rw-r-- 1 area51 area51     51 Dec 21 20:16 build.sh
+-rwxrwxr-x 1 area51 area51  16344 Dec 22 16:37 build_and_run
+-rw-rw-r-- 1 area51 area51    193 Dec 21 21:38 build_and_run.cpp
+-rw-rw-r-- 1 area51 area51      9 Jan  4 18:49 cinic.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 24 23:43 cmake-build-debug
+-rw-rw-r-- 1 area51 area51    121 Dec 22 19:54 CMakeLists.txt
+drwxrwxr-x 2 area51 area51   4096 Jan  5 09:47 commands
+-rw-rw-r-- 1 area51 area51 142251 Jan  5 09:50 debug_file.txt
+-rwxrwxr-x 1 area51 area51  17552 Jan  4 15:42 learning_grep
+drwxrwxr-x 2 area51 area51   4096 Jan  5 09:33 libraries
+prw-rw-r-- 1 area51 area51      0 Dec 24 18:06 MYFIFO
+-rw-rw-r-- 1 area51 area51     10 Jan  4 15:44 nou.txt
+drwxrwxr-x 4 area51 area51   4096 Jan  4 15:45 proba
+drwxrwxr-x 2 area51 area51   4096 Dec 23 21:07 scandal
+lrwxrwxr-x 2 area51 area51      9 Dec 19 13:06 sym_to_lab -> ../LAB12/
+lrwxrwxr-x 4 area51 area51      6 Jan  4 15:45 symbolic_link -> proba/
+-rwxrwxr-x 1 area51 area51 353112 Jan  5 09:47 terminal
+-rw-rw-r-- 1 area51 area51    122 Dec 21 21:30 terminal.cpp
+-rw-rw-r-- 1 area51 area51     13 Jan  4 21:55 unu.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 10 10:56 venv
+
+Finished
+This command is =======
+ls -l 
+==========
+prw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+ sort --recursive
+==========
+The name of this command is |sort|
+Prev string is: -rw-rw-r-- 1 area51 area51      9 Jan  4 18:48 brah.txt
+-rw-rw-r-- 1 area51 area51     51 Dec 21 20:16 build.sh
+-rwxrwxr-x 1 area51 area51  16344 Dec 22 16:37 build_and_run
+-rw-rw-r-- 1 area51 area51    193 Dec 21 21:38 build_and_run.cpp
+-rw-rw-r-- 1 area51 area51      9 Jan  4 18:49 cinic.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 24 23:43 cmake-build-debug
+-rw-rw-r-- 1 area51 area51    121 Dec 22 19:54 CMakeLists.txt
+drwxrwxr-x 2 area51 area51   4096 Jan  5 09:47 commands
+-rw-rw-r-- 1 area51 area51 145224 Jan  5 09:50 debug_file.txt
+-rwxrwxr-x 1 area51 area51  17552 Jan  4 15:42 learning_grep
+drwxrwxr-x 2 area51 area51   4096 Jan  5 09:33 libraries
+prw-rw-r-- 1 area51 area51      0 Dec 24 18:06 MYFIFO
+-rw-rw-r-- 1 area51 area51     10 Jan  4 15:44 nou.txt
+drwxrwxr-x 4 area51 area51   4096 Jan  4 15:45 proba
+drwxrwxr-x 2 area51 area51   4096 Dec 23 21:07 scandal
+lrwxrwxr-x 2 area51 area51      9 Dec 19 13:06 sym_to_lab -> ../LAB12/
+lrwxrwxr-x 4 area51 area51      6 Jan  4 15:45 symbolic_link -> proba/
+-rwxrwxr-x 1 area51 area51 353112 Jan  5 09:47 terminal
+-rw-rw-r-- 1 area51 area51    122 Dec 21 21:30 terminal.cpp
+-rw-rw-r-- 1 area51 area51     13 Jan  4 21:55 unu.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 10 10:56 venv
+
+Finished
+This command is =======
+ls -l 
+==========
+prw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+ sort r
+==========
+The name of this command is |sort|
+Prev string is: -rw-rw-r-- 1 area51 area51      9 Jan  4 18:48 brah.txt
+-rw-rw-r-- 1 area51 area51     51 Dec 21 20:16 build.sh
+-rwxrwxr-x 1 area51 area51  16344 Dec 22 16:37 build_and_run
+-rw-rw-r-- 1 area51 area51    193 Dec 21 21:38 build_and_run.cpp
+-rw-rw-r-- 1 area51 area51      9 Jan  4 18:49 cinic.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 24 23:43 cmake-build-debug
+-rw-rw-r-- 1 area51 area51    121 Dec 22 19:54 CMakeLists.txt
+drwxrwxr-x 2 area51 area51   4096 Jan  5 09:47 commands
+-rw-rw-r-- 1 area51 area51 148197 Jan  5 09:50 debug_file.txt
+-rwxrwxr-x 1 area51 area51  17552 Jan  4 15:42 learning_grep
+drwxrwxr-x 2 area51 area51   4096 Jan  5 09:33 libraries
+prw-rw-r-- 1 area51 area51      0 Dec 24 18:06 MYFIFO
+-rw-rw-r-- 1 area51 area51     10 Jan  4 15:44 nou.txt
+drwxrwxr-x 4 area51 area51   4096 Jan  4 15:45 proba
+drwxrwxr-x 2 area51 area51   4096 Dec 23 21:07 scandal
+lrwxrwxr-x 2 area51 area51      9 Dec 19 13:06 sym_to_lab -> ../LAB12/
+lrwxrwxr-x 4 area51 area51      6 Jan  4 15:45 symbolic_link -> proba/
+-rwxrwxr-x 1 area51 area51 353112 Jan  5 09:47 terminal
+-rw-rw-r-- 1 area51 area51    122 Dec 21 21:30 terminal.cpp
+-rw-rw-r-- 1 area51 area51     13 Jan  4 21:55 unu.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 10 10:56 venv
+
+Finished
+This command is =======
+ls -l 
+==========
+prw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+ sort-r
+==========
+This command is =======
+clear
+==========
+This command is =======
+sort -r
+==========
+The name of this command is |sort|
+Prev string is: 
+Finished
+This command is =======
+sort unu.txt -r
+==========
+The name of this command is |sort|
+Prev string is: 
+Finished
+This command is =======
+sort --help
+==========
+The name of this command is |sort|
+Prev string is: 
+Finished
+This command is =======
+cat --help
+==========
+The name of this command is |cat|
+Prev string is: 
+Finished
+This command is =======
+exit
+==========
+This command is =======
+cat --help
+==========
+The name of this command is |cat|
+Prev string is: 
+Finished
+This command is =======
+exit
+==========
+This command is =======
+cat --help
+==========
+The name of this command is |cat|
+Prev string is: 
+Finished
+This command is =======
+exit
+==========
+This command is =======
+ls
+==========
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This command is =======
+clear
+==========
+This command is =======
+cat --help
+==========
+The name of this command is |cat|
+Prev string is: 
+Finished
+This command is =======
+ls 
+==========
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This command is =======
+ grep a
+==========
+The name of this command is |grep|
+Prev string is: brah.txt   build_and_run       cinic.txt           CMakeLists.txt   debug_file.txt   libraries   nou.txt   scandal      symbolic_link   terminal.cpp   venv   
+build.sh   build_and_run.cpp   cmake-build-debug   commands         learning_grep    MYFIFO      proba     sym_to_lab   terminal        unu.txt        
+
+Finished
+This command is =======
+clear
+==========
+This command is =======
+clear
+==========
+This command is =======
+cat unu.txt 
+==========
+The name of this command is |cat|
+Prev string is: 
+Finished
+This command is =======
+ grep i
+==========
+The name of this command is |grep|
+Finished
+This command is =======
+exit
+==========
+This command is =======
+ls 
+==========
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This command is =======
+ grep a
+==========
+The name of this command is |grep|
+Prev string is: brah.txt   build_and_run       cinic.txt           CMakeLists.txt   debug_file.txt   libraries   nou.txt   scandal      symbolic_link   terminal.cpp   venv   
+build.sh   build_and_run.cpp   cmake-build-debug   commands         learning_grep    MYFIFO      proba     sym_to_lab   terminal        unu.txt        
+
+grep
+a
+Finished
+This command is =======
+ls -l 
+==========
+prw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+ grep a
+==========
+The name of this command is |grep|
+Prev string is: -rw-rw-r-- 1 area51 area51      9 Jan  4 18:48 brah.txt
+-rw-rw-r-- 1 area51 area51     51 Dec 21 20:16 build.sh
+-rwxrwxr-x 1 area51 area51  16344 Dec 22 16:37 build_and_run
+-rw-rw-r-- 1 area51 area51    193 Dec 21 21:38 build_and_run.cpp
+-rw-rw-r-- 1 area51 area51      9 Jan  4 18:49 cinic.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 24 23:43 cmake-build-debug
+-rw-rw-r-- 1 area51 area51    121 Dec 22 19:54 CMakeLists.txt
+drwxrwxr-x 2 area51 area51   4096 Jan  5 09:56 commands
+-rw-rw-r-- 1 area51 area51 158255 Jan  5 09:57 debug_file.txt
+-rwxrwxr-x 1 area51 area51  17552 Jan  4 15:42 learning_grep
+drwxrwxr-x 2 area51 area51   4096 Jan  5 09:33 libraries
+prw-rw-r-- 1 area51 area51      0 Dec 24 18:06 MYFIFO
+-rw-rw-r-- 1 area51 area51     10 Jan  4 15:44 nou.txt
+drwxrwxr-x 4 area51 area51   4096 Jan  4 15:45 proba
+drwxrwxr-x 2 area51 area51   4096 Dec 23 21:07 scandal
+lrwxrwxr-x 2 area51 area51      9 Dec 19 13:06 sym_to_lab -> ../LAB12/
+lrwxrwxr-x 4 area51 area51      6 Jan  4 15:45 symbolic_link -> proba/
+-rwxrwxr-x 1 area51 area51 353072 Jan  5 09:57 terminal
+-rw-rw-r-- 1 area51 area51    122 Dec 21 21:30 terminal.cpp
+-rw-rw-r-- 1 area51 area51     13 Jan  4 21:55 unu.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 10 10:56 venv
+
+grep
+a
+Finished
+This command is =======
+cat --help
+==========
+The name of this command is |cat|
+Prev string is: 
+cat
+help
+Finished
+This command is =======
+exit
+==========
+This command is =======
+ls -l 
+==========
+This command is =======
+ sort -r
+==========
+The name of this command is |sort|
+sort
+-r
+Finished
+This command is =======
+cat unu.txt
+==========
+The name of this command is |cat|
+Prev string is: 
+cat
+unu.txt
+Finished
+This command is =======
+cat --help
+==========
+The name of this command is |cat|
+Prev string is: 
+cat
+--help
+Finished
+This command is =======
+exit
+==========
+This command is =======
+ls -l 
+==========
+This command is =======
+ grep a
+==========
+The name of this command is |grep|
+grep
+a
+Finished
+This command is =======
+ls -lsaF
+==========
+This command is =======
+ls --help
+==========
+This command is =======
+cat unu.txt
+==========
+The name of this command is |cat|
+Prev string is: 
+cat
+unu.txt
+Finished
+This command is =======
+cat unu.txt 
+==========
+The name of this command is |cat|
+Prev string is: 
+cat
+unu.txt
+Finished
+This command is =======
+ grep n
+==========
+The name of this command is |grep|
+Prev string is: acii
+another
+
+grep
+n
+Finished
+This command is =======
+cat unu.txt 
+==========
+The name of this command is |cat|
+Prev string is: 
+cat
+unu.txt
+Finished
+This command is =======
+ sort -r
+==========
+The name of this command is |sort|
+Prev string is: acii
+another
+
+sort
+-r
+Finished
+This command is =======
+clear
+==========
+This command is =======
+ls
+==========
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This command is =======
+ls -l
+==========
+This command is =======
+exit
+==========
+This command is =======
+ls -l 
+==========
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This command is =======
+ grep a
+==========
+The name of this command is |grep|
+Prev string is: brah.txt   build_and_run       cinic.txt           CMakeLists.txt   debug_file.txt   libraries   nou.txt   scandal      symbolic_link   terminal.cpp   venv   
+build.sh   build_and_run.cpp   cmake-build-debug   commands         learning_grep    MYFIFO      proba     sym_to_lab   terminal        unu.txt        
+
+grep
+a
+Finished
+This command is =======
+ls -l
+==========
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This command is =======
+ls -s
+==========
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This command is =======
+ls -lsaF
+==========
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This command is =======
+cat unu.txt
+==========
+The name of this command is |cat|
+Prev string is: 
+cat
+unu.txt
+Finished
+This command is =======
+ls -
+==========
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This command is =======
+ls -5
+==========
+This command is =======
+ls -l
+==========
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This command is =======
+exit
+==========
+This command is =======
+cat unu.txt
+==========
+The name of this command is |cat|
+Prev string is: 
+cat
+unu.txt
+Finished
+This command is =======
+cat unu.txt 
+==========
+The name of this command is |cat|
+Prev string is: 
+cat
+unu.txt
+Finished
+This command is =======
+ sort -r
+==========
+The name of this command is |sort|
+Prev string is: acii
+another
+
+sort
+-r
+Finished
+This command is =======
+ls -l 
+==========
+prw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+ grep a
+==========
+The name of this command is |grep|
+Prev string is: -rw-rw-r-- 1 area51 area51      9 Jan  4 18:48 brah.txt
+-rw-rw-r-- 1 area51 area51     51 Dec 21 20:16 build.sh
+-rwxrwxr-x 1 area51 area51  16344 Dec 22 16:37 build_and_run
+-rw-rw-r-- 1 area51 area51    193 Dec 21 21:38 build_and_run.cpp
+-rw-rw-r-- 1 area51 area51      9 Jan  4 18:49 cinic.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 24 23:43 cmake-build-debug
+-rw-rw-r-- 1 area51 area51    121 Dec 22 19:54 CMakeLists.txt
+drwxrwxr-x 2 area51 area51   4096 Jan  5 10:06 commands
+-rw-rw-r-- 1 area51 area51 171521 Jan  5 10:09 debug_file.txt
+-rwxrwxr-x 1 area51 area51  17552 Jan  4 15:42 learning_grep
+drwxrwxr-x 2 area51 area51   4096 Jan  5 10:08 libraries
+prw-rw-r-- 1 area51 area51      0 Dec 24 18:06 MYFIFO
+-rw-rw-r-- 1 area51 area51     10 Jan  4 15:44 nou.txt
+drwxrwxr-x 4 area51 area51   4096 Jan  4 15:45 proba
+drwxrwxr-x 2 area51 area51   4096 Dec 23 21:07 scandal
+lrwxrwxr-x 2 area51 area51      9 Dec 19 13:06 sym_to_lab -> ../LAB12/
+lrwxrwxr-x 4 area51 area51      6 Jan  4 15:45 symbolic_link -> proba/
+-rwxrwxr-x 1 area51 area51 353112 Jan  5 10:08 terminal
+-rw-rw-r-- 1 area51 area51    122 Dec 21 21:30 terminal.cpp
+-rw-rw-r-- 1 area51 area51     13 Jan  4 21:55 unu.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 10 10:56 venv
+
+grep
+a
+Finished
+This command is =======
+ls -l 
+==========
+prw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+ grep venv
+==========
+The name of this command is |grep|
+Prev string is: -rw-rw-r-- 1 area51 area51      9 Jan  4 18:48 brah.txt
+-rw-rw-r-- 1 area51 area51     51 Dec 21 20:16 build.sh
+-rwxrwxr-x 1 area51 area51  16344 Dec 22 16:37 build_and_run
+-rw-rw-r-- 1 area51 area51    193 Dec 21 21:38 build_and_run.cpp
+-rw-rw-r-- 1 area51 area51      9 Jan  4 18:49 cinic.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 24 23:43 cmake-build-debug
+-rw-rw-r-- 1 area51 area51    121 Dec 22 19:54 CMakeLists.txt
+drwxrwxr-x 2 area51 area51   4096 Jan  5 10:06 commands
+-rw-rw-r-- 1 area51 area51 174491 Jan  5 10:09 debug_file.txt
+-rwxrwxr-x 1 area51 area51  17552 Jan  4 15:42 learning_grep
+drwxrwxr-x 2 area51 area51   4096 Jan  5 10:08 libraries
+prw-rw-r-- 1 area51 area51      0 Dec 24 18:06 MYFIFO
+-rw-rw-r-- 1 area51 area51     10 Jan  4 15:44 nou.txt
+drwxrwxr-x 4 area51 area51   4096 Jan  4 15:45 proba
+drwxrwxr-x 2 area51 area51   4096 Dec 23 21:07 scandal
+lrwxrwxr-x 2 area51 area51      9 Dec 19 13:06 sym_to_lab -> ../LAB12/
+lrwxrwxr-x 4 area51 area51      6 Jan  4 15:45 symbolic_link -> proba/
+-rwxrwxr-x 1 area51 area51 353112 Jan  5 10:08 terminal
+-rw-rw-r-- 1 area51 area51    122 Dec 21 21:30 terminal.cpp
+-rw-rw-r-- 1 area51 area51     13 Jan  4 21:55 unu.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 10 10:56 venv
+
+grep
+venv
+Finished
+This command is =======
+ls -l 
+==========
+prw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+ sort
+==========
+The name of this command is |sort|
+Prev string is: -rw-rw-r-- 1 area51 area51      9 Jan  4 18:48 brah.txt
+-rw-rw-r-- 1 area51 area51     51 Dec 21 20:16 build.sh
+-rwxrwxr-x 1 area51 area51  16344 Dec 22 16:37 build_and_run
+-rw-rw-r-- 1 area51 area51    193 Dec 21 21:38 build_and_run.cpp
+-rw-rw-r-- 1 area51 area51      9 Jan  4 18:49 cinic.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 24 23:43 cmake-build-debug
+-rw-rw-r-- 1 area51 area51    121 Dec 22 19:54 CMakeLists.txt
+drwxrwxr-x 2 area51 area51   4096 Jan  5 10:06 commands
+-rw-rw-r-- 1 area51 area51 177467 Jan  5 10:09 debug_file.txt
+-rwxrwxr-x 1 area51 area51  17552 Jan  4 15:42 learning_grep
+drwxrwxr-x 2 area51 area51   4096 Jan  5 10:08 libraries
+prw-rw-r-- 1 area51 area51      0 Dec 24 18:06 MYFIFO
+-rw-rw-r-- 1 area51 area51     10 Jan  4 15:44 nou.txt
+drwxrwxr-x 4 area51 area51   4096 Jan  4 15:45 proba
+drwxrwxr-x 2 area51 area51   4096 Dec 23 21:07 scandal
+lrwxrwxr-x 2 area51 area51      9 Dec 19 13:06 sym_to_lab -> ../LAB12/
+lrwxrwxr-x 4 area51 area51      6 Jan  4 15:45 symbolic_link -> proba/
+-rwxrwxr-x 1 area51 area51 353112 Jan  5 10:08 terminal
+-rw-rw-r-- 1 area51 area51    122 Dec 21 21:30 terminal.cpp
+-rw-rw-r-- 1 area51 area51     13 Jan  4 21:55 unu.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 10 10:56 venv
+
+sort
+Finished
+This command is =======
+ls -l 
+==========
+prw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+ sort -r
+==========
+The name of this command is |sort|
+Prev string is: -rw-rw-r-- 1 area51 area51      9 Jan  4 18:48 brah.txt
+-rw-rw-r-- 1 area51 area51     51 Dec 21 20:16 build.sh
+-rwxrwxr-x 1 area51 area51  16344 Dec 22 16:37 build_and_run
+-rw-rw-r-- 1 area51 area51    193 Dec 21 21:38 build_and_run.cpp
+-rw-rw-r-- 1 area51 area51      9 Jan  4 18:49 cinic.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 24 23:43 cmake-build-debug
+-rw-rw-r-- 1 area51 area51    121 Dec 22 19:54 CMakeLists.txt
+drwxrwxr-x 2 area51 area51   4096 Jan  5 10:06 commands
+-rw-rw-r-- 1 area51 area51 180433 Jan  5 10:09 debug_file.txt
+-rwxrwxr-x 1 area51 area51  17552 Jan  4 15:42 learning_grep
+drwxrwxr-x 2 area51 area51   4096 Jan  5 10:08 libraries
+prw-rw-r-- 1 area51 area51      0 Dec 24 18:06 MYFIFO
+-rw-rw-r-- 1 area51 area51     10 Jan  4 15:44 nou.txt
+drwxrwxr-x 4 area51 area51   4096 Jan  4 15:45 proba
+drwxrwxr-x 2 area51 area51   4096 Dec 23 21:07 scandal
+lrwxrwxr-x 2 area51 area51      9 Dec 19 13:06 sym_to_lab -> ../LAB12/
+lrwxrwxr-x 4 area51 area51      6 Jan  4 15:45 symbolic_link -> proba/
+-rwxrwxr-x 1 area51 area51 353112 Jan  5 10:08 terminal
+-rw-rw-r-- 1 area51 area51    122 Dec 21 21:30 terminal.cpp
+-rw-rw-r-- 1 area51 area51     13 Jan  4 21:55 unu.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 10 10:56 venv
+
+sort
+-r
+Finished
+This command is =======
+ls -l 
+==========
+prw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+ sort -r 
+==========
+The name of this command is |sort|
+Prev string is: -rw-rw-r-- 1 area51 area51      9 Jan  4 18:48 brah.txt
+-rw-rw-r-- 1 area51 area51     51 Dec 21 20:16 build.sh
+-rwxrwxr-x 1 area51 area51  16344 Dec 22 16:37 build_and_run
+-rw-rw-r-- 1 area51 area51    193 Dec 21 21:38 build_and_run.cpp
+-rw-rw-r-- 1 area51 area51      9 Jan  4 18:49 cinic.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 24 23:43 cmake-build-debug
+-rw-rw-r-- 1 area51 area51    121 Dec 22 19:54 CMakeLists.txt
+drwxrwxr-x 2 area51 area51   4096 Jan  5 10:06 commands
+-rw-rw-r-- 1 area51 area51 183405 Jan  5 10:09 debug_file.txt
+-rwxrwxr-x 1 area51 area51  17552 Jan  4 15:42 learning_grep
+drwxrwxr-x 2 area51 area51   4096 Jan  5 10:08 libraries
+prw-rw-r-- 1 area51 area51      0 Dec 24 18:06 MYFIFO
+-rw-rw-r-- 1 area51 area51     10 Jan  4 15:44 nou.txt
+drwxrwxr-x 4 area51 area51   4096 Jan  4 15:45 proba
+drwxrwxr-x 2 area51 area51   4096 Dec 23 21:07 scandal
+lrwxrwxr-x 2 area51 area51      9 Dec 19 13:06 sym_to_lab -> ../LAB12/
+lrwxrwxr-x 4 area51 area51      6 Jan  4 15:45 symbolic_link -> proba/
+-rwxrwxr-x 1 area51 area51 353112 Jan  5 10:08 terminal
+-rw-rw-r-- 1 area51 area51    122 Dec 21 21:30 terminal.cpp
+-rw-rw-r-- 1 area51 area51     13 Jan  4 21:55 unu.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 10 10:56 venv
+
+sort
+-r
+Finished
+This command is =======
+ grep t
+==========
+The name of this command is |grep|
+Prev string is: -rwxrwxr-x 1 area51 area51 353112 Jan  5 10:08 terminal
+-rwxrwxr-x 1 area51 area51  17552 Jan  4 15:42 learning_grep
+-rwxrwxr-x 1 area51 area51  16344 Dec 22 16:37 build_and_run
+-rw-rw-r-- 1 area51 area51      9 Jan  4 18:49 cinic.txt
+-rw-rw-r-- 1 area51 area51      9 Jan  4 18:48 brah.txt
+-rw-rw-r-- 1 area51 area51     51 Dec 21 20:16 build.sh
+-rw-rw-r-- 1 area51 area51    193 Dec 21 21:38 build_and_run.cpp
+-rw-rw-r-- 1 area51 area51 183405 Jan  5 10:09 debug_file.txt
+-rw-rw-r-- 1 area51 area51     13 Jan  4 21:55 unu.txt
+-rw-rw-r-- 1 area51 area51    122 Dec 21 21:30 terminal.cpp
+-rw-rw-r-- 1 area51 area51    121 Dec 22 19:54 CMakeLists.txt
+-rw-rw-r-- 1 area51 area51     10 Jan  4 15:44 nou.txt
+prw-rw-r-- 1 area51 area51      0 Dec 24 18:06 MYFIFO
+lrwxrwxr-x 4 area51 area51      6 Jan  4 15:45 symbolic_link -> proba/
+lrwxrwxr-x 2 area51 area51      9 Dec 19 13:06 sym_to_lab -> ../LAB12/
+drwxrwxr-x 5 area51 area51   4096 Dec 24 23:43 cmake-build-debug
+drwxrwxr-x 5 area51 area51   4096 Dec 10 10:56 venv
+drwxrwxr-x 4 area51 area51   4096 Jan  4 15:45 proba
+drwxrwxr-x 2 area51 area51   4096 Jan  5 10:08 libraries
+drwxrwxr-x 2 area51 area51   4096 Jan  5 10:06 commands
+drwxrwxr-x 2 area51 area51   4096 Dec 23 21:07 scandal
+
+grep
+t
+Finished
+This command is =======
+ls -l 
+==========
+prw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+ sort -r 
+==========
+The name of this command is |sort|
+Prev string is: -rw-rw-r-- 1 area51 area51      9 Jan  4 18:48 brah.txt
+-rw-rw-r-- 1 area51 area51     51 Dec 21 20:16 build.sh
+-rwxrwxr-x 1 area51 area51  16344 Dec 22 16:37 build_and_run
+-rw-rw-r-- 1 area51 area51    193 Dec 21 21:38 build_and_run.cpp
+-rw-rw-r-- 1 area51 area51      9 Jan  4 18:49 cinic.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 24 23:43 cmake-build-debug
+-rw-rw-r-- 1 area51 area51    121 Dec 22 19:54 CMakeLists.txt
+drwxrwxr-x 2 area51 area51   4096 Jan  5 10:06 commands
+-rw-rw-r-- 1 area51 area51 187729 Jan  5 10:09 debug_file.txt
+-rwxrwxr-x 1 area51 area51  17552 Jan  4 15:42 learning_grep
+drwxrwxr-x 2 area51 area51   4096 Jan  5 10:08 libraries
+prw-rw-r-- 1 area51 area51      0 Dec 24 18:06 MYFIFO
+-rw-rw-r-- 1 area51 area51     10 Jan  4 15:44 nou.txt
+drwxrwxr-x 4 area51 area51   4096 Jan  4 15:45 proba
+drwxrwxr-x 2 area51 area51   4096 Dec 23 21:07 scandal
+lrwxrwxr-x 2 area51 area51      9 Dec 19 13:06 sym_to_lab -> ../LAB12/
+lrwxrwxr-x 4 area51 area51      6 Jan  4 15:45 symbolic_link -> proba/
+-rwxrwxr-x 1 area51 area51 353112 Jan  5 10:08 terminal
+-rw-rw-r-- 1 area51 area51    122 Dec 21 21:30 terminal.cpp
+-rw-rw-r-- 1 area51 area51     13 Jan  4 21:55 unu.txt
+drwxrwxr-x 5 area51 area51   4096 Dec 10 10:56 venv
+
+sort
+-r
+Finished
+This command is =======
+ grep t 
+==========
+The name of this command is |grep|
+Prev string is: -rwxrwxr-x 1 area51 area51 353112 Jan  5 10:08 terminal
+-rwxrwxr-x 1 area51 area51  17552 Jan  4 15:42 learning_grep
+-rwxrwxr-x 1 area51 area51  16344 Dec 22 16:37 build_and_run
+-rw-rw-r-- 1 area51 area51      9 Jan  4 18:49 cinic.txt
+-rw-rw-r-- 1 area51 area51      9 Jan  4 18:48 brah.txt
+-rw-rw-r-- 1 area51 area51     51 Dec 21 20:16 build.sh
+-rw-rw-r-- 1 area51 area51    193 Dec 21 21:38 build_and_run.cpp
+-rw-rw-r-- 1 area51 area51 187729 Jan  5 10:09 debug_file.txt
+-rw-rw-r-- 1 area51 area51     13 Jan  4 21:55 unu.txt
+-rw-rw-r-- 1 area51 area51    122 Dec 21 21:30 terminal.cpp
+-rw-rw-r-- 1 area51 area51    121 Dec 22 19:54 CMakeLists.txt
+-rw-rw-r-- 1 area51 area51     10 Jan  4 15:44 nou.txt
+prw-rw-r-- 1 area51 area51      0 Dec 24 18:06 MYFIFO
+lrwxrwxr-x 4 area51 area51      6 Jan  4 15:45 symbolic_link -> proba/
+lrwxrwxr-x 2 area51 area51      9 Dec 19 13:06 sym_to_lab -> ../LAB12/
+drwxrwxr-x 5 area51 area51   4096 Dec 24 23:43 cmake-build-debug
+drwxrwxr-x 5 area51 area51   4096 Dec 10 10:56 venv
+drwxrwxr-x 4 area51 area51   4096 Jan  4 15:45 proba
+drwxrwxr-x 2 area51 area51   4096 Jan  5 10:08 libraries
+drwxrwxr-x 2 area51 area51   4096 Jan  5 10:06 commands
+drwxrwxr-x 2 area51 area51   4096 Dec 23 21:07 scandal
+
+grep
+t
+Finished
+This command is =======
+ sort
+==========
+The name of this command is |sort|
+Prev string is: -rwxrwxr-x 1 area51 area51 353112 Jan  5 10:08 terminal
+-rw-rw-r-- 1 area51 area51      9 Jan  4 18:49 cinic.txt
+-rw-rw-r-- 1 area51 area51      9 Jan  4 18:48 brah.txt
+-rw-rw-r-- 1 area51 area51 187729 Jan  5 10:09 debug_file.txt
+-rw-rw-r-- 1 area51 area51     13 Jan  4 21:55 unu.txt
+-rw-rw-r-- 1 area51 area51    122 Dec 21 21:30 terminal.cpp
+-rw-rw-r-- 1 area51 area51    121 Dec 22 19:54 CMakeLists.txt
+-rw-rw-r-- 1 area51 area51     10 Jan  4 15:44 nou.txt
+lrwxrwxr-x 2 area51 area51      9 Dec 19 13:06 sym_to_lab -> ../LAB12/
+
+sort
+Finished
+This command is =======
+clear
+==========
+This command is =======
+exit
+==========

@@ -230,7 +230,8 @@ int Terminal::execute_external_command(string command, string previous_command_r
         close(keep[0]);
         display.display_debug_file("Finished");
     }
-    display.display_message(result);
+    display.display_external_command_output(result);
+//    display.display_message(result);
     return 0;
 }
 

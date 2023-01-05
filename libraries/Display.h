@@ -63,6 +63,8 @@ public:
     const string &getCache() const;
 
     void setShowCache(bool showCache);
+
+    void display_external_command_output(string basicString);
 }display;
 
 void Display::display_prefix(vector<string> prefix, vector<int> colors)
@@ -209,7 +211,7 @@ void Display::display_endl()
 void Display::display_message_with_endl(string message, bool keep) {
     display_message(message);
 
-    if (keep){
+    if (display.show_cache and keep){
         //when "\n" encounterd i need to make new line
         scroll_object.new_line();
 
@@ -284,6 +286,21 @@ const string &Display::getCache() const {
 
 void Display::setShowCache(bool showCache) {
     show_cache = showCache;
+}
+
+void Display::display_external_command_output(string result) {
+    int start = 0;
+    int end = result.find('\n', start);
+    while(end != std::string::npos)
+    {
+        string substring = result.substr(start, end - start);
+
+        display.display_message_with_endl(substring);
+
+        start = end + 1;
+
+        end = result.find('\n', start);
+    }
 }
 
 

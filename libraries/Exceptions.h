@@ -31,4 +31,11 @@ public:
     }
 };
 
+class MissingArguments : public std::exception {
+public:
+    const char * what () {
+        return "No arguments received!";
+    }
+};
+
 #endif //TERMINAL_ERRORS_H

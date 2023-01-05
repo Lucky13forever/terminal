@@ -64,7 +64,7 @@ public:
 
     void setShowCache(bool showCache);
 
-    void display_external_command_output(string basicString);
+    void display_a_new_line_for_each_endl(string basicString);
 }display;
 
 void Display::display_prefix(vector<string> prefix, vector<int> colors)
@@ -289,18 +289,18 @@ void Display::setShowCache(bool showCache) {
     show_cache = showCache;
 }
 
-void Display::display_external_command_output(string result) {
+void Display::display_a_new_line_for_each_endl(string basicString) {
     int start = 0;
-    int end = result.find('\n', start);
+    int end = basicString.find('\n', start);
     while(end != std::string::npos)
     {
-        string substring = result.substr(start, end - start);
+        string substring = basicString.substr(start, end - start);
 
         display.display_message_with_endl(substring);
 
         start = end + 1;
 
-        end = result.find('\n', start);
+        end = basicString.find('\n', start);
     }
 }
 

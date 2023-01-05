@@ -137,7 +137,7 @@ void User_Input::check_if_command_is_internal(string full_command)
         string internal_command = command + " " + result_from_prev_command;
 
 
-        if ( command.rfind(string(EXIT).append(" "), 0) == 0 or strcmp(command.c_str(), EXIT) == 0 )
+        if ( command.rfind(string(EXIT), 0) == 0 or strcmp(command.c_str(), EXIT) == 0 )
         {
             exit_command.run(command);
             return;
@@ -168,6 +168,12 @@ void User_Input::check_if_command_is_internal(string full_command)
         if ( command.rfind(string(LS).append(" "), 0) == 0 or strcmp(command.c_str(), LS) == 0 )
         {
             ls_command.run(internal_command);
+            continue;
+        }
+
+        if ( command.rfind(string(DIRNAME).append(" "), 0) == 0 or strcmp(command.c_str(), DIRNAME) == 0 )
+        {
+            dirname_command.run(internal_command);
             continue;
         }
 

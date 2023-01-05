@@ -14,6 +14,8 @@ public:
     void no_such_file_or_directory(string);
     void invalid_flag_provided(string);
     void use_help_flag_on_command(string);
+
+    void no_arguments();
 }errors;
 
 //    internal meaning, implemented by this program
@@ -27,6 +29,10 @@ void Errors::shell_popen_failed() {
 
 void Errors::too_many_arguments() {
     display.display_message_with_endl("Too many arguments!");
+}
+
+void Errors::no_arguments(){
+    display.display_message_with_endl("Missing arguments!");
 }
 
 void Errors::invalid_path_provided() {

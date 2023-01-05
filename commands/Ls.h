@@ -566,7 +566,7 @@ void Ls::identify_next_step() {
     // --help is only a long flag
     if (scanner_for_command.found_long_flag(accepted_flags::help))
     {
-        display.display_message(help);
+        display.display_a_new_line_for_each_endl(help);
         return;
     }
 

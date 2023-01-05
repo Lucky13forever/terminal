@@ -95,44 +95,82 @@ string User_Input::user_types_command() {
     return result;
 }
 
-void User_Input::check_if_command_is_internal(string command)
+void User_Input::check_if_command_is_internal(string full_command)
 {
+    //enter was pressed -> remove everything from cache
+    display.clear_cache();
+    //stop the display
+    display.setShowCache(false);
 
-    //i should remove the space in front
-    if ( command.rfind(string(EXIT).append(" "), 0) == 0 or strcmp(command.c_str(), EXIT) == 0 )
+
+    Scanner user_input_scanner = *new Scanner();
+    //command can be piped like ls | grep "smth", now the scanner will be the one who splits those commands
+
+    string command;
+    string result_from_prev_command;
+    Raw_command raw;
+    vector<Raw_command> raw_commands = user_input_scanner.split_command(full_command);
+    Scanner command_scanner = *new Scanner();
+    for (int i=0; i<raw_commands.size(); i++)
     {
-        exit_command.run(command);
-        return;
-    }
-    if ( command.rfind(string(CLEAR).append(" "), 0) == 0 or strcmp(command.c_str(), CLEAR) == 0 )
-    {
-        clear_command.run(command);
-        return;
-    }
-    if ( command.rfind(string(HISTORY).append(" "), 0) == 0 or strcmp(command.c_str(), HISTORY) == 0 )
-    {
-        history_command.run(command);
-        return;
+        raw = raw_commands[i];
+
+        display.display_debug_file("This command is =======");
+        display.display_debug_file(raw.getCommand());
+        display.display_debug_file("==========");
+
+        if (i == raw_commands.size() - 1)
+        {
+            //if i have pipes or redirection -> only the final output i am interested in
+            display.setShowCache(true);
+        }
+        //clear display cache
+        result_from_prev_command = display.getCache();
+        display.clear_cache();
+
+        //get the normal command, trim it
+        command = raw.getCommand();
+        //trim
+
+        command = user_input_scanner.trim(command);
+
+
+        if ( command.rfind(string(EXIT).append(" "), 0) == 0 or strcmp(command.c_str(), EXIT) == 0 )
+        {
+            exit_command.run(command);
+            return;
+        }
+        if ( command.rfind(string(CLEAR).append(" "), 0) == 0 or strcmp(command.c_str(), CLEAR) == 0 )
+        {
+            clear_command.run(command);
+            continue;
+        }
+        if ( command.rfind(string(HISTORY).append(" "), 0) == 0 or strcmp(command.c_str(), HISTORY) == 0 )
+        {
+            history_command.run(command);
+            continue;
+        }
+
+        if ( command.rfind(string(PWD).append(" "), 0) == 0 or strcmp(command.c_str(), PWD) == 0 )
+        {
+            pwd_command.run(command);\
+            continue;
+        }
+
+        if ( command.rfind(string(CD).append(" "), 0) == 0 or strcmp(command.c_str(), CD) == 0 )
+        {
+            cd_command.run(command);
+            continue;
+        }
+
+        if ( command.rfind(string(LS).append(" "), 0) == 0 or strcmp(command.c_str(), LS) == 0 )
+        {
+            ls_command.run(command);
+            continue;
+        }
+
+        terminal.check_if_external_command_exists(command, result_from_prev_command);
     }
 
-    if ( command.rfind(string(PWD).append(" "), 0) == 0 or strcmp(command.c_str(), PWD) == 0 )
-    {
-        pwd_command.run(command);
-        return;
-    }
-
-    if ( command.rfind(string(CD).append(" "), 0) == 0 or strcmp(command.c_str(), CD) == 0 )
-    {
-        cd_command.run(command);
-        return;
-    }
-
-    if ( command.rfind(string(LS).append(" "), 0) == 0 or strcmp(command.c_str(), LS) == 0 )
-    {
-        ls_command.run(command);
-        return;
-    }
-
-    terminal.check_if_external_command_exists(command);
 }
 #endif //TERMINAL_USERINPUT_H

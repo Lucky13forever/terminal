@@ -3,11 +3,14 @@
 #include <unistd.h>
 #include <string.h>
 #include <sys/wait.h>
+#include <ncurses.h>
 #include <iostream>
 #define BUFFER_SIZE 1024;
 using namespace std;
 
 int main(int argc, char *argv[]) {
+
+    initscr();
 
     string result;
     string all = "build_and_run\n"
@@ -18,6 +21,7 @@ int main(int argc, char *argv[]) {
     //0 - read
     //1 - write
     int pipe_fd[2];
+    int history_of_0 = pipe_fd[0];
     pipe(pipe_fd);
 
     int main_pid = fork();
@@ -37,12 +41,11 @@ int main(int argc, char *argv[]) {
             dup2(second_fd[0], STDIN_FILENO);
 
             // Run the "grep" command using execvp
-            char *cmd = "grep";
-            char *args[] = {"grep", "a", "arguments", "more arguemnts", NULL};
+            char *args[] = {"sort",  NULL};
 
             dup2(pipe_fd[1], STDERR_FILENO);
             dup2(pipe_fd[1], STDOUT_FILENO);
-            execvp(cmd, args);
+            execvp(args[0], args);
 
             // If execvp returns, it must have failed
             perror("execvp failed");
@@ -62,6 +65,8 @@ int main(int argc, char *argv[]) {
         }
     } else {
 
+        //no need for stdin anymore
+        dup2(pipe_fd[0], history_of_0);
         //if execvp runs but returns an error, the error code should be different then 0
         close(pipe_fd[1]);
 
@@ -86,7 +91,10 @@ int main(int argc, char *argv[]) {
         }
         close(pipe_fd[0]);
     }
-    cout << result;
+    printw(result.c_str());
+    refresh();
+    getch();
+    endwin();
     return 0;
 }
 

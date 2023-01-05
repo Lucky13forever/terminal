@@ -14,8 +14,8 @@
 #include <exception>
 #include <pwd.h>
 #include <grp.h>
-#include "Scanner.h"
 #include "Constants.h"
+#include "Scanner.h"
 #include "Scroll.h"
 #include "Display.h"
 #include "Errors.h"

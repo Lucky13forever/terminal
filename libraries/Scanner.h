@@ -4,7 +4,35 @@
 
 #ifndef TERMINAL_SCANNER_H
 #define TERMINAL_SCANNER_H
+
+#include "Constants.h"
+
 using namespace std;
+
+class Raw_command{
+    string command;
+    string action;
+public:
+    const string &getCommand() const {
+        return command;
+    }
+
+    const string &getAction() const {
+        return action;
+    }
+
+    void setAction(const string &action) {
+        Raw_command::action = action;
+    }
+
+    void setCommand(const string &command) {
+        Raw_command::command = command;
+    }
+
+    Raw_command(const string &command, const string &action) : command(command), action(action) {}
+    Raw_command() {}
+};
+
 class Scanner{
     map<string, vector<string> > scan;
     const char * COMMAND = "command";
@@ -37,6 +65,8 @@ public:
     static string remove_starting_dots_from_string(string word);
     static string transform_to_lower_case(string word);
     static bool compare_strings(const string &, const string &);
+    vector<Raw_command> split_command(string);//used when the command has | or > and >>
+    static string trim(string);
 
     string concatenate_path_with_file_name(string, string);
     string extract_file_name_from_path(string);
@@ -116,7 +146,15 @@ void Scanner::scan_command(const string& command)
 {
     scan.clear();
     string word;
-    for (char i : command)
+    string trim_command = command;
+    //remove forward spaces
+    while(trim_command[0] == ' ')
+        trim_command.erase(0, 1);
+    //remove back spaces
+    while(trim_command[ trim_command.size() - 1 ] == ' ')
+        trim_command.erase( trim_command.size() - 1, 1);
+
+    for (char i : trim_command)
     {
         if (i == ' ')
         {
@@ -249,6 +287,60 @@ vector<string> Scanner::get_everything()
     result.insert(result.end(), trei.begin(), trei.end());
     result.insert(result.end(), patru.begin(), patru.end());
 
+    return result;
+}
+
+vector<Raw_command> Scanner::split_command(string command)
+{
+    //TODO add exception when user uses to many pipes or to much of >>
+    vector<Raw_command> result;
+    string word;
+    string action = NORMAL_RUN;
+    for(char c : command)
+    {
+        if (c == '|')
+            action = DO_PIPE;
+        if (c == '>')
+        {
+            if (action == DO_REDIRECTION)
+            {
+                action = DO_APPEND;
+            }
+            else {
+                action = DO_REDIRECTION;
+            }
+        }
+        if (c == '|' or c == '>')
+        {
+            if (!word.empty())
+            {
+                result.push_back(*new Raw_command(word, action));
+            }
+            else {
+                //it means i have 2 consecutive > and so action will be set to DO_REDIRECTION
+                result[ result.size() - 1 ].setAction(action);
+            }
+            word.erase();
+        }
+        else {
+            word += c;
+        }
+    }
+    if (!word.empty())
+        result.push_back(*new Raw_command(word, action));
+    return result;
+}
+
+string Scanner::trim(string start) {
+    string result = start;
+    while(result[0] == ' ')
+    {
+        result.erase(0, 1);
+    }
+    while(result[ result.length() - 1 ] == ' ')
+    {
+        result.erase( result.length() - 1, 1 );
+    }
     return result;
 }
 

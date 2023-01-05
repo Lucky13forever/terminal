@@ -20,6 +20,8 @@ private:
     vector<string>prefix;
     vector<int>colors;
     int current_line_pos=0; //what is the last line on screen index? At what line index is the cursor?
+    string cache; //keep track of everything shown on screen, usefull to keep track of command output
+    bool show_cache = true;
 
 public:
     void clear_screen(bool from_command = false); // clear_tool the entire screen
@@ -56,6 +58,11 @@ public:
     void scroll_effect(SE index);
 
     void display_endl();
+    void clear_cache() {cache.erase();};
+
+    const string &getCache() const;
+
+    void setShowCache(bool showCache);
 }display;
 
 void Display::display_prefix(vector<string> prefix, vector<int> colors)
@@ -178,6 +185,11 @@ void Display::display_message(string command) {
 //keep means keep in scroll_object;
 void Display::display_message_with_color(string message, int color, bool keep) {
 
+    cache += message;
+
+    if (!display.show_cache)
+        return;
+
     attron(COLOR_PAIR( color ));
     printw("%s", message.c_str());
     attroff(COLOR_PAIR( color ));
@@ -188,7 +200,10 @@ void Display::display_message_with_color(string message, int color, bool keep) {
 
 void Display::display_endl()
 {
-    printw("\n");
+    //also keep \n in the result;
+    cache += "\n";
+    if (display.show_cache)
+        printw("\n");
 }
 
 void Display::display_message_with_endl(string message, bool keep) {
@@ -261,6 +276,14 @@ void Display::scroll_effect(struct SE index) {
         if (i != index.end_line )
             display.display_endl();
     }
+}
+
+const string &Display::getCache() const {
+    return cache;
+}
+
+void Display::setShowCache(bool showCache) {
+    show_cache = showCache;
 }
 
 

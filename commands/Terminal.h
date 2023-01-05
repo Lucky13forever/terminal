@@ -5,7 +5,7 @@
 #define TERMINAL_TERMINAL_H
 
 class Terminal{
-    Scanner terminal_scanner;
+    Scanner terminal_scanner = *new Scanner();
     int state = RUNNING;
 public:
     const string &getPath() const;
@@ -33,8 +33,8 @@ public:
     void display_shell_runned_command(string);
     Terminal();
     void configure();
-    void check_if_external_command_exists(string command);
-    string execute_external_command(string command, string previous_command);
+    void check_if_external_command_exists(string command, string prev);
+    int execute_external_command(string command, string previous_command_result);
     bool this_command_exists(string);
     string extract_name_of_command(string);
     static bool check_file_type(string, string);
@@ -130,15 +130,18 @@ string Terminal::extract_name_of_command(string command){
 }
 
 
-void Terminal::check_if_external_command_exists(string command) {
+void Terminal::check_if_external_command_exists(string command, string prev) {
 
     //extract the name of the command
     string name = extract_name_of_command(command);
 
+
     if (this_command_exists(name) == 1)
     {
+        display.display_debug_file("The name of this command is |" + name + "|");
+        display.display_debug_file("Prev string is: " + prev);
         //run exec on it
-        execute_external_command(command, "");
+        execute_external_command(command, prev);
 
     }
     else{
@@ -160,80 +163,66 @@ char ** Terminal::return_char_pointer_from_vector_of_strings(vector<string> argv
     return argv;
 }
 
-string Terminal::execute_external_command(string command, string previous_command_result) {
+int Terminal::execute_external_command(string command, string previous_command_result) {
 
     string result;
     terminal_scanner.scan_command(command);
     int pipe_fd[2];
+    int keep[2];
     pipe(pipe_fd);
+    pipe(keep);
 
-    int pid = fork();
-    if (pid == 0){
+    write(pipe_fd[1], previous_command_result.c_str(), previous_command_result.length());
+    int pid1 = true;
+//    int pid1 = fork();
+//    if (pid1 == 0) {
+//
+//        //firstly send previous command result to stdin
+//
+//        close(pipe_fd[0]);
+//        close(pipe_fd[1]);
+//        close(keep[0]);
+//        close(keep[1]);
+//        return 0;
+//    }
 
-        int second_fd[2];
-        pipe(second_fd);
-        int second_pid = fork();
-        if (second_pid == 0) {
-            // This is the child process
-
-            // Close the write end of the pipe
-            close(second_fd[1]);
-
-            // Redirect the read end of the pipe to the STDIN of the child
-            dup2(second_fd[0], STDIN_FILENO);
-            close(second_fd[0]);
-
-            // Run the "grep" command using execvp
-            char ** argv = return_char_pointer_from_vector_of_strings(terminal_scanner.get_everything());
-
-            dup2(pipe_fd[1], STDERR_FILENO);
-            dup2(pipe_fd[1], STDOUT_FILENO);
-            execvp(argv[0], argv);
-
-            // If execvp returns, it must have failed
-            perror("execvp failed");
-            exit(1);
-        } else {
-            // This is the parent process
-
-            // Close the read end of the pipe
-            close(second_fd[0]);
-
-            // Write the output of "ls" to the write end of the pipe
-            write(second_fd[1], previous_command_result.c_str(), previous_command_result.length());
-            close(second_fd[1]);
-
-            // Wait for the child to complete
-            wait(NULL);
-        }
-
-    } else {
-
-        //if execvp runs but returns an error, the error code should be different then 0
-        close(pipe_fd[1]);
-
-        int status;
-        waitpid(pid, &status, 0);
-        if (WIFEXITED(status)){
-            int es = WEXITSTATUS(status);
-            if (es == 0)
-            {
-                //success;
-            }
-            else {
-                //got an error, so result will keep the error
-            }
-            int num_of_bytes;
-            char buffer[BUFFER_SIZE];
-            while ( ( num_of_bytes = read(pipe_fd[0], buffer, BUFFER_SIZE) ) > 0 )
-            {
-                result += buffer;
-            }
-            display.display_message(result);
-        }
+    int pid2 = fork();
+    if (pid2 == 0) {
+        dup2(pipe_fd[0], STDIN_FILENO);
+        dup2(keep[1], STDOUT_FILENO);//in output i keep the result
+        dup2(keep[1], STDERR_FILENO);//keep the errors
         close(pipe_fd[0]);
+        close(pipe_fd[1]);
+        close(keep[0]);
+        close(keep[1]);
+
+        char ** argv = return_char_pointer_from_vector_of_strings(terminal_scanner.get_everything());
+        execvp(argv[0], argv);
+        return 0;
     }
-    return result;
+
+    close(pipe_fd[0]);
+    close(pipe_fd[1]);
+    close(keep[1]);
+
+//    display.display_debug_file("Before the kids");
+    waitpid(pid1, NULL, 0);
+    waitpid(pid2, NULL, 0);
+
+    if (pid2 and pid1) {
+
+        char buffer[1025];
+        int num_bytes;
+        while( (num_bytes = read(keep[0], buffer, 1024)) > 0 )
+        {
+            buffer[num_bytes] = 0;
+            result += buffer;
+        }
+        close(keep[0]);
+        display.display_debug_file("Finished");
+    }
+    printw(result.c_str());
+    return 0;
 }
 
 bool Terminal::this_command_exists(string name)

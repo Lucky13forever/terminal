@@ -38,4 +38,37 @@ public:
     }
 };
 
+class FlagHasNoValue : public std::exception {
+private:
+    string flag;
+public:
+    explicit FlagHasNoValue(const string &flag) : flag(flag) {};
+
+    const char * what () {
+        return "Flag has no value";
+    }
+
+    const string &getFlag() const {
+        return flag;
+    }
+};
+
+class SyntaxError : public std::exception {
+private:
+    string sign;
+public:
+    explicit SyntaxError(const string &sign) : sign(sign) {};
+
+    const char * what () {
+        return "Flag has no value";
+    }
+
+    const string &getSign() const {
+        return sign;
+    }
+};
+
+
+
+
 #endif //TERMINAL_ERRORS_H

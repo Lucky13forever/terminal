@@ -12,15 +12,28 @@ namespace tac_flags{
     const char * b = "-b";
     const char * before = "--before";
     const char * s = "-s";
-    const char * separator = "--separator";
 }
 
-Scanner tac_scanner = *new Scanner();
+vector<const char *>accepted_tac_flags = {
+        tac_flags::help,
+        tac_flags::b,
+        tac_flags::before,
+        tac_flags::s,
+};
+
+Scanner tac_scanner = *new Scanner({"-s"});
 
 class Tac{
 private:
 
-    string help_message;
+    string help_message = "Usage: tac [OPTION]... [FILE]...\n"
+                          "Write each FILE to standard output, last line first.\n"
+                          "\n"
+                          "With no FILE, or when FILE is -, read standard input.\n"
+                          "\n"
+                          "Mandatory arguments to long options are mandatory for short options too.\n"
+                          "  -b, --before             attach the separator before instead of after\n"
+                          "  -s, --separator=STRING   use STRING as the separator instead of newline\n";
 public:
     void run(string);
     void identify_next_step();
@@ -40,11 +53,15 @@ public:
     string remove_any_final_slash(string basicString);
 
     string remove_last_word(string basicString);
+
+    void show_each_line(vector<string> vector1);
+
+    void place_separator_in_front(vector<string>, string basicString) {};
 }tac_command;
 
 void Tac::run(string command = "")
 {
-    tac_scanner = *new Scanner();
+    tac_scanner = *new Scanner({"-s"});
     tac_scanner.scan_command(command);
 
     try{
@@ -59,13 +76,16 @@ void Tac::run(string command = "")
     } catch (const InvalidFlag & ex)
     {
         errors.invalid_flag_provided(ex.getFlag());
-        errors.use_help_flag_on_command(DIRNAME);
+        errors.use_help_flag_on_command(TAC);
+    } catch (const FlagHasNoValue & ex){
+        errors.flag_has_no_value(ex.getFlag());
+        errors.use_help_flag_on_command(TAC);
     }
 }
 
 bool Tac::is_unknown_flag(string flag)
 {
-    for (const char * accepted : accepted_flags_list)
+    for (const char * accepted : accepted_tac_flags)
     {
         if (strcmp(accepted, flag.c_str()) == 0)
             return false;
@@ -88,6 +108,12 @@ void Tac::validate_flags() {
         {
             throw InvalidFlag(short_flag);
         }
+        //check if the flag has value if needed
+        if (tac_scanner.does_flag_need_value(short_flag) and tac_scanner.get_value_of_flag(short_flag).empty())
+        {
+            //if the flag needs a value, but it's empty -> error
+            throw FlagHasNoValue(short_flag);
+        }
     }
 }
 
@@ -106,8 +132,7 @@ void Tac::identify_next_step() {
 
     } catch (const MissingArguments & ex)
     {
-        errors.no_arguments();
-        errors.use_help_flag_on_command(DIRNAME);
+        //if no argumnents solve for a string;
     }
 }
 
@@ -125,18 +150,44 @@ void Tac::solve_for_each_argument() {
     }
 }
 
-void Tac::individual_argument(string basicString) {
+void Tac::individual_argument(string file_name) {
     //if i have a slash or none -> .
     //other then that remove the last slash
     //this can work on multiply arguments, keep the ls logic
 
     //remove any consecutive /
-    basicString = remove_consecutive_slashes(basicString);
-    basicString = remove_any_final_slash(basicString);
-    display.display_debug_file(basicString);
-    basicString = remove_last_word(basicString);
+    //check if file exists
+    struct stat st;
+    bool exists = stat(file_name.c_str(), &st) == 0;
+    if (!exists)
+    {
+        //throw error
+        errors.no_such_file(file_name);
+        return;
+    }
 
-    display.display_message_with_endl(basicString);
+    //if im here -> file exists
+    //TODO USE LATER
+    vector<string> lines;
+
+    ifstream fin(file_name.c_str());
+    string line;
+    while(getline(fin, line))
+    {
+        lines.push_back(line);
+    }
+    reverse(lines.begin(), lines.end());
+
+    //check if -b is present
+    if (tac_scanner.found_short_flag(tac_flags::b) or tac_scanner.found_long_flag(tac_flags::before)){
+        string separator;
+        place_separator_in_front(lines , separator);
+    }
+
+    //print the order
+    show_each_line(lines);
+
+
 }
 
 string Tac::remove_consecutive_slashes(string basicString) {
@@ -174,5 +225,19 @@ string Tac::remove_last_word(string basicString) {
     }
     return ".";
 }
+
+void Tac::show_each_line(vector<string> lines) {
+    for (string line : lines)
+    {
+        display.display_message_with_endl(line);
+    }
+}
+
+//void Tac::place_separator_in_front(vector<string> & lines, string basicString) {
+//    for (string & line : lines)
+//    {
+//
+//    }
+//}
 
 #endif //TERMINAL_TAC_H

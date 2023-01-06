@@ -16,6 +16,12 @@ public:
     void use_help_flag_on_command(string);
 
     void no_arguments();
+
+    void no_such_file(string);
+
+    void flag_has_no_value(const string &basicString);
+
+    void syntax_error(const string &sign);
 }errors;
 
 //    internal meaning, implemented by this program
@@ -54,6 +60,19 @@ void Errors::invalid_flag_provided(string flag) {
 
 void Errors::use_help_flag_on_command(string command) {
     display.display_message_with_endl("Try running the '" + command + " --help command for more details!");
+}
+
+void Errors::no_such_file(string file_name) {
+    display.display_message_with_endl("cannot open '" + file_name + "'" + " -> No such file!");
+}
+
+void Errors::flag_has_no_value(const string & flag) {
+    display.display_message_with_endl("The flag '" + flag + "' hasn't received a value");
+}
+
+void Errors::syntax_error(const string & sign)
+{
+    display.display_message_with_endl("syntax error near unexcepted token '" + sign + "'. Valid options are '>', '>>' and '|' .");
 }
 
 #endif //TERMINAL_ERRORS_H

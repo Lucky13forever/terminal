@@ -35,6 +35,9 @@ public:
 
 class Scanner{
     map<string, vector<string> > scan;
+    map<string, string> value_of_flag;
+    vector<string> flags_that_need_value;
+    string last_pushed;
     const char * COMMAND = "command";
     const char * ARGUMENTS = "arguments";
     const char * SHORT_FLAGS = "short_flags";
@@ -52,6 +55,7 @@ class Scanner{
     bool missing(const vector<string>&,const string&);
 public:
     Scanner() {};
+    explicit Scanner(vector<string>);//list of flags that have to take a value!
     void scan_command(const string& command);
     string get_command() {return scan[COMMAND][0];};
     vector<string> get_arguments() {return scan[ARGUMENTS];};
@@ -78,7 +82,29 @@ public:
     string get_relative_path_to_terminal_path(const string &terminal_path, const string &path_file);
 
     vector<string> concatenate_all_arguments();
+
+    bool added_value_to_flag(const string &basicString);
+    string get_value_of_flag(string flag) {return value_of_flag[flag];};
+    bool does_flag_need_value(string flag) {
+        for (const string& yes_i_need : flags_that_need_value)
+        {
+            if (flag == yes_i_need)
+                return true;
+        }
+        return false;
+    };
+
+    void validate_action(string basicString);
 };
+
+Scanner::Scanner(vector<string>flags) {
+    for (string flag : flags)
+    {
+        value_of_flag[flag] = *new string;
+        flags_that_need_value.push_back(flag);
+    }
+
+}
 
 bool Scanner::has_key(map<string, vector<string>> map, const string& key){
 
@@ -127,18 +153,23 @@ void Scanner::find_place(const string& word)
         scan[COMMAND].push_back(word);
     }
     else {
-        // 2 options, it's either an argument, or a flag
-        if (is_argument(word)) {
-            add_argument(word);
-        }
-        if (is_short_flag(word)) {
-            add_short_flag(word);
-        }
-        if (is_long_flag(word))
+        //it can be a value of a flag
+        if (!added_value_to_flag(word))
         {
-            add_long_flag(word);
+            // 2 options, it's either an argument, or a flag
+            if (is_argument(word)) {
+                add_argument(word);
+            }
+            if (is_short_flag(word)) {
+                add_short_flag(word);
+            }
+            if (is_long_flag(word))
+            {
+                add_long_flag(word);
+            }
         }
     }
+    this->last_pushed = word;
 }
 
 
@@ -304,6 +335,7 @@ vector<Raw_command> Scanner::split_command(string command)
     vector<Raw_command> result;
     string word;
     string action = NORMAL_RUN;
+    string follow_up_action;
     for(char c : command)
     {
         if (c == '|' or c == '>')
@@ -311,16 +343,34 @@ vector<Raw_command> Scanner::split_command(string command)
             if (!word.empty())
             {
                 result.push_back(*new Raw_command(word, action));
+                follow_up_action.clear();
             }
+            follow_up_action += c;
+            validate_action(follow_up_action);
             word.erase();
         }
         else {
-            word += c;
+            //word is valid if it is not just a space so
+            if (!(word.empty() and c == ' '))
+            {
+                //if word is empty and this c is just space i can ignore it => use negation
+                word += c;
+            }
+            else {
+                //if i end up hear, the user could type >> >, so i need to warn him
+                follow_up_action += c;
+            }
         }
 
+        //the signs are > and |
+        //for signs i cannot have more then 2 signs toghether
+        //for the | cannot have more then 1 signs together
+        //after creating the sign >> > or |, the only accepted chars are anything else
 
         if (c == '|')
+        {
             action = DO_PIPE;
+        }
         if (c == '>')
         {
             if (action == DO_REDIRECTION)
@@ -331,6 +381,7 @@ vector<Raw_command> Scanner::split_command(string command)
                 action = DO_REDIRECTION;
             }
         }
+
     }
     if (!word.empty())
         result.push_back(*new Raw_command(word, action));
@@ -348,6 +399,30 @@ string Scanner::trim(string start) {
         result.erase( result.length() - 1, 1 );
     }
     return result;
+}
+
+bool Scanner::added_value_to_flag(const string & value) {
+    //when creating the scanner, the constructor will now what flags have to take values
+    //let's identify if the last pushed is a flag that needs a value
+
+    for (string flag : flags_that_need_value)
+    {
+        if (this->last_pushed == flag)
+        {
+            //this flag was inserted last, so this string is his value
+            value_of_flag[last_pushed] = value;
+            return true;
+        }
+    }
+    return false;
+}
+
+void Scanner::validate_action(string basicString) {
+    if (! (basicString == "|" or basicString == ">" or basicString == ">>" ) )
+    {
+        display.display_debug_file("I want to throw an error cause : " + basicString);
+        throw SyntaxError(basicString);
+    }
 }
 
 

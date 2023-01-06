@@ -1,3 +1,3 @@
-again.txt   build_and_run       cinic.txt           commands                go.txt          libraries   nou.txt          scandal      symbolic_link   terminal.cpp   unu.txt   
-brah.txt    build_and_run.cpp   cmake-build-debug   debug_file.txt          hello.txt       masina      nounoutimp.txt   simplu.txt   tac.txt         test.txt       venv      
-build.sh    cat aici            CMakeLists.txt      display_each_new_line   learning_grep   MYFIFO      proba            sym_to_lab   terminal        trust.txt      
+dir1/dir2
+diana
+./proba/ceva

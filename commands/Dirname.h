@@ -10,6 +10,10 @@ namespace dirname_flags{
     const char * help = "--help";
 }
 
+vector<const char *>accepted_dirname_flags = {
+        dirname_flags::help,
+};
+
 Scanner dirname_scanner = *new Scanner();
 
 class Dirname{
@@ -69,7 +73,7 @@ void Dirname::run(string command = "")
 
 bool Dirname::is_unknown_flag(string flag)
 {
-    for (const char * accepted : accepted_flags_list)
+    for (const char * accepted : accepted_dirname_flags)
     {
         if (strcmp(accepted, flag.c_str()) == 0)
             return false;

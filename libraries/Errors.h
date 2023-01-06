@@ -45,6 +45,7 @@ void Errors::cannot_open_dir() {
 
 void Errors::no_such_file_or_directory(string file_name) {
     display.display_message_with_endl("Cannot access '" + file_name + "'" + " -> No such file or directory!");
+    display.display_message_with_endl("");
 }
 
 void Errors::invalid_flag_provided(string flag) {

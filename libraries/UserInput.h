@@ -14,6 +14,10 @@ public:
     void check_if_command_is_internal(string command);
     string detect_arrow_key(int, string);
     string user_types_command();
+
+    void do_redirect_or_append(string basicString, const string &basicString1);
+
+    void do_redirect_or_append(string cache, const string &action, string file_name);
 }user_input;
 
 string User_Input::detect_arrow_key(int value, string result) {
@@ -136,6 +140,12 @@ void User_Input::check_if_command_is_internal(string full_command)
 
         string internal_command = command + " " + result_from_prev_command;
 
+        display.display_debug_file("Internal command is " + internal_command);
+        if (raw.getAction() == DO_REDIRECTION or raw.getAction() == DO_APPEND)
+        {
+            do_redirect_or_append(result_from_prev_command, raw.getAction(), command);
+            continue;
+        }
 
         if ( command.rfind(string(EXIT), 0) == 0 or strcmp(command.c_str(), EXIT) == 0 )
         {
@@ -177,8 +187,32 @@ void User_Input::check_if_command_is_internal(string full_command)
             continue;
         }
 
+        if ( command.rfind(string(TAC).append(" "), 0) == 0 or strcmp(command.c_str(), TAC) == 0 )
+        {
+            tac_command.run(internal_command);
+            continue;
+        }
+
         terminal.check_if_external_command_exists(command, result_from_prev_command);
     }
 
 }
+
+void User_Input::do_redirect_or_append(string cache, const string &action, string file_name) {
+
+    fstream file;
+    if (action == DO_REDIRECTION){
+        file.open(file_name.c_str(), ios::out);
+    }
+    else if (action == DO_APPEND) {
+        file.open(file_name.c_str(), ios::app);
+    }
+    else {
+        return;
+    }
+    display.display_debug_file("The cache to be written is " + cache);
+    display.display_debug_file("Action is to do " + action);
+    file.write(cache.c_str(), cache.length());
+}
+
 #endif //TERMINAL_USERINPUT_H

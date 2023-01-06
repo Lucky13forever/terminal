@@ -31,6 +31,7 @@
 #include "../commands/Cd.h"
 #include "../commands/Ls.h"
 #include "../commands/Dirname.h"
+#include "../commands/Tac.h"
 
 //user input might use terminal stuff and commands aswell
 #include "UserInput.h"

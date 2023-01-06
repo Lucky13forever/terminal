@@ -1,228 +1,230 @@
 This command is =======
-dirname ////dir1////dir2////
+exit
 ==========
-/dir1/dir2
+Internal command is exit 
+This command is =======
+ls 
+==========
+Internal command is ls 
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This command is =======
+clear
+==========
+Internal command is clear 
+This command is =======
+echo aici 
+==========
+Internal command is echo aici 
+Checking if |echo| exists
+The name of this command is |echo|
+Prev string is: 
+echo
+aici
+Finished
+This command is =======
+ simplu.txt
+==========
+Internal command is simplu.txt aici
+
+The cache to be written is aici
+
+Action is to do append
+This command is =======
+cat simplu.txt
+==========
+Internal command is cat simplu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+cat
+simplu.txt
+Finished
+This command is =======
+echo trei 
+==========
+Internal command is echo trei 
+Checking if |echo| exists
+The name of this command is |echo|
+Prev string is: 
+echo
+trei
+Finished
+This command is =======
+ simplu.txt
+==========
+Internal command is simplu.txt trei
+
+The cache to be written is trei
+
+Action is to do append
+This command is =======
+cat simplu.txt
+==========
+Internal command is cat simplu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+cat
+simplu.txt
+Finished
+This command is =======
+ls 
+==========
+Internal command is ls 
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This command is =======
+ simplu.txt
+==========
+Internal command is simplu.txt again.txt   build_and_run       cinic.txt           commands                go.txt          libraries   nou.txt          scandal      symbolic_link   terminal.cpp   unu.txt   
+brah.txt    build_and_run.cpp   cmake-build-debug   debug_file.txt          hello.txt       masina      nounoutimp.txt   simplu.txt   tac.txt         test.txt       venv      
+build.sh    cat aici            CMakeLists.txt      display_each_new_line   learning_grep   MYFIFO      proba            sym_to_lab   terminal        trust.txt      
+
+The cache to be written is again.txt   build_and_run       cinic.txt           commands                go.txt          libraries   nou.txt          scandal      symbolic_link   terminal.cpp   unu.txt   
+brah.txt    build_and_run.cpp   cmake-build-debug   debug_file.txt          hello.txt       masina      nounoutimp.txt   simplu.txt   tac.txt         test.txt       venv      
+build.sh    cat aici            CMakeLists.txt      display_each_new_line   learning_grep   MYFIFO      proba            sym_to_lab   terminal        trust.txt      
+
+Action is to do redirection
+This command is =======
+cat simplu.txt
+==========
+Internal command is cat simplu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+cat
+simplu.txt
+Finished
+This command is =======
+clear
+==========
+Internal command is clear 
 This command is =======
 exit
 ==========
-This command is =======
-dirname 
-==========
-This command is =======
-dirname unu.txt
-==========
-This command is =======
-exit
-==========
-This command is =======
-dirname unu.txt
-==========
-This command is =======
-dirname unu.txt ///dir1///dir2
-==========
-This command is =======
-exit
-==========
-This command is =======
-dirname unu.txt
-==========
-unu.txt
-This command is =======
-dirname ////dir1////dir2///
-==========
-/dir1/dir2
-This command is =======
-exit
-==========
-This command is =======
-dirname unu.txt dir1/user ///dir2////dir2////dir3///
-==========
-unu.txt
-dir1/user
-/dir2/dir2/dir3
-This command is =======
-dirname unu.txt dir1/user ///dir2////dir2////dir3/// 
-==========
-unu.txt
-dir1/user
-/dir2/dir2/dir3
-This command is =======
- ls
-==========
-This is from the file 1
-This is from the longest 1
-This is from the file 1
-This is from the longest 1
-This is from the file 1
-This is from the longest 1
-This is from the file 1
-This is from the longest 1
-This is from the file 1
-This is from the longest 1
-This is from the file 1
-This is from the longest 1
-This is from the file 1
-This is from the longest 1
-This is from the file 1
-This is from the longest 1
-This is from the file 1
-This is from the longest 1
-This is from the file 1
-This is from the longest 1
-This is from the file 1
-This is from the longest 1
-This is from the file 1
-This is from the longest 1
-This is from the file 1
-This is from the longest 1
-This is from the file 1
-This is from the longest 1
-This is from the file 1
-This is from the longest 1
-This is from the file 1
-This is from the longest 1
-This is from the file 1
-This is from the longest 1
-This is from the file 1
-This is from the longest 1
-This is from the file 1
-This is from the longest 1
-This is from the file 1
-This is from the longest 1
-This is from the file 1
-This is from the longest 1
-This is from the file 1
-This is from the longest 1
-This is from the file 1
-This is from the longest 1
-This is from the file 1
-This is from the longest 1
-This command is =======
-ls --help
-==========
-This command is =======
-ls -latr
-==========
-This command is =======
-ls -lasF
-==========
--rw-rw-r--
--rw-r--r--
-prw-rw-r--
-drwxrwxr-x
-drwxrwxr-x
-drwxrwxr-x
--rw-rw-r--
--rw-rw-r--
-drwxrwxr-x
--rwxrwxr-x
--rw-rw-r--
--rw-rw-r--
--rw-rw-r--
-drwxrwxr-x
-drwxrwxr-x
--rwxrwxr-x
--rw-rw-r--
--rw-rw-r--
-lrwxrwxr-x
-drwxrwxr-x
--rw-rw-r--
-drwxrwxr-x
--rwxrwxr-x
--rw-rw-r--
-drwxrwxr-x
--rwxrwxr-x
-lrwxrwxr-x
-drwxrwxr-x
-drwxrwxr-x
-drwxrwxr-x
--rw-rw-r--
-drwxrwxr-x
-This is from the file 2
-This is from the longest 2
-drwxrwxr-x
-This is from the file 2
-This is from the longest 2
--rw-r--r--
-This is from the file 1
-This is from the longest 2
-drwxrwxr-x
-This is from the file 1
-This is from the longest 2
-drwxrwxr-x
-This is from the file 1
-This is from the longest 2
--rw-rw-r--
-This is from the file 1
-This is from the longest 2
--rw-rw-r--
-This is from the file 1
-This is from the longest 2
--rwxrwxr-x
-This is from the file 1
-This is from the longest 2
--rw-rw-r--
-This is from the file 1
-This is from the longest 2
--rw-rw-r--
-This is from the file 1
-This is from the longest 2
-drwxrwxr-x
-This is from the file 1
-This is from the longest 2
--rw-rw-r--
-This is from the file 1
-This is from the longest 2
-drwxrwxr-x
-This is from the file 1
-This is from the longest 2
--rw-rw-r--
-This is from the file 1
-This is from the longest 2
--rwxrwxr-x
-This is from the file 1
-This is from the longest 2
--rw-rw-r--
-This is from the file 1
-This is from the longest 2
--rwxrwxr-x
-This is from the file 1
-This is from the longest 2
-drwxrwxr-x
-This is from the file 1
-This is from the longest 2
--rw-rw-r--
-This is from the file 1
-This is from the longest 2
-prw-rw-r--
-This is from the file 1
-This is from the longest 2
--rw-rw-r--
-This is from the file 1
-This is from the longest 2
-drwxrwxr-x
-This is from the file 1
-This is from the longest 2
-drwxrwxr-x
-This is from the file 1
-This is from the longest 2
-lrwxrwxr-x
-drwxrwxr-x
-This is from the file 1
-This is from the longest 2
-lrwxrwxr-x
-drwxrwxr-x
-This is from the file 1
-This is from the longest 2
--rwxrwxr-x
-This is from the file 1
-This is from the longest 2
--rw-rw-r--
-This is from the file 1
-This is from the longest 2
--rw-rw-r--
-This is from the file 1
-This is from the longest 2
-drwxrwxr-x
-This is from the file 1
-This is from the longest 2
+Internal command is exit 

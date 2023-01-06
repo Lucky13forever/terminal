@@ -237,6 +237,8 @@ int Terminal::execute_external_command(string command, string previous_command_r
 
 bool Terminal::this_command_exists(string name)
 {
+
+    display.display_debug_file("Checking if |" + name + "| exists");
     string command = "command -v ";
     command.append(name);
     FILE * pipe = popen(command.c_str(), "r");

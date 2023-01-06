@@ -306,6 +306,19 @@ vector<Raw_command> Scanner::split_command(string command)
     string action = NORMAL_RUN;
     for(char c : command)
     {
+        if (c == '|' or c == '>')
+        {
+            if (!word.empty())
+            {
+                result.push_back(*new Raw_command(word, action));
+            }
+            word.erase();
+        }
+        else {
+            word += c;
+        }
+
+
         if (c == '|')
             action = DO_PIPE;
         if (c == '>')
@@ -317,21 +330,6 @@ vector<Raw_command> Scanner::split_command(string command)
             else {
                 action = DO_REDIRECTION;
             }
-        }
-        if (c == '|' or c == '>')
-        {
-            if (!word.empty())
-            {
-                result.push_back(*new Raw_command(word, action));
-            }
-            else {
-                //it means i have 2 consecutive > and so action will be set to DO_REDIRECTION
-                result[ result.size() - 1 ].setAction(action);
-            }
-            word.erase();
-        }
-        else {
-            word += c;
         }
     }
     if (!word.empty())

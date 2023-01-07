@@ -169,13 +169,13 @@ void Tac::identify_next_step() {
 
     if (tac_scanner.found_short_flag(tac_flags::s))
     {
-        separator = tac_scanner.get_value_of_flag(tac_flags::s);
+        this->separator = tac_scanner.get_value_of_flag(tac_flags::s);
     }
     if (tac_scanner.found_short_flag(tac_flags::b) or tac_scanner.found_long_flag(tac_flags::before)){
-        place_separator_in_front(separator);
+        place_separator_in_front(this->separator);
     }
     else {
-        place_separator_in_back( separator);
+        place_separator_in_back( this->separator);
     }
 
     show_each_line();
@@ -219,14 +219,12 @@ void Tac::individual_argument(string file_name) {
     string line;
     while(getline(fin, line))
     {
-        lines.insert(lines.begin(), line);
+        lines_to_add.insert(lines_to_add.begin(), line);
     }
-//    reverse(lines_to_add.begin(), lines_to_add.end());
 
     //check if -b is present
 
     //append this line to the original vector
-    this->lines.reserve(lines.size() + lines_to_add.size());
     this->lines.insert(lines.end(), lines_to_add.begin(), lines_to_add.end());
 }
 
@@ -267,17 +265,15 @@ string Tac::remove_last_word(string basicString) {
 }
 
 void Tac::show_each_line() {
+    int size = int (this->lines.size());
+    display.display_debug_file("YES I WANT TO SHOW EAcH LINE!" + std::to_string(size));
     for (string line : this->lines)
     {
         display.display_message(line);
-        if (line[ line.size() - 1 ] == '\n')
-        {
-            display.display_message_with_endl("");
-        }
     }
 
 //    if the flag b is present, one line might be lost due to the prefix displaying on top
-    if(tac_scanner.found_short_flag(tac_flags::b) == true or tac_scanner.found_long_flag(tac_flags::before) == true)
+    if(tac_scanner.found_short_flag(tac_flags::b) == true or tac_scanner.found_long_flag(tac_flags::before) == true or tac_scanner.found_short_flag(tac_flags::s))
     {
         display.display_message_with_endl("");
     }
@@ -293,7 +289,7 @@ void Tac::place_separator_in_front(string sep) {
 void Tac::place_separator_in_back(string sep) {
     for (string & line : this->lines)
     {
-        line += sep;
+        line.append(sep);
     }
 }
 

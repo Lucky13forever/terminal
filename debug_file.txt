@@ -1240,3 +1240,3962 @@ This command is =======
 clear
 ==========
 Internal command is clear 
+This command is =======
+history
+==========
+Internal command is history 
+This command is =======
+clear
+==========
+Internal command is clear 
+This command is =======
+exit
+==========
+Internal command is exit 
+This command is =======
+clear
+==========
+Internal command is clear 
+This command is =======
+clear
+==========
+Internal command is clear 
+This command is =======
+ls
+==========
+Internal command is ls 
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This command is =======
+ls -l
+==========
+Internal command is ls -l 
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+prw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rwxrwxr-x
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+cd venv
+==========
+Internal command is cd venv 
+This command is =======
+clear
+==========
+Internal command is clear 
+This command is =======
+exit
+==========
+Internal command is exit 
+This command is =======
+ls
+==========
+Internal command is ls 
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This is from the file 1
+This is from the longest 1
+This command is =======
+cd commands
+==========
+Internal command is cd commands 
+This command is =======
+exit
+==========
+Internal command is exit 
+This command is =======
+tac 
+==========
+Internal command is tac 
+I WANT TO READ FROM STDIN!
+Message from stdin: 1
+2
+3
+4
+5
+6
+7
+89
+
+1
+1
+1
+
+111111111111
+
+1
+1
+1
+1
+1
+1
+1
+1
+
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+
+1
+1
+1
+1
+1
+1
+1
+1
+
+
+
+This command is =======
+tac 1
+==========
+Internal command is tac 1 
+This command is =======
+clear
+==========
+Internal command is clear 
+This command is =======
+ls -l
+==========
+Internal command is ls -l 
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+prw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rwxrwxr-x
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+ls -l
+==========
+Internal command is ls -l 
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+prw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rwxrwxr-x
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+tac 
+==========
+Internal command is tac 
+I WANT TO READ FROM STDIN!
+Message from stdin: 1
+2
+3
+
+This command is =======
+tac 
+==========
+Internal command is tac 
+I WANT TO READ FROM STDIN!
+Message from stdin: 1
+2
+2
+2
+
+2
+3
+32
+2
+
+32
+3
+2
+3
+2
+3
+23
+2
+3
+2
+
+3
+23
+2
+3
+2
+32
+3
+2
+3
+2
+3
+23
+2
+3
+2
+32
+3
+2
+3
+23
+2
+3
+2
+3
+2
+This command is =======
+ls -l
+==========
+Internal command is ls -l 
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+prw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rwxrwxr-x
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+ls -l
+==========
+Internal command is ls -l 
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+prw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rwxrwxr-x
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+tac 
+==========
+Internal command is tac 
+I WANT TO READ FROM STDIN!
+Message from stdin: 1
+2
+
+3
+3
+3
+
+3
+
+
+4
+5
+6
+7
+8
+9
+
+9
+9
+1
+
+1
+1
+
+1
+1
+1
+1
+
+1
+
+This command is =======
+clear
+==========
+Internal command is clear 
+This command is =======
+exit
+==========
+Internal command is exit 
+This command is =======
+ls -l
+==========
+Internal command is ls -l 
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+prw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rwxrwxr-x
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+ls -l
+==========
+Internal command is ls -l 
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+prw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rwxrwxr-x
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+tac 
+==========
+Internal command is tac 
+I WANT TO READ FROM STDIN!
+Message from stdin: 1
+2
+3
+4
+5
+
+7
+7
+6
+54
+3
+2
+345
+67
+65
+432
+
+345
+67
+654
+321
+2
+345
+6
+543
+2
+34
+56
+54
+32
+34
+56
+5
+432
+3
+456
+5
+432
+3
+456
+76
+543
+2
+345
+6
+54
+32
+3
+456
+
+543
+2
+345
+67
+65
+432
+34
+56
+5
+432
+
+
+This command is =======
+exit
+==========
+Internal command is exit 
+This command is =======
+ls -l
+==========
+Internal command is ls -l 
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+prw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rwxrwxr-x
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+ls -l
+==========
+Internal command is ls -l 
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+prw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rwxrwxr-x
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+tac
+==========
+Internal command is tac 
+I WANT TO READ FROM STDIN!
+Message from stdin: 1
+2
+3
+4
+5
+5
+5
+
+5
+5
+5
+5
+5
+This command is =======
+ls -l
+==========
+Internal command is ls -l 
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+prw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rwxrwxr-x
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+ls -l
+==========
+Internal command is ls -l 
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+prw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rwxrwxr-x
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+==========
+Checking if |echo| exists
+The name of this command is |echo|
+Prev string is: 
+Inainte de error!
+This command is =======
+cat1 
+==========
+Internal command is cat1 
+Checking if |cat1| exists
+This command is =======
+ls
+==========
+Internal command is ls Command not found!
+
+This command is =======
+cat1
+==========
+Internal command is cat1 
+Checking if |cat1| exists
+This command is =======
+cat1
+==========
+Internal command is cat1 
+Checking if |cat1| exists
+This command is =======
+exit
+==========
+Internal command is exit 
+This command is =======
+cat1 
+==========
+Internal command is cat1 
+Checking if |cat1| exists
+This command is =======
+ls
+==========
+Internal command is ls Command not found!
+
+This command is =======
+cat1
+==========
+Internal command is cat1 
+Checking if |cat1| exists
+This command is =======
+clear
+==========
+Internal command is clear 
+This command is =======
+exit
+==========
+Internal command is exit 
+This command is =======
+tac -b
+==========
+Internal command is tac -b 
+I WANT TO READ FROM STDIN!
+Message from stdin: 1
+2
+3
+
+3
+4
+5
+5
+5
+
+
+
+6
+6
+6
+6
+
+
+This command is =======
+ls -l
+==========
+Internal command is ls -l 
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+prw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rwxrwxr-x
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+tac -b
+==========
+Internal command is tac -b 
+I WANT TO READ FROM STDIN!
+Message from stdin: 1
+1
+1
+1
+111
+1
+
+1
+1
+1
+
+
+1
+1
+
+1
+1
+1
+1
+This command is =======
+tac -b
+==========
+Internal command is tac -b 
+I WANT TO READ FROM STDIN!
+Message from stdin: unu
+doi
+trei
+
+This command is =======
+exit
+==========
+Internal command is exit 
+This command is =======
+tac -b
+==========
+Internal command is tac -b 
+I WANT TO READ FROM STDIN!
+Message from stdin: 1
+2
+3
+
+This command is =======
+ls -l
+==========
+Internal command is ls -l 
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+prw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rwxrwxr-x
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+prw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+-rw-rw-r--
+This is from the file 1
+This is from the longest 1
+drwxrwxr-x
+This is from the file 1
+This is from the longest 1
+This command is =======
+ls -lsaF
+==========
+Internal command is ls -lsaF 
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-r--r--
+prw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-r--r--
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+lrwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+drwxrwxr-x
+-rwxrwxr-x
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+-rw-rw-r--
+-rwxrwxr-x
+lrwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+drwxrwxr-x
+-rw-rw-r--
+drwxrwxr-x
+This is from the file 2
+This is from the longest 2
+drwxrwxr-x
+This is from the file 2
+This is from the longest 2
+-rw-r--r--
+This is from the file 1
+This is from the longest 2
+drwxrwxr-x
+This is from the file 1
+This is from the longest 2
+drwxrwxr-x
+This is from the file 1
+This is from the longest 2
+-rw-r--r--
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+drwxrwxr-x
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+drwxrwxr-x
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 2
+drwxrwxr-x
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+prw-rw-r--
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+drwxrwxr-x
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+drwxrwxr-x
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 2
+lrwxrwxr-x
+drwxrwxr-x
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+-rwxrwxr-x
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+-rw-rw-r--
+This is from the file 1
+This is from the longest 2
+drwxrwxr-x
+This is from the file 1
+This is from the longest 2
+This command is =======
+tac -b
+==========
+Internal command is tac -b 
+I WANT TO READ FROM STDIN!
+Message from stdin: 1
+2
+3
+
+This command is =======
+clear
+==========
+Internal command is clear 
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+tac -b
+==========
+Internal command is tac -b 
+I WANT TO READ FROM STDIN!
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+clear
+==========
+Internal command is clear 
+This command is =======
+cat unu.txt 
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+dirname
+==========
+Internal command is dirname unu
+doi
+trei
+
+unu
+doi
+trei
+This command is =======
+clear
+==========
+Internal command is clear 
+This command is =======
+clear
+==========
+Internal command is clear 
+This command is =======
+exit
+==========
+Internal command is exit 
+This command is =======
+cat unu.txt
+==========
+Internal command is cat unu.txt 
+Checking if |cat| exists
+The name of this command is |cat|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+cat
+unu.txt
+Finished
+This command is =======
+clear
+==========
+Internal command is clear 
+This command is =======
+exit
+==========
+Internal command is exit 
+This command is =======
+tac -b
+==========
+Internal command is tac -b 
+I WANT TO READ FROM STDIN!
+Message from stdin: 1
+2
+3
+
+This command is =======
+clear
+==========
+Internal command is clear 

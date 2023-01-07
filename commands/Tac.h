@@ -270,6 +270,10 @@ void Tac::show_each_line() {
     for (string line : this->lines)
     {
         display.display_message(line);
+        if (line[ line.size() - 1 ] == '\n')
+        {
+            display.display_message_with_endl("");
+        }
     }
 
 //    if the flag b is present, one line might be lost due to the prefix displaying on top
@@ -308,9 +312,15 @@ void Tac::read_from_stdin() {
                 result.erase(result.size() - 1, 1);
         }
         else{
-            //we don't need to keep it in cache
-            display.display_char(key);
-
+            if (key == ENTER)
+            {
+                //make new line in scroll
+                display.display_message_with_endl("");
+            }
+            else{
+                //we don't need to keep it in cache
+                display.display_char(key);
+            }
             result += key;
         }
     }

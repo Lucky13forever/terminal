@@ -5,6 +5,7 @@
 #ifndef TERMINAL_ERRORS_H
 #define TERMINAL_ERRORS_H
 class Errors{
+    bool had_error;
 public:
     void internal_command_not_found();
     void shell_popen_failed();
@@ -22,57 +23,60 @@ public:
     void flag_has_no_value(const string &basicString);
 
     void syntax_error(const string &sign);
+    void reset_error_recorder() {had_error = false;};
+
+    bool DoIHaveError() const;
 }errors;
 
 //    internal meaning, implemented by this program
 void Errors::internal_command_not_found() {
-    display.display_message_with_endl("Command not found!");
+    this->had_error = true;
+    display.display_message_with_endl("Error: Command not found!");
 }
 
 void Errors::shell_popen_failed() {
-    display.display_message_with_endl("When running in shell, popen failed");
+    display.display_message_with_endl("Error: When running in shell, popen failed");
 }
 
 void Errors::too_many_arguments() {
-    display.display_message_with_endl("Too many arguments!");
+    display.display_message_with_endl("Error: Too many arguments!");
 }
 
 void Errors::no_arguments(){
-    display.display_message_with_endl("Missing arguments!");
+    display.display_message_with_endl("Error: Missing arguments!");
 }
 
 void Errors::invalid_path_provided() {
-    display.display_message_with_endl("Invalid path provided!");
+    display.display_message_with_endl("Error: Invalid path provided!");
 }
 
 void Errors::cannot_open_dir() {
-    display.display_message_with_endl("Cannot open the current directory, you are probably missing permisions to do so!");
+    display.display_message_with_endl("Error: Cannot open the current directory, you are probably missing permisions to do so!");
 }
 
 void Errors::no_such_file_or_directory(string file_name) {
-    display.display_message_with_endl("Cannot access '" + file_name + "'" + " -> No such file or directory!");
+    display.display_message_with_endl("Error: Cannot access '" + file_name + "'" + " -> No such file or directory!");
     display.display_message_with_endl("");
 }
 
 void Errors::invalid_flag_provided(string flag) {
-    display.display_message_with_endl("Unknown flag, '" + flag + "'" + " -> Invalid flag provided!");
+    display.display_message_with_endl("Error: Unknown flag, '" + flag + "'" + " -> Invalid flag provided!");
 }
 
 void Errors::use_help_flag_on_command(string command) {
-    display.display_message_with_endl("Try running the '" + command + " --help command for more details!");
+    display.display_message_with_endl("Error: Try running the '" + command + " --help command for more details!");
 }
 
 void Errors::no_such_file(string file_name) {
-    display.display_message_with_endl("cannot open '" + file_name + "'" + " -> No such file!");
+    display.display_message_with_endl("Error: cannot open '" + file_name + "'" + " -> No such file!");
 }
 
 void Errors::flag_has_no_value(const string & flag) {
-    display.display_message_with_endl("The flag '" + flag + "' hasn't received a value");
+    display.display_message_with_endl("Error: The flag '" + flag + "' hasn't received a value");
 }
 
 void Errors::syntax_error(const string & sign)
 {
-    display.display_message_with_endl("syntax error near unexcepted token '" + sign + "'. Valid options are '>', '>>' and '|' .");
+    display.display_message_with_endl("Error: syntax error near unexcepted token '" + sign + "'. Valid options are '>', '>>' and '|' .");
 }
-
 #endif //TERMINAL_ERRORS_H

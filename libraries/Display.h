@@ -77,7 +77,7 @@ public:
 
 void Display::display_prefix(vector<string> prefix, vector<int> colors)
 {
-    //clear anything in front
+    //clear anything in front, only if not last line
     clear_line(true);
     this->prefix = prefix;
     this->colors = colors;
@@ -103,10 +103,10 @@ void Display::clear_line(bool check_if_something_is_on_line){
     int y, x;
 //    get current cursor position
     getyx(stdscr, y, x);
-    if (check_if_something_is_on_line == true and x != 0)
-    {
-        display.display_message_with_endl("");
-    }
+//    if (check_if_something_is_on_line == true and x != 0 and )
+//    {
+//        display.display_message_with_endl("");
+//    }
 //    move to beginning of line
     move(y, 0);
 //    delete from start till end of line

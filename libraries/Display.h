@@ -27,7 +27,7 @@ private:
 
 public:
     void clear_screen(bool from_command = false); // clear_tool the entire screen
-    void backspace(); // remove the last n chars from the screen
+    void backspace(bool prefix_protection = true); // remove the last n chars from the screen
     void clear_line(); // clear_tool the last written line
     void display_new_command(string);
     void display_char(char);
@@ -109,15 +109,20 @@ void Display::clear_line(){
     clrtoeol();
 }
 
-void Display::backspace(){
+void Display::backspace(bool prefix_protection){
     int y, x;
     getyx(stdscr, y, x);
 //        to make sure the PREFIX isnt touched
-    if (x - 1 < display.get_prefix_length())
+    if (prefix_protection == true and  x - 1 < display.get_prefix_length())
     {
         return;
     }
 //        printw("%d | %dt\n", x - i, display.get_prefix_length());
+
+    if (prefix_protection == false and x - 1 < 0)
+    {
+        return;
+    }
     move(y, x - 1);
     clrtoeol();
 

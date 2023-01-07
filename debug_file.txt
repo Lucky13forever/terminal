@@ -1767,3 +1767,151 @@ This command is =======
 clear
 ==========
 Internal command is clear 
+This command is =======
+exit
+==========
+Internal command is exit 
+This command is =======
+anshda
+==========
+Internal command is anshda 
+Checking if |anshda| exists
+This command is =======
+
+==========
+Internal command is  
+Checking if || exists
+This command is =======
+exit
+==========
+Internal command is exit 
+This command is =======
+tac
+==========
+Internal command is tac 
+This command is =======
+tac   
+==========
+Internal command is tac 
+This command is =======
+clear
+==========
+Internal command is clear 
+This command is =======
+exit
+==========
+Internal command is exit 
+This command is =======
+tac
+==========
+Internal command is tac 
+Message from stdin: ahere i go
+aasdasd
+hey man
+
+
+
+
+This command is =======
+clear
+==========
+Internal command is clear 
+This command is =======
+tac
+==========
+Internal command is tac 
+Message from stdin: one
+two three
+four five six 
+seven eight nine ten
+
+This command is =======
+exit
+==========
+Internal command is exit 
+This command is =======
+tac
+==========
+Internal command is tac 
+This command is =======
+echo aici
+==========
+Internal command is echo aici 
+Checking if |echo| exists
+The name of this command is |echo|
+Prev string is: 
+Inainte de error!
+nU AR TREBUIE SA VAD LINIA ASTA!
+echo
+aici
+Finished
+This command is =======
+history
+==========
+Internal command is history 
+This command is =======
+tac
+==========
+Internal command is tac 
+This command is =======
+tac
+==========
+Internal command is tac 
+This command is =======
+tac
+==========
+Internal command is tac 
+This command is =======
+tac 
+==========
+Internal command is tac 
+Message from stdin: two three
+This command is =======
+tac 
+==========
+Internal command is tac 
+Message from stdin: one
+two three
+
+This command is =======
+exit
+==========
+Internal command is exit 
+This command is =======
+tac
+==========
+Internal command is tac 
+Message from stdin: one
+two three
+This command is =======
+tac
+==========
+Internal command is tac 
+Message from stdin: one 
+two 
+three
+
+This command is =======
+clear
+==========
+Internal command is clear 
+This command is =======
+tac
+==========
+Internal command is tac 
+Message from stdin: one
+two
+three
+
+This command is =======
+tac -s T
+==========
+Internal command is tac -s T 
+Message from stdin: one
+two
+three
+
+This command is =======
+clear
+==========
+Internal command is clear 

@@ -4,6 +4,7 @@
 using namespace std;
 const int ENTER = 10;
 const int BACKSPACE = 263;
+const int CTRL_D = 4; //stop reading from tac
 const char * EXIT = "exit";
 const char * HISTORY = "history";
 const char * PWD = "pwd";

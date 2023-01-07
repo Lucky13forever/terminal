@@ -62,6 +62,10 @@ public:
     void place_separator_in_front(string basicString);
 
     void place_separator_in_back(string basicString);
+
+    void read_from_stdin();
+
+    void transpose_this_to_lines(string basicString);
 }tac_command;
 
 void Tac::run(string command = "")
@@ -138,24 +142,25 @@ void Tac::identify_next_step() {
 
         solve_for_each_argument();
 
-        if (tac_scanner.found_short_flag(tac_flags::s))
-        {
-            separator = tac_scanner.get_value_of_flag(tac_flags::s);
-        }
-        if (tac_scanner.found_short_flag(tac_flags::b) or tac_scanner.found_long_flag(tac_flags::before)){
-            place_separator_in_front(separator);
-        }
-        else {
-            place_separator_in_back( separator);
-        }
-
-        show_each_line();
-
     } catch (const MissingArguments & ex)
     {
         //if no argumnents solve for a string;
-        display.display_message_with_endl("Read from stdin");
+//        display.display_message_with_endl("Read from stdin");
+        read_from_stdin();
     }
+
+    if (tac_scanner.found_short_flag(tac_flags::s))
+    {
+        separator = tac_scanner.get_value_of_flag(tac_flags::s);
+    }
+    if (tac_scanner.found_short_flag(tac_flags::b) or tac_scanner.found_long_flag(tac_flags::before)){
+        place_separator_in_front(separator);
+    }
+    else {
+        place_separator_in_back( separator);
+    }
+
+    show_each_line();
 }
 
 void Tac::validate_arguments() {
@@ -262,6 +267,44 @@ void Tac::place_separator_in_back(string sep) {
     {
         line += sep;
     }
+}
+
+void Tac::read_from_stdin() {
+    int key;
+    string result;
+    while ((key = getch()) != CTRL_D)
+    {
+        if(key == BACKSPACE){
+
+            display.backspace(false);
+            if (!result.empty())
+                result.erase(result.size() - 1, 1);
+        }
+        else{
+            display.display_char(key);
+
+            result += key;
+        }
+    }
+
+    display.display_debug_file("Message from stdin: " + result);
+    transpose_this_to_lines(result);
+}
+
+void Tac::transpose_this_to_lines(string basicString) {
+    int start = 0;
+    int end = basicString.find('\n', start);
+    while(end != std::string::npos)
+    {
+        string substring = basicString.substr(start, end - start);
+
+        this->lines.push_back(substring);
+
+        start = end + 1;
+
+        end = basicString.find('\n', start);
+    }
+    std::reverse(this->lines.begin(), this->lines.end());
 }
 
 

@@ -166,7 +166,9 @@ char ** Terminal::return_char_pointer_from_vector_of_strings(vector<string> argv
 int Terminal::execute_external_command(string command, string previous_command_result) {
 
     string result;
+    display.display_debug_file("Inainte de error!");
     terminal_scanner.scan_command(command);
+    display.display_debug_file("nU AR TREBUIE SA VAD LINIA ASTA!");
     int pipe_fd[2];
     int keep[2];
     pipe(pipe_fd);
@@ -174,17 +176,6 @@ int Terminal::execute_external_command(string command, string previous_command_r
 
     write(pipe_fd[1], previous_command_result.c_str(), previous_command_result.length());
     int pid1 = true;
-//    int pid1 = fork();
-//    if (pid1 == 0) {
-//
-//        //firstly send previous command result to stdin
-//
-//        close(pipe_fd[0]);
-//        close(pipe_fd[1]);
-//        close(keep[0]);
-//        close(keep[1]);
-//        return 0;
-//    }
 
     int pid2 = fork();
     if (pid2 == 0) {

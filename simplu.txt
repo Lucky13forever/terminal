@@ -1,3 +1,13 @@
 dir1/dir2
 diana
 ./proba/ceva
+simplu
+simplu
+simplu
+simplu
+brah.txt    build_and_run.cpp   cmake-build-debug   debug_file.txt          hello.txt       masina      nigger.txt   proba            simplu.txt    symbolic_link   terminal.cpp   unu.txt     
+./proba:
+brah.txt    build_and_run.cpp   cmake-build-debug   debug_file.txt          hello.txt       masina      nigger.txt   proba            simplu.txt    symbolic_link   terminal.cpp   unu.txt     
+brah.txt    build_and_run.cpp   cmake-build-debug   debug_file.txt          hello.txt       masina      nigger.txt   proba            simplu.txt    symbolic_link   terminal.cpp   unu.txt     
+brah.txt    build_and_run.cpp   cmake-build-debug   debug_file.txt          hello.txt       masina      nigger.txt   proba            simplu.txt    symbolic_link   terminal.cpp   unu.txt     
+brah.txt    build_and_run.cpp   cmake-build-debug   debug_file.txt          hello.txt       masina      nigger.txt   proba            simplu.txt    symbolic_link   terminal.cpp   unu.txt     

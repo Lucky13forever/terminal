@@ -16,7 +16,9 @@ struct SE{
 //it's job is to keep, no to display
 class Display{
 private:
+    int position_of_cursor = 0; //right after $ is 0 like echo, o is pos 3
     int prefix_length; // backspace could potentially delete the prefix, so each time we display_new_command() we also change thi
+    string current_message;
     vector<string>prefix;
     vector<int>colors;
     int current_line_pos=0; //what is the last line on screen index? At what line index is the cursor?
@@ -65,6 +67,12 @@ public:
     void setShowCache(bool showCache);
 
     void display_a_new_line_for_each_endl(string basicString);
+
+    void move_cursor_left();
+
+    void move_cursor_right();
+
+    void insert_char_in_current_message(string basicString, int i);
 }display;
 
 void Display::display_prefix(vector<string> prefix, vector<int> colors)
@@ -141,6 +149,8 @@ void Display::display_new_command(string message) {
 void Display::display_char(char c) {
     string message;
     message += c;
+    //what is the position of the cursor?
+
     display_message(message);
 }
 
@@ -302,6 +312,31 @@ void Display::display_a_new_line_for_each_endl(string basicString) {
 
         end = basicString.find('\n', start);
     }
+}
+
+void Display::move_cursor_left() {
+    int y, x;
+    getyx(stdscr, y, x);
+//        to make sure the PREFIX isnt touched
+    if (x - 1 < display.get_prefix_length())
+    {
+        return;
+    }
+//        printw("%d | %dt\n", x - i, display.get_prefix_length());
+    move(y, x - 1);
+}
+
+void Display::move_cursor_right() {
+    int y, x;
+    getyx(stdscr, y, x);
+
+//        to make sure the PREFIX isnt touched
+//        printw("%d | %dt\n", x - i, display.get_prefix_length());
+    move(y, x + 1);
+}
+
+void Display::insert_char_in_current_message(string basicString, int i) {
+
 }
 
 

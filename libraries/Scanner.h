@@ -49,7 +49,7 @@ class Scanner{
     bool is_long_flag(string word);
     bool is_argument(string word);
     void add_argument(const string&);
-    void find_place(const string& word);
+    void find_place(string& word);
     void add_short_flag(string word);
     void add_long_flag(const string& word);
     bool missing(const vector<string>&,const string&);
@@ -145,8 +145,21 @@ void Scanner::add_long_flag(const string& word) {
     if (missing(scan[LONG_FLAGS], flag))
         scan[LONG_FLAGS].push_back( "--" + flag );
 }
-void Scanner::find_place(const string& word)
+void Scanner::find_place(string& word)
 {
+
+    //if word has quotes remove them
+    if (word[0] == '\'' or word[0] == '"')
+    {
+        //if the quotes are not identical -> error
+        if (word[0] != word[ word.size() - 1 ])
+        {
+            throw QuotesDontMatch();
+        }
+        //if they are the same -> i can remove them
+        word.erase(0, 1);
+        word.erase(word.size() - 1, 1);
+    }
     if (!has_key(scan, COMMAND))
     {
 //        if i have no command yet, then this is the first call
@@ -193,9 +206,19 @@ void Scanner::scan_command(const string& command)
         pos = trim_command.find('\n');
     }
 
+    bool in_quoted_string = false;
     for (char i : trim_command)
     {
-        if (i == ' ')
+        if (i == '"' or i == '\'')
+        {
+            //if im in a string
+            if (in_quoted_string == false)
+                in_quoted_string = true;
+            else
+                in_quoted_string = false;
+        }
+        //if im in quote i take space as a content of the quoted string
+        if (i == ' ' and in_quoted_string == false)
         {
             if (!word.empty()) {
                 find_place(word);
@@ -205,6 +228,12 @@ void Scanner::scan_command(const string& command)
             word += i;
         }
     }
+    //if at the end, i'm still in a quote error
+    if (in_quoted_string == true)
+    {
+        throw UnterminatedQuotedString();
+    }
+
     if (!word.empty())
         find_place(word);
 }

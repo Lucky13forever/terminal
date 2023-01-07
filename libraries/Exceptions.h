@@ -68,7 +68,27 @@ public:
     }
 };
 
+class UnterminatedQuotedString : public std::exception {
+    string message = "Unterminated Quoted String!";
+public:
+    const char * what () {
+        return "Unterminated Quoted String!";
+    }
+    const string & getMessage() const {
+        return message;
+    }
+};
 
+class QuotesDontMatch : public std::exception {
+    string message = "Start and end quote symbol don't match";
+public:
+    const char * what() {
+        return "Start and end quote symbol don't match";
+    }
+    const string & getMessage() const {
+        return message;
+    }
+};
 
 
 #endif //TERMINAL_ERRORS_H

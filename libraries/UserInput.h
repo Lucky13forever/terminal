@@ -75,7 +75,6 @@ string User_Input::user_types_command() {
                             result.pop_back();
                         break;
                     default:
-
                         display.display_char(key);
                         result += key;
 
@@ -203,6 +202,16 @@ void User_Input::check_if_command_is_internal(string full_command)
     {
         display.setShowCache(true);
         errors.syntax_error(ex.getSign());
+    }
+    catch (const UnterminatedQuotedString & ex)
+    {
+        display.setShowCache(true);
+        display.display_message_with_endl(ex.getMessage());
+    }
+    catch (const QuotesDontMatch & ex)
+    {
+        display.setShowCache(true);
+        display.display_message_with_endl(ex.getMessage());
     }
 
 

@@ -26,6 +26,9 @@ Scanner tac_scanner = *new Scanner({"-s"});
 class Tac{
 private:
 
+    vector<string>lines;
+    string separator = "\n";
+
     string help_message = "Usage: tac [OPTION]... [FILE]...\n"
                           "Write each FILE to standard output, last line first.\n"
                           "\n"
@@ -54,15 +57,20 @@ public:
 
     string remove_last_word(string basicString);
 
-    void show_each_line(vector<string> vector1);
+    void show_each_line();
 
-    void place_separator_in_front(vector<string>, string basicString) {};
+    void place_separator_in_front(string basicString);
+
+    void place_separator_in_back(string basicString);
 }tac_command;
 
 void Tac::run(string command = "")
 {
     tac_scanner = *new Scanner({"-s"});
     tac_scanner.scan_command(command);
+
+    this->lines.clear();
+    this->separator = '\n';
 
     try{
         validate_flags();
@@ -130,9 +138,23 @@ void Tac::identify_next_step() {
 
         solve_for_each_argument();
 
+        if (tac_scanner.found_short_flag(tac_flags::s))
+        {
+            separator = tac_scanner.get_value_of_flag(tac_flags::s);
+        }
+        if (tac_scanner.found_short_flag(tac_flags::b) or tac_scanner.found_long_flag(tac_flags::before)){
+            place_separator_in_front(separator);
+        }
+        else {
+            place_separator_in_back( separator);
+        }
+
+        show_each_line();
+
     } catch (const MissingArguments & ex)
     {
         //if no argumnents solve for a string;
+        display.display_message_with_endl("Read from stdin");
     }
 }
 
@@ -168,26 +190,21 @@ void Tac::individual_argument(string file_name) {
 
     //if im here -> file exists
     //TODO USE LATER
-    vector<string> lines;
+    vector<string> lines_to_add;
 
     ifstream fin(file_name.c_str());
     string line;
     while(getline(fin, line))
     {
-        lines.push_back(line);
+        lines.insert(lines.begin(), line);
     }
-    reverse(lines.begin(), lines.end());
+//    reverse(lines_to_add.begin(), lines_to_add.end());
 
     //check if -b is present
-    if (tac_scanner.found_short_flag(tac_flags::b) or tac_scanner.found_long_flag(tac_flags::before)){
-        string separator;
-        place_separator_in_front(lines , separator);
-    }
 
-    //print the order
-    show_each_line(lines);
-
-
+    //append this line to the original vector
+    this->lines.reserve(lines.size() + lines_to_add.size());
+    this->lines.insert(lines.end(), lines_to_add.begin(), lines_to_add.end());
 }
 
 string Tac::remove_consecutive_slashes(string basicString) {
@@ -226,18 +243,26 @@ string Tac::remove_last_word(string basicString) {
     return ".";
 }
 
-void Tac::show_each_line(vector<string> lines) {
-    for (string line : lines)
+void Tac::show_each_line() {
+    for (string line : this->lines)
     {
-        display.display_message_with_endl(line);
+        display.display_message(line);
     }
 }
 
-//void Tac::place_separator_in_front(vector<string> & lines, string basicString) {
-//    for (string & line : lines)
-//    {
-//
-//    }
-//}
+void Tac::place_separator_in_front(string sep) {
+    for (string & line : this->lines)
+    {
+        line.insert(0, sep);
+    }
+}
+
+void Tac::place_separator_in_back(string sep) {
+    for (string & line : this->lines)
+    {
+        line += sep;
+    }
+}
+
 
 #endif //TERMINAL_TAC_H

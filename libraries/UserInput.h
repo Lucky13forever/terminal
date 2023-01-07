@@ -103,7 +103,8 @@ void User_Input::check_if_command_is_internal(string full_command)
     //enter was pressed -> remove everything from cache
     display.clear_cache();
     //stop the display
-    display.setShowCache(false);
+    bool status = false;
+    display.setShowCache(status);
 
 
     Scanner user_input_scanner = *new Scanner();
@@ -128,7 +129,8 @@ void User_Input::check_if_command_is_internal(string full_command)
             if (i == raw_commands.size() - 1)
             {
                 //if i have pipes or redirection -> only the final output i am interested in
-                display.setShowCache(true);
+                status = true;
+                display.setShowCache(status);
             }
             //clear display cache
             result_from_prev_command = display.getCache();
@@ -191,7 +193,7 @@ void User_Input::check_if_command_is_internal(string full_command)
 
             if ( command.rfind(string(TAC).append(" "), 0) == 0 or strcmp(command.c_str(), TAC) == 0 )
             {
-                tac_command.run(internal_command);
+                tac_command.run(command, result_from_prev_command, status);
                 continue;
             }
 

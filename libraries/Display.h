@@ -28,16 +28,16 @@ private:
 public:
     void clear_screen(bool from_command = false); // clear_tool the entire screen
     void backspace(bool prefix_protection = true); // remove the last n chars from the screen
-    void clear_line(); // clear_tool the last written line
+    void clear_line(bool check_if_something_is_on_line = true); // clear_tool the last written line
     void display_new_command(string);
-    void display_char(char);
+    void display_char(char, bool keep = true);
     void display_after_key_press(string);
     void display_message_with_endl(string message, bool keep = true);
     const int get_prefix_length() {return prefix_length;};
     void display_shell_runned_command(string);
     void display_prefix(vector<string>, vector<int>);
     void display_debug(string);
-    void display_message(string);
+    void display_message(string, bool keep = true);
     void display_message_with_color(string, int, bool keep = true);
     void display_front_spaces(string longest, string normal);
 
@@ -78,7 +78,7 @@ public:
 void Display::display_prefix(vector<string> prefix, vector<int> colors)
 {
     //clear anything in front
-    clear_line();
+    clear_line(true);
     this->prefix = prefix;
     this->colors = colors;
 
@@ -98,7 +98,7 @@ void Display::display_after_key_press(string result)
     display_message(result);
 }
 
-void Display::clear_line(){
+void Display::clear_line(bool check_if_something_is_on_line){
 
     int y, x;
 //    get current cursor position
@@ -151,12 +151,12 @@ void Display::display_new_command(string message) {
     prefix_length = message.size();
 }
 
-void Display::display_char(char c) {
+void Display::display_char(char c, bool keep) {
     string message;
     message += c;
     //what is the position of the cursor?
 
-    display_message(message);
+    display_message(message, keep);
 }
 
 void Display::display_debug(string debug) {
@@ -195,8 +195,8 @@ void Display::display_front_spaces(int longest, int normal) {
 
 
 
-void Display::display_message(string command) {
-    display_message_with_color(command, COLOR_WHITE_CODE);
+void Display::display_message(string command, bool keep) {
+    display_message_with_color(command, COLOR_WHITE_CODE, keep);
 }
 
 //every message will go through this function, this is where scroll will get updated

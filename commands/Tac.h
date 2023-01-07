@@ -28,7 +28,8 @@ private:
 
     vector<string>lines;
     string separator = "\n";
-
+    string result_from_prev_command;
+    bool prev_show_state_val;
     string help_message = "Usage: tac [OPTION]... [FILE]...\n"
                           "Write each FILE to standard output, last line first.\n"
                           "\n"
@@ -38,7 +39,7 @@ private:
                           "  -b, --before             attach the separator before instead of after\n"
                           "  -s, --separator=STRING   use STRING as the separator instead of newline\n";
 public:
-    void run(string);
+    void run(string, string, bool);
     void identify_next_step();
 
     bool is_unknown_flag(string flag);
@@ -66,15 +67,20 @@ public:
     void read_from_stdin();
 
     void transpose_this_to_lines(string basicString);
+
+    void read_from_pipe();
 }tac_command;
 
-void Tac::run(string command = "")
+void Tac::run(string command = "", string result_from_prev_command = "", bool prev_show_state_val = true)
 {
     tac_scanner = *new Scanner({"-s"});
     tac_scanner.scan_command(command);
 
+
     this->lines.clear();
     this->separator = '\n';
+    this->result_from_prev_command = result_from_prev_command;
+    this->prev_show_state_val = prev_show_state_val;
 
     try{
         validate_flags();
@@ -146,7 +152,19 @@ void Tac::identify_next_step() {
     {
         //if no argumnents solve for a string;
 //        display.display_message_with_endl("Read from stdin");
-        read_from_stdin();
+        //means i have no arguments -> BUT maybe i have input from pipe
+        if (this->result_from_prev_command.empty())
+        {
+            //if this is empty too
+            read_from_stdin();
+        }
+        else{
+            read_from_pipe();
+        }
+
+        //i need to remove this from display cache, this input will not be redirected
+        display.clear_cache();
+
     }
 
     if (tac_scanner.found_short_flag(tac_flags::s))
@@ -270,8 +288,11 @@ void Tac::place_separator_in_back(string sep) {
 }
 
 void Tac::read_from_stdin() {
+
+    display.display_debug_file("I WANT TO READ FROM STDIN!");
     int key;
     string result;
+    display.setShowCache(true); //to see the input
     while ((key = getch()) != CTRL_D)
     {
         if(key == BACKSPACE){
@@ -281,12 +302,15 @@ void Tac::read_from_stdin() {
                 result.erase(result.size() - 1, 1);
         }
         else{
+            //we don't need to keep it in cache
             display.display_char(key);
 
             result += key;
         }
     }
 
+    //refresh
+    display.setShowCache(this->prev_show_state_val);
     display.display_debug_file("Message from stdin: " + result);
     transpose_this_to_lines(result);
 }
@@ -304,7 +328,12 @@ void Tac::transpose_this_to_lines(string basicString) {
 
         end = basicString.find('\n', start);
     }
+
     std::reverse(this->lines.begin(), this->lines.end());
+}
+
+void Tac::read_from_pipe() {
+    transpose_this_to_lines(this->result_from_prev_command);
 }
 
 

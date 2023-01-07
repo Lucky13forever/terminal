@@ -271,6 +271,12 @@ void Tac::show_each_line() {
     {
         display.display_message(line);
     }
+
+//    if the flag b is present, one line might be lost due to the prefix displaying on top
+    if(tac_scanner.found_short_flag(tac_flags::b) == true or tac_scanner.found_long_flag(tac_flags::before) == true)
+    {
+        display.display_message_with_endl("");
+    }
 }
 
 void Tac::place_separator_in_front(string sep) {

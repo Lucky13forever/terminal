@@ -103,6 +103,10 @@ void Display::clear_line(bool check_if_something_is_on_line){
     int y, x;
 //    get current cursor position
     getyx(stdscr, y, x);
+    if (check_if_something_is_on_line == true and x != 0)
+    {
+        display.display_message_with_endl("");
+    }
 //    move to beginning of line
     move(y, 0);
 //    delete from start till end of line

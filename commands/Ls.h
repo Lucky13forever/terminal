@@ -19,6 +19,7 @@ namespace accepted_flags{
     const char * help = "--help";
     const char * l = "-l";
     const char * s = "-s";
+    const char * version = "--version";
 }
 vector<const char *>accepted_flags_list = {
         accepted_flags::a,
@@ -27,7 +28,8 @@ vector<const char *>accepted_flags_list = {
         accepted_flags::classify,
         accepted_flags::help,
         accepted_flags::l,
-        accepted_flags::s
+        accepted_flags::s,
+        accepted_flags::version
 };
 
 namespace classifier{
@@ -78,6 +80,9 @@ class Ls{
                   "   --help              used to display this instructions\n"
                   "-l                     use a long listing format, helps for visibility\n"
                   "-s --size              print the allocated size of each file, in blocks\n";
+
+    string version_message = "ls version 10.9.7\n"
+                             "Written by Lugojan Emanuel";
 
 //the structure we will keep inside a vector, meaning a row and this will contain everything so to make ls -l easier
 
@@ -569,6 +574,13 @@ void Ls::identify_next_step() {
         display.display_a_new_line_for_each_endl(help);
         return;
     }
+
+    if (scanner_for_command.found_long_flag(accepted_flags::version))
+    {
+        display.display_message_with_endl(this->version_message);
+        return;
+    }
+
 
     //firstly we will consider the file paths provided
     if (files_in_lexicographic_order.size())

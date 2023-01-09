@@ -196,7 +196,6 @@ int Terminal::execute_external_command(string command, string previous_command_r
             display.display_debug_file(str);
         }
 
-
         execvp(argv[0], argv);
         return 0;
     }

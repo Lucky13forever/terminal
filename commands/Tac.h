@@ -12,6 +12,7 @@ namespace tac_flags{
     const char * b = "-b";
     const char * before = "--before";
     const char * s = "-s";
+    const char * version = "--version";
 }
 
 vector<const char *>accepted_tac_flags = {
@@ -19,6 +20,7 @@ vector<const char *>accepted_tac_flags = {
         tac_flags::b,
         tac_flags::before,
         tac_flags::s,
+        tac_flags::version
 };
 
 Scanner tac_scanner = *new Scanner({"-s"});
@@ -38,6 +40,8 @@ private:
                           "Mandatory arguments to long options are mandatory for short options too.\n"
                           "  -b, --before             attach the separator before instead of after\n"
                           "  -s, --separator=STRING   use STRING as the separator instead of newline\n";
+    string version_message = "tac version 3.6.2\n"
+                             "Written by Lugojan Emanuel";
 public:
     void run(string, string, bool);
     void identify_next_step();
@@ -139,6 +143,12 @@ void Tac::identify_next_step() {
     if (tac_scanner.found_long_flag(tac_flags::help))
     {
         display.display_a_new_line_for_each_endl(this->help_message);
+        return;
+    }
+
+    if (tac_scanner.found_long_flag(tac_flags::version))
+    {
+        display.display_message_with_endl(this->version_message);
         return;
     }
 

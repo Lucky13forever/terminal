@@ -8,10 +8,12 @@ using namespace std;
 
 namespace dirname_flags{
     const char * help = "--help";
+    const char * version = "--version";
 }
 
 vector<const char *>accepted_dirname_flags = {
         dirname_flags::help,
+        dirname_flags::version
 };
 
 Scanner dirname_scanner = *new Scanner();
@@ -29,6 +31,8 @@ private:
                                   "  dirname /usr/bin/          -> \"/usr\"\n"
                                   "  dirname dir1/str dir2/str  -> \"dir1\" followed by \"dir2\"\n"
                                   "  dirname stdio.h            -> \".\"";
+    string version_message ="dirname version 1.9.8\n"
+                            "Written by Lugojan Emanuel.";
 public:
     void run(string);
     void identify_next_step();
@@ -103,6 +107,13 @@ void Dirname::identify_next_step() {
     if (dirname_scanner.found_long_flag(dirname_flags::help))
     {
         display.display_a_new_line_for_each_endl(this->help_message);
+        return;
+    }
+
+    //if no help check for version
+    if (dirname_scanner.found_long_flag(dirname_flags::version))
+    {
+        display.display_message_with_endl(this->version_message);
         return;
     }
 

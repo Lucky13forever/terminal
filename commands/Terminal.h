@@ -34,7 +34,8 @@ public:
     Terminal();
     void configure();
     void check_if_external_command_exists(string command, string prev);
-    int execute_external_command(string command, string previous_command_result, string &result_after_run);
+    int execute_external_command(string command, string previous_command_result, string &result_after_run,
+                                 bool keep_on_screen);
     bool this_command_exists(string name);
     string extract_name_of_command(string);
     string trim_path_received(string path);
@@ -101,7 +102,7 @@ void Terminal::check_if_external_command_exists(string command, string prev) {
         display.display_debug_file("Prev string is: " + prev);
         //run exec on it
         string mt;
-        execute_external_command(command, prev, mt);
+        execute_external_command(command, prev, mt, true);
 
     }
     else{
@@ -124,7 +125,7 @@ char ** Terminal::return_char_pointer_from_vector_of_strings(vector<string> argv
     return argv;
 }
 
-int Terminal::execute_external_command(string command, string previous_command_result, string &result) {
+int Terminal::execute_external_command(string command, string previous_command_result, string &result,bool keep_on_screen) {
 
     display.display_debug_file("Comanda externa ce va fi rulata este " + command );
     terminal_scanner.scan_command(command);
@@ -176,7 +177,8 @@ int Terminal::execute_external_command(string command, string previous_command_r
         close(keep[0]);
         display.display_debug_file("Finished");
     }
-    display.display_a_new_line_for_each_endl(result);
+    if (keep_on_screen)
+        display.display_a_new_line_for_each_endl(result);
 //    display.display_message(result);
     return 0;
 }
@@ -184,9 +186,7 @@ int Terminal::execute_external_command(string command, string previous_command_r
 bool Terminal::this_command_exists(string name)
 {
     string mt;
-    display.setShowCache(false);
-    execute_external_command("which " + name, "", mt);
-    display.setShowCache(true);
+    execute_external_command("which " + name, "", mt, false);
     return !mt.empty();
 
 }

@@ -695,3 +695,231 @@ rm
 check_if_command_exists.cpp
 Finished
 AICI??
+This command is =======
+clear
+==========
+Internal command is clear 
+This command is =======
+exit
+==========
+Internal command is exit 
+This command is =======
+echo "Emanuel" 
+==========
+Internal command is echo "Emanuel" 
+Comanda externa ce va fi rulata este which echo
+which
+echo
+Finished
+The name of this command is |echo|
+Prev string is: 
+Comanda externa ce va fi rulata este echo "Emanuel"
+echo
+Emanuel
+Finished
+AICI??
+This command is =======
+aici.txt 
+==========
+Internal command is aici.txt /usr/bin/echo
+Emanuel
+
+The cache to be written is /usr/bin/echo
+Emanuel
+
+Action is to do redirection
+This command is =======
+cat aici.txt 
+==========
+Internal command is cat aici.txt 
+Comanda externa ce va fi rulata este which cat
+which
+cat
+Finished
+The name of this command is |cat|
+Prev string is: 
+Comanda externa ce va fi rulata este cat aici.txt
+cat
+aici.txt
+Finished
+AICI??
+This command is =======
+grep "n" 
+==========
+Internal command is grep "n" /usr/bin/cat
+/usr/bin/echo
+Emanuel
+
+Comanda externa ce va fi rulata este which grep
+which
+grep
+Finished
+The name of this command is |grep|
+Prev string is: /usr/bin/cat
+/usr/bin/echo
+Emanuel
+
+Comanda externa ce va fi rulata este grep "n"
+grep
+n
+Finished
+AICI??
+This command is =======
+result.txt
+==========
+Internal command is result.txt /usr/bin/grep
+/usr/bin/cat
+/usr/bin/echo
+Emanuel
+
+The cache to be written is /usr/bin/grep
+/usr/bin/cat
+/usr/bin/echo
+Emanuel
+
+Action is to do redirection
+This command is =======
+cat result.xt
+==========
+Internal command is cat result.xt 
+Comanda externa ce va fi rulata este which cat
+which
+cat
+Finished
+The name of this command is |cat|
+Prev string is: 
+Comanda externa ce va fi rulata este cat result.xt
+cat
+result.xt
+Finished
+AICI??
+This command is =======
+cat result.txt
+==========
+Internal command is cat result.txt 
+Comanda externa ce va fi rulata este which cat
+which
+cat
+Finished
+The name of this command is |cat|
+Prev string is: 
+Comanda externa ce va fi rulata este cat result.txt
+cat
+result.txt
+Finished
+AICI??
+This command is =======
+echo "Emanuel" 
+==========
+Internal command is echo "Emanuel" 
+Comanda externa ce va fi rulata este which echo
+which
+echo
+Finished
+The name of this command is |echo|
+Prev string is: 
+Comanda externa ce va fi rulata este echo "Emanuel"
+echo
+Emanuel
+Finished
+AICI??
+This command is =======
+aici.txt
+==========
+Internal command is aici.txt /usr/bin/echo
+Emanuel
+
+The cache to be written is /usr/bin/echo
+Emanuel
+
+Action is to do redirection
+This command is =======
+exit
+==========
+Internal command is exit 
+This command is =======
+echo "Emanuel" 
+==========
+Internal command is echo "Emanuel" 
+Comanda externa ce va fi rulata este which echo
+which
+echo
+Finished
+The name of this command is |echo|
+Prev string is: 
+Comanda externa ce va fi rulata este echo "Emanuel"
+echo
+Emanuel
+Finished
+AICI??
+This command is =======
+aici.txt 
+==========
+Internal command is aici.txt Emanuel
+
+The cache to be written is Emanuel
+
+Action is to do redirection
+This command is =======
+cat aici.txt 
+==========
+Internal command is cat aici.txt 
+Comanda externa ce va fi rulata este which cat
+which
+cat
+Finished
+The name of this command is |cat|
+Prev string is: 
+Comanda externa ce va fi rulata este cat aici.txt
+cat
+aici.txt
+Finished
+AICI??
+This command is =======
+grep n 
+==========
+Internal command is grep n Emanuel
+
+Comanda externa ce va fi rulata este which grep
+which
+grep
+Finished
+The name of this command is |grep|
+Prev string is: Emanuel
+
+Comanda externa ce va fi rulata este grep n
+grep
+n
+Finished
+AICI??
+This command is =======
+nou.txt
+==========
+Internal command is nou.txt Emanuel
+
+The cache to be written is Emanuel
+
+Action is to do redirection
+This command is =======
+cat nou.txt
+==========
+Internal command is cat nou.txt 
+Comanda externa ce va fi rulata este which cat
+which
+cat
+Finished
+The name of this command is |cat|
+Prev string is: 
+Comanda externa ce va fi rulata este cat nou.txt
+cat
+nou.txt
+Finished
+AICI??
+This command is =======
+clear
+==========
+Internal command is clear 
+This command is =======
+exit
+==========
+Internal command is exit 

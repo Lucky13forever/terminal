@@ -4,6 +4,7 @@
 #ifndef TERMINAL_TERMINAL_H
 #define TERMINAL_TERMINAL_H
 
+
 class Terminal{
     Scanner terminal_scanner = *new Scanner();
     int state = RUNNING;
@@ -30,43 +31,19 @@ public:
     const int get_state() {return state;};
     void terminate() {state = TERMINATED;};
     bool running() {return state == RUNNING;};
-    void display_shell_runned_command(string);
     Terminal();
     void configure();
     void check_if_external_command_exists(string command, string prev);
-    int execute_external_command(string command, string previous_command_result);
-    bool this_command_exists(string);
+    int execute_external_command(string command, string previous_command_result, string &result_after_run);
+    bool this_command_exists(string name);
     string extract_name_of_command(string);
-    static bool check_file_type(string, string);
-
     string trim_path_received(string path);
-
     char **return_char_pointer_from_vector_of_strings(vector<string> argv_vector);
 }terminal;
 
 Terminal::Terminal()
 {
     initialize_path();
-}
-
-bool check_file_type(string file, string type)
-{
-    string command = "file ";
-    command += file + " | grep " + "'" + type + "'";
-
-    FILE * f = popen(command.c_str(), "r");
-
-    string result;
-    char * buffer = new char[1024];
-    while(std::fgets(buffer, 1024, f) != NULL)
-    {
-        result += buffer;
-    }
-    if (!result.empty())
-    {
-        return 1;
-    }
-    return 0;
 }
 
 void Terminal::configure()
@@ -83,24 +60,6 @@ void Terminal::initialize_path(){
     }
     prefix[2] = "~";
     prefix[2].append(path);
-}
-
-void Terminal::display_shell_runned_command(string command) {
-    FILE *fpipe;
-
-    char c = 0;
-
-    if (0 == (fpipe = (FILE*)popen(command.c_str(), "r")))
-    {
-        errors.shell_popen_failed();
-        return;
-    }
-
-    while (fread(&c, sizeof c, 1, fpipe))
-    {
-        display.display_char(c);
-    }
-    pclose(fpipe);
 }
 
 const vector<string> &Terminal::getPrefix() const {
@@ -141,12 +100,14 @@ void Terminal::check_if_external_command_exists(string command, string prev) {
         display.display_debug_file("The name of this command is |" + name + "|");
         display.display_debug_file("Prev string is: " + prev);
         //run exec on it
-        execute_external_command(command, prev);
+        string mt;
+        execute_external_command(command, prev, mt);
 
     }
     else{
         errors.internal_command_not_found();
     }
+    display.display_debug_file("AICI??");
 }
 
 char ** Terminal::return_char_pointer_from_vector_of_strings(vector<string> argv_vector)
@@ -163,20 +124,16 @@ char ** Terminal::return_char_pointer_from_vector_of_strings(vector<string> argv
     return argv;
 }
 
-int Terminal::execute_external_command(string command, string previous_command_result) {
+int Terminal::execute_external_command(string command, string previous_command_result, string &result) {
 
-    string result;
-    display.display_debug_file("Inainte de error!");
+    display.display_debug_file("Comanda externa ce va fi rulata este " + command );
     terminal_scanner.scan_command(command);
-    display.display_debug_file("nU AR TREBUIE SA VAD LINIA ASTA!");
     int pipe_fd[2];
     int keep[2];
     pipe(pipe_fd);
     pipe(keep);
 
     write(pipe_fd[1], previous_command_result.c_str(), previous_command_result.length());
-    int pid1 = true;
-
     int pid2 = fork();
     if (pid2 == 0) {
         dup2(pipe_fd[0], STDIN_FILENO);
@@ -205,10 +162,9 @@ int Terminal::execute_external_command(string command, string previous_command_r
     close(keep[1]);
 
 //    display.display_debug_file("Before the kids");
-    waitpid(pid1, NULL, 0);
     waitpid(pid2, NULL, 0);
 
-    if (pid2 and pid1) {
+    if (pid2) {
 
         char buffer[1025];
         int num_bytes;
@@ -227,35 +183,12 @@ int Terminal::execute_external_command(string command, string previous_command_r
 
 bool Terminal::this_command_exists(string name)
 {
+    string mt;
+    display.setShowCache(false);
+    execute_external_command("which " + name, "", mt);
+    display.setShowCache(true);
+    return !mt.empty();
 
-    display.display_debug_file("Checking if |" + name + "| exists");
-    string command = "command -v ";
-    command.append(name);
-    FILE * pipe = popen(command.c_str(), "r");
-
-    string result = "";
-    if (pipe)
-    {
-
-        //can open and read
-        char * buffer = new char[128];
-        if (fgets(buffer, 128, pipe) != NULL)
-        {
-            result += buffer;
-        }
-
-        if (!result.empty())
-        {
-            //this exists
-            return true;
-        }
-
-    } else {
-        errors.shell_popen_failed();
-    }
-
-    pclose(pipe);
-    return false;
 }
 
 const string &Terminal::getPath() const {

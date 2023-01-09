@@ -5,10 +5,8 @@
 #ifndef TERMINAL_ERRORS_H
 #define TERMINAL_ERRORS_H
 class Errors{
-    bool had_error;
 public:
     void internal_command_not_found();
-    void shell_popen_failed();
     void too_many_arguments();
     void invalid_path_provided();
     void cannot_open_dir();
@@ -23,19 +21,11 @@ public:
     void flag_has_no_value(const string &basicString);
 
     void syntax_error(const string &sign);
-    void reset_error_recorder() {had_error = false;};
-
-    bool DoIHaveError() const;
 }errors;
 
 //    internal meaning, implemented by this program
 void Errors::internal_command_not_found() {
-    this->had_error = true;
     display.display_message_with_endl("Error: Command not found!");
-}
-
-void Errors::shell_popen_failed() {
-    display.display_message_with_endl("Error: When running in shell, popen failed");
 }
 
 void Errors::too_many_arguments() {

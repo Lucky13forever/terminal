@@ -1,7 +1,0 @@
-cmake-build-debug
-CMakeLists.txt
-debug_file.txt
-libraries
-terminal
-terminal.cpp
-venv

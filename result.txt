@@ -1,4 +1,0 @@
-/usr/bin/grep
-/usr/bin/cat
-/usr/bin/echo
-Emanuel
